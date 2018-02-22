@@ -1,0 +1,165 @@
+#content .content_main {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .content_main .main_top {
+  width: 1200px;
+  height: 685px;
+}
+#content .content_main .main_top .main_top_up {
+  width: 1200px;
+  height: 145px;
+}
+#content .content_main .main_top .main_top_up .up_left {
+  width: 317px;
+  height: 145px;
+  border: 1px solid #ccc;
+  float: left;
+}
+#content .content_main .main_top .main_top_up .up_left .join {
+  height: 73px;
+  width: 270px;
+  margin: 0 auto;
+  border-bottom: 1px solid #900;
+  text-align: center;
+  line-height: 80px;
+  font-size: 24px;
+  color: #2058C2;
+}
+#content .content_main .main_top .main_top_up .up_left .apply {
+  height: 72px;
+  width: 270px;
+  margin: 0 auto;
+  padding: 18px;
+}
+#content .content_main .main_top .main_top_up .up_left .apply a {
+  display: block;
+  width: 55px;
+  height: 25px;
+  margin: 0 auto;
+  line-height: 25px;
+  text-align: center;
+  background: #900;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+}
+#content .content_main .main_top .main_top_up .brandattr {
+  height: 145px;
+  width: 852px;
+  float: right;
+  background: #F5F5F5;
+  /*margin-top: -10px;*/
+}
+/*#content .content_main .main_top .main_top_up .brandattr dl {
+  width: 780px;
+  height: 80px;
+}
+#content .content_main .main_top .main_top_up .brandattr dl h5 {
+  float: left;
+  font-size: 14px;
+  line-height: 30px;
+  margin: 18px 0px 15px 23px;
+}
+#content .content_main .main_top .main_top_up .brandattr dl dt {
+  font-size: 14px;
+  float: left;
+  width: 70px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: #2058C2;
+  margin: 17px;
+}*/
+#content .content_main .main_top .main_top_up .up_right dl dt a {
+  color: white;
+  font-family: '宋体';
+}
+#content .content_main .main_top .main_top_up .up_right dl dd {
+  font-size: 18px;
+  width: 65px;
+  float: left;
+  line-height: 18px;
+  margin-top: 22px;
+}
+#content .content_main .main_top .main_top_up .up_right dl dd a {
+  color: #444444;
+}
+#content .content_main .main_top .main_top_down {
+  height: 520px;
+  width: 1200px;
+  margin-top: 20px;
+}
+#content .content_main .main_top .main_top_down .down_left {
+  width: 317px;
+  height: 520px;
+  border: 1px solid #ccc;
+  float: left;
+}
+#content .content_main .main_top .main_top_down .down_left .down_left_title {
+  width: 270px;
+  height: 72px;
+  border-bottom: 2px solid #900;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 80px;
+  font-size: 24px;
+  color: #2058C2;
+}
+#content .content_main .main_top .main_top_down .down_left .down_left_content {
+  height: 428px;
+  width: 270px;
+  margin: 20px auto;
+  overflow: hidden;
+  color: #6E6D72;
+  font-size: 14px;
+  text-indent: 32px;
+  line-height: 23.5px;
+}
+#content .content_main .main_top .main_top_down .down_right {
+  width: 852px;
+  height: 520px;
+  float: right;
+}
+#content .content_main .main_top .main_top_down .down_right ul {
+  width: 900px;
+  height: 520px;
+}
+#content .content_main .main_top .main_top_down .down_right ul li {
+  width: 267px;
+  height: 245px;
+  border: 1px solid #ccc;
+  float: left;
+  margin-right: 25px;
+  margin-bottom: 30px;
+}
+#content .content_main .main_topup_right .main_top_down .down_right ul li a {
+  display: block;
+  width: 265px;
+  height: 175px;
+  padding: 30px 23px 23px 23px;
+}
+#content .content_main .main_top .main_top_down .down_right ul li a h5 {
+  margin-top: 20px;
+  font-size: 20px;
+}
+#content .content_main .main_top .main_top_down .down_right ul li span {
+  display: block;
+  width: 220px;
+  /*padding-left: 23px;*/
+  /*padding-right: 23px;*/
+  font-size: 16px;
+  line-height: 30px;
+  color: #6E6D72;
+  margin-top: 15px;
+}
+
+
+.brandattr .brandl .bluea{height: 30px; background: #900;  color:#fff; text-align: center; line-height: 30px; display: inline-block;}
+.brandattr .brandl dt{float: left; line-height:30px; width:50px; text-align: left; font-size: 14px; color:#787d82;}
+.brandattr .brandl dd a{line-height:30px;margin-right:4px; color:#14191e;display: inline-block;height: 30px;float: left;margin:0;font-size: 16px;padding-left: 0 10px 0 10px;}
+.brandattr .brandl dd{ margin-left: 50px;}
+.brandattr .brandl{ font-size: 14px;line-height: 26px;}
+/*.brandattr .brandl dd .screen{line-height:30px;display: inline-block;height: 30px;}*/
+#screen{padding: 0 5px;}
+/*# sourceMappingURL=list_consume_alliance.css.map */

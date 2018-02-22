@@ -1,0 +1,377 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>用户注册11</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="../resources/default/css/index.php-act=search&op=index&cate_id=1314&area_id=35.css" tppabs="http://www.sdcii.com/psapp/resources/default/css/default.css" rel="stylesheet" type="text/css"/>
+    <link href="../resources/default/css/index.php-act=search&op=get_booth_goods&cate_id=1140.css" tppabs="http://www.sdcii.com/psapp/resources/default/css/login.css" rel="stylesheet" type="text/css"/>
+    <script src="../js/jquery-1.11.3.min.js" tppabs="http://www.sdcii.com/psapp/js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="../js/image.js" tppabs="http://www.sdcii.com/psapp/js/image.js" type="text/javascript"></script>
+    <script src="../js/Validform_v5.3.2_min.js" tppabs="http://www.sdcii.com/psapp/js/Validform_v5.3.2_min.js" type="text/javascript"></script>
+    <script src="../js/passwordStrength-min.js" tppabs="http://www.sdcii.com/psapp/js/passwordStrength-min.js" type="text/javascript"></script>
+    <script src="../js/area/index.php-act=search&op=index&cate_id=1143&order=0&key=0" tppabs="http://www.sdcii.com/psapp/js/area/area.js?path=/psapp/js/area/" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".myform").Validform({
+                tiptype: 2,
+                datatype: { //自定义datatype类型
+                    "zh2-4": /^([\u4E00-\u9FA5\uF900-\uFA2D]){2,4}$/,
+                    "zh2-50": /^([\u4E00-\u9FA5\uF900-\uFA2D]){2,50}$/,
+                    "tel":/^0(([1,2]\d)|([3-9]\d{2}))-\d{7,8}$/,
+                    "QQ":/^\d{5,11}$/,
+                    "organizationCode": /^[a-zA-Z0-9]{8}-[a-zA-Z0-9]{1}$/,
+                    "idcard": function (gets, obj, curform, datatype) {
+
+                        var Wi = [7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2, 1];// 加权因子;
+                        var ValideCode = [1, 0, 10, 9, 8, 7, 6, 5, 4, 3, 2];// 身份证验证位值，10代表X;
+                        var valCodePosition =0;
+                        if (gets.length == 15) {
+                            return isValidityBrithBy15IdCard(gets);
+                        } else if (gets.length == 18) {
+                            var a_idCard = gets.split("");// 得到身份证数组
+                            if (isValidityBrithBy18IdCard(gets) && isTrueValidateCodeBy18IdCard(a_idCard)) {
+                                return true;
+                            }
+                            return false;
+                        }
+                        return false;
+
+                        function isTrueValidateCodeBy18IdCard(a_idCard) {
+                            var sum = 0; // 声明加权求和变量
+                            if (a_idCard[17].toLowerCase() == 'x') {
+                                a_idCard[17] = 10;// 将最后位为x的验证码替换为10方便后续操作
+                            }
+                            for (var i = 0; i < 17; i++) {
+                                sum += Wi[i] * a_idCard[i];// 加权求和
+                            }
+                            valCodePosition = sum % 11;// 得到验证码所位置
+                            if (a_idCard[17] == ValideCode[valCodePosition]) {
+                                return true;
+                            }
+                            return false;
+                        }
+
+                        function isValidityBrithBy18IdCard(idCard18) {
+                            var year = idCard18.substring(6, 10);
+                            var month = idCard18.substring(10, 12);
+                            var day = idCard18.substring(12, 14);
+                            var temp_date = new Date(year, parseFloat(month) - 1, parseFloat(day));
+                            // 这里用getFullYear()获取年份，避免千年虫问题
+                            if (temp_date.getFullYear() != parseFloat(year) || temp_date.getMonth() != parseFloat(month) - 1 || temp_date.getDate() != parseFloat(day)) {
+                                return false;
+                            }
+                            return true;
+                        }
+
+                        function isValidityBrithBy15IdCard(idCard15) {
+                            var year = idCard15.substring(6, 8);
+                            var month = idCard15.substring(8, 10);
+                            var day = idCard15.substring(10, 12);
+                            var temp_date = new Date(year, parseFloat(month) - 1, parseFloat(day));
+                            // 对于老身份证中的你年龄则不需考虑千年虫问题而使用getYear()方法
+                            if (temp_date.getYear() != parseFloat(year) || temp_date.getMonth() != parseFloat(month) - 1 || temp_date.getDate() != parseFloat(day)) {
+                                return false;
+                            }
+                            return true;
+                        }
+
+                    }
+                },
+                beforeCheck: function (curform) {
+                    if(2=='1'){
+                        return true;
+                    }
+                    if (!checkAddress()) {
+                        return false;
+                    }
+
+                }
+            });
+
+            var getInfoObj = function () {
+                return $(this).parents("dt").next().find(".info");
+            }
+
+            $("[datatype]").focusin(function () {
+                if (this.timeout) {
+                    clearTimeout(this.timeout);
+                }
+                var infoObj = getInfoObj.call(this);
+                if (infoObj.siblings(".Validform_right").length != 0) {
+                    return;
+                }
+                infoObj.show().siblings().hide();
+
+            }).focusout(function () {
+                var infoObj = getInfoObj.call(this);
+                this.timeout = setTimeout(function () {
+                    infoObj.hide().siblings().show();
+                }, 0);
+
+            });
+
+
+            load_province("15");
+            change_province("15");
+            $("#province").change(function () {
+                change_province($(this).val());
+            });
+            $("#city").change(function () {
+                change_city($(this).val());
+            });
+
+
+            $("#qyZhucedizhiDizhi").focusin(function () {
+                $("#addressMsg").hide();
+                $("#addressMsg").next().show();
+            }).focusout(function () {
+                if (checkAddress()) {
+                    $("#addressMsg").next().hide();
+                    $("#qyZhucedizhiDizhi").removeClass('Validform_error');
+                    $("#addressMsg").removeClass('Validform_wrong');
+                    $("#addressMsg").addClass('Validform_right');
+                    $("#addressMsg").show();
+                }
+                ;
+            });
+
+        });
+
+        function checkIsWenHuaDanWei(obj){
+            if($(obj).val()=='financial'){
+                $("input[name='psSdciiCompanyUser.qyIsWenHuaDanWei'][value=0]").click();
+                $("input[name='psSdciiCompanyUser.qyIsWenHuaDanWei']").attr('disabled','disabled');
+            }else{
+                $("input[name='psSdciiCompanyUser.qyIsWenHuaDanWei']").removeAttr('disabled');
+            }
+        }
+
+        function checkAddress() {
+            var province = $("#province").val();
+            var city = $("#city").val();
+            var area = $("#area").val();
+            var address = $("#qyZhucedizhiDizhi").val();
+            if (province == -1) {
+                $("#province").addClass('Validform_error');
+                $("#addressMsg").addClass('Validform_wrong');
+                $("#addressMsg").html("请选择省份");
+                $("#province").focus();
+                return false;
+            }
+            if (city == -1) {
+                $("#city").addClass('Validform_error');
+                $("#addressMsg").addClass('Validform_wrong');
+                $("#addressMsg").html("请选择城市");
+                $("#city").focus();
+                return false;
+            }
+            if (area == -1) {
+                $("#area").addClass('Validform_error');
+                $("#addressMsg").addClass('Validform_wrong');
+                $("#addressMsg").html("请选择区域");
+                $("#area").focus();
+                return false;
+            }
+            if (!address) {
+                $("#qyZhucedizhiDizhi").addClass('Validform_error');
+                $("#addressMsg").addClass('Validform_wrong');
+                $("#addressMsg").html("请选择区域");
+                $("#qyZhucedizhiDizhi").focus();
+                return false;
+
+            }
+            return true;
+        }
+
+        function reloadCheck(obj) {
+
+            var val = $(obj).val();
+            if (val != -1) {
+                $(obj).removeClass('Validform_error');
+                $("#addressMsg").removeClass('Validform_wrong');
+                $("#addressMsg").empty();
+            }
+
+        }
+    </script>
+</head>
+<body style="background:#fff">
+<div class="p_head">
+    <div class="text_h">
+        <span class="pad-right15 blod"><a href="#">首页</a></span>
+        <i>|</i><a href="logon.do.htm" tppabs="http://www.sdcii.com/psapp/member/logon.do"><em>请登录</em></a>
+        <i>|</i><a href="forInsertMember.do-memberType=1.htm" tppabs="http://www.sdcii.com/psapp/member/forInsertMember.do?memberType=1">个人用户注册</a>
+        <i>|</i><a href="forInsertMember.do-memberType=1.htm" tppabs="http://www.sdcii.com/psapp/member/forInsertMember.do?memberType=1">企业用户注册</a>
+    </div>
+</div>
+<div class="q_layout">
+    <div class="content">
+        <div class="logo floatLeft margin-top23"></div>
+        <div class="m_con bor">
+            <dl>
+                <dt class="grzc_bg"><i>机构用户注册</i></dt>
+                <dt class="text_step  mar-left260"><span class="icon02 blod">1</span>设置登录名</dt>
+                <dt class="text_step bor-bot"><span class="icon03 blod">2</span><em>完善注册信息</em></dt>
+                <dt class="text_step"><span class="icon05 blod"></span>注册成功</dt>
+            </dl>
+        </div>
+        <div class="clear"></div>
+        <form method="post" id="myform" name="myform" class="myform"
+              action="javascript:if(confirm('http://www.sdcii.com/psapp/member/index.php?act=search&op=index&cate_id=1143&key=1&order=2  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.sdcii.com/psapp/member/index.php?act=search&op=index&cate_id=1143&key=1&order=2'" tppabs="http://www.sdcii.com/psapp/member/saveOrUpdateMemberBase.do?vo.memberType=2&vo.Id=<!-- FREEMARKER ERROR MESSAGE STARTS HERE --><script language=javascript>//">
+            <input type="hidden" name="vo.memberType" value="2" id="memberType"/>
+            <input type="hidden" name="vo.Id" value="<!-- FREEMARKER ERROR MESSAGE STARTS HERE --><script language=javascript>//"></script><script language=javascript>//'></script><script language=javascript>//"></script><script language=javascript>//'></script></title></xmp></script></noscript></style></object></head></pre></table></form></table></table></table></a></u></i></b><div align=left style='background-color:#FFFF00; color:#FF0000; display:block; border-top:double; padding:2pt; font-size:medium; font-family:Arial,sans-serif; font-style: normal; font-variant: normal; font-weight: normal; text-decoration: none; text-transform: none'><b style='font-size:medium'>FreeMarker template error!</b><pre><xmp>
+
+Expression memberBase is undefined on line 227, column 56 in WEB-INF/template/client/member/forCompleteMember.ftl.
+The problematic instruction:
+----------
+==> ${memberBase.id} [on line 227, column 54 in WEB-INF/template/client/member/forCompleteMember.ftl]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.core.InvalidReferenceException: Expression memberBase is undefined on line 227, column 56 in WEB-INF/template/client/member/forCompleteMember.ftl.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:125)
+	at freemarker.core.TemplateObject.invalidTypeException(TemplateObject.java:135)
+	at freemarker.core.Dot._getAsTemplateModel(Dot.java:78)
+	at freemarker.core.Expression.getAsTemplateModel(Expression.java:89)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:221)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:221)
+	at freemarker.core.Environment.process(Environment.java:199)
+	at freemarker.template.Template.process(Template.java:259)
+	at freemarker.ext.servlet.FreemarkerServlet.process(FreemarkerServlet.java:452)
+	at freemarker.ext.servlet.FreemarkerServlet.doGet(FreemarkerServlet.java:391)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:749)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:487)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:412)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:339)
+	at org.apache.struts2.dispatcher.ServletDispatcherResult.doExecute(ServletDispatcherResult.java:164)
+	at org.apache.struts2.dispatcher.StrutsResultSupport.execute(StrutsResultSupport.java:186)
+	at com.opensymphony.xwork2.DefaultActionInvocation.executeResult(DefaultActionInvocation.java:371)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:275)
+	at org.apache.struts2.interceptor.debugging.DebuggingInterceptor.intercept(DebuggingInterceptor.java:256)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.DefaultWorkflowInterceptor.doIntercept(DefaultWorkflowInterceptor.java:167)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.validator.ValidationInterceptor.doIntercept(ValidationInterceptor.java:265)
+	at org.apache.struts2.interceptor.validation.AnnotationValidationInterceptor.doIntercept(AnnotationValidationInterceptor.java:68)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ConversionErrorInterceptor.intercept(ConversionErrorInterceptor.java:138)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:239)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:239)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.StaticParametersInterceptor.intercept(StaticParametersInterceptor.java:191)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.MultiselectInterceptor.intercept(MultiselectInterceptor.java:73)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.CheckboxInterceptor.intercept(CheckboxInterceptor.java:91)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.FileUploadInterceptor.intercept(FileUploadInterceptor.java:252)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ModelDrivenInterceptor.intercept(ModelDrivenInterceptor.java:100)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ScopedModelDrivenInterceptor.intercept(ScopedModelDrivenInterceptor.java:141)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ChainingInterceptor.intercept(ChainingInterceptor.java:145)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.PrepareInterceptor.doIntercept(PrepareInterceptor.java:171)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.I18nInterceptor.intercept(I18nInterceptor.java:161)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.ServletConfigInterceptor.intercept(ServletConfigInterceptor.java:164)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.AliasInterceptor.intercept(AliasInterceptor.java:193)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor.intercept(ExceptionMappingInterceptor.java:189)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.pshop.pub.interceptor.ACLInterceptor.intercept(ACLInterceptor.java:38)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.impl.StrutsActionProxy.execute(StrutsActionProxy.java:54)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:563)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:936)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1004)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+</xmp></pre></div></html>
+<html>
+	<head>
+	    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>系统提示</title>
+		<style type="text/css">			
+			a:link {
+				font-size: 12px;
+				line-height: 25px;
+				color: #333333;
+				text-decoration: underline;
+			}
+			
+			a:hover {
+				font-size: 12px;
+				line-height: 25px;
+				color: #666666;
+				text-decoration: underline;
+			}
+			
+			a:visited {
+				font-size: 12px;
+				line-height: 25px;
+				color: #333333;
+				text-decoration: underline;
+			}
+		</style>
+	</head>
+	<body>
+		<table width="60%" border="0" cellpadding="0" cellspacing="0" class="line_table">
+        	<tr>
+        		<td width="8%" valign="middle" background="../images/admin/index.php-act=search&op=index&cate_id=1314&area_id=1" tppabs="http://www.sdcii.com/psapp/images/admin/news-title-bg.gif">&nbsp;&nbsp;<img src="../images/admin/index.php-act=search&op=index&cate_id=1314&area_id=2" tppabs="http://www.sdcii.com/psapp/images/admin/info_ico.jpg" border="0">&nbsp;</td>
+	            <td height="27" background="../images/admin/index.php-act=search&op=index&cate_id=1314&area_id=1" tppabs="http://www.sdcii.com/psapp/images/admin/news-title-bg.gif" class="title_txt_shadow" align="left">提示信息</td>
+    		</tr>
+	        <tr>
+	            <td valign="top" colspan="2">
+	            	<table border="0">
+	            		<tr>
+	            			<td width="10">&nbsp;</td>
+	            			<td valign="midden" align="center"><img src="../images/admin/index.php-act=search&op=index&cate_id=1314&area_id=9" tppabs="http://www.sdcii.com/psapp/images/admin/failure.png" border="0" width="100" height="100"></td>
+	            			<td width="20">&nbsp;</td>
+	            			<td align="left">系统遇到错误！</td>
+	            		</tr>
+	            	</table>
+	            </td>
+	        </tr>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,121 @@
+#content table td {
+  border: none;
+}
+#content table tr {
+  height: 30px;
+}
+#content .header_search {
+  margin: 32px auto 37px;
+  padding-left: 207px;
+}
+#content .header_search input {
+  border: 1px solid #2058C2;
+  width: 684px;
+  height: 32px;
+}
+#content .select_div {
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #F5F5F5;
+}
+#content .select_div .select {
+  width: 370px;
+  height: 390px;
+  background: #fff;
+  text-align: center;
+  display: inline-block;
+  margin-right: 20px;
+  font: 15px/18px "微软雅黑";
+}
+#content .select_div .select li {
+  margin: 6px 0;
+}
+#content .select_div .select li span {
+  float: right;
+  display: none;
+}
+#content .select_div .select:last-child {
+  margin-right: 0;
+}
+#content .select_div li:hover {
+  background: #F5F5F5;
+}
+#content .select_div li:hover span {
+  display: block;
+}
+#content .send_content {
+  padding: 20px;
+  padding-top: 0;
+  border-top: 1px solid #5982D0;
+  background: #F5F5F5;
+  height: 1035px;
+}
+#content .send_content h4 {
+  font: 18px/52px "微软雅黑";
+}
+#content .send_content .proaddeditorbox{font-size: 12px; line-height: 20px;  width: 625px;height: 300px;overflow: hidden;}
+#content .send_content>table {
+  height: 200px;
+  width: 100%;
+  background: #fff;
+  font: 16px/30px "微软雅黑";
+}
+#content .send_content>table input {
+  border: 1px solid #6289D4;
+  height: 31px;
+  width: 280px;
+  margin-right: 10px;
+}
+#content .send_content>table td {
+  border: none;
+  padding: 10px;
+}
+#content .send_content>table td:nth-child(odd) {
+  width: 295px;
+  text-align: right;
+}
+#content .send_content>table td:nth-child(even) {
+  text-align: left;
+  padding-left: 0;
+}
+#content .send_content>table tr:last-child td {
+  text-align: center;
+}
+#content .send_content>table .name {
+  width: 623px;
+  height: 31px;
+  border: 1px solid #6289D4;
+}
+#content .send_content>table .sub_but {
+  text-align: center;
+  height: 105px;
+}
+#content .send_content>table .sub_but .submit {
+  width: 250px;
+  height: 50px;
+  color: #fff;
+  font: 25px/50px "微软雅黑";
+  background: #2058C2;
+}
+#content .send_content>table .button {
+  width: 109px;
+  height: 105px;
+  /*border: 1px solid #6289D4;*/
+  font: 54px/105px "微软雅黑";
+  display: inline-block;
+  margin-top: 20px;
+}
+
+#content .send_content>table .proadd_chks input{
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 3px; 
+}
+#content .send_content>table .proadd_chks label{
+  margin-right: 10px;
+  vertical-align: middle;
+  margin-bottom: auto;
+  font-weight: normal;
+}
+/*# sourceMappingURL=product_add.css.map */

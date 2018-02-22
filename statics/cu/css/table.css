@@ -1,0 +1,15 @@
+table{border: 1px solid #E1E1E1;}
+thead th{background-color: #B8DFFF !important;}
+thead th{border: none !important;font-size: 16px;}
+thead th,tbody tr td{text-align: center;}
+tr td a{color: #268BE0;}
+tfoot tr td{padding: 0px !important;background-color: #F6F6F6;}
+tr:nth-child(odd){background-color: #F6F6F6;}
+tr:nth-child(even){background-color: #F0F0F0;}
+.tb-db thead th:last-child{width: 40%;}
+.tb-tj tbody tr td span{color: red;}
+
+.sjkTb tbody tr td img{width: 18px;}
+.sjkTb thead th{background-color: #438FB1 !important;color: white;}
+.sjkTb tr:nth-child(odd){background-color:#D1D1D1;}
+.sjkTb tr:nth-child(even){background-color:#F2F2F2;}

@@ -1,0 +1,444 @@
+@charset "utf-8";
+/* CSS Document */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;outline:0;font-size:100%;vertical-align:baseline;}body{line-height:1;}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}li{list-style:none}table{width:100%;line-height:1.5em;border-collapse:collapse;border-spacing:0}
+.clearfix:after, .container:after{content:'\0020';display:block;height:0;clear:both;visibility:hidden;max-height:0;}
+.clearfix, .container{display:inline-block;}
+* html .clearfix, * html .container{height:1%;}
+.clearfix, .container{display:block;}
+.clearer{background:none;border:0;clear:both;display:block;float:none;font-size:0;list-style:none;margin:0;padding:0;overflow:hidden;visibility:hidden;width:0;height:0}
+html{color:#555;font-size:12px;font-family:Helvetica, Arial,sans-serif;text-align:left;}
+strong, th, thead td, h1, h2, h3, h4, h5, h6{font-weight:bold;}
+h1{font-size:1.9em;}h2{font-size:1.7em;}h3{font-size:1.5em;}h4{font-size:1.3em;}h5{font-size:1.2em;}h6{font-size:1em;}
+cite, em, dfn{ font-style: normal;}
+code, kbd, samp, pre, tt, var, button, input, select, textarea{font-family:Helvetica, Arial,sans-serif;}
+a{color:#484848;text-decoration:none;outline:none;}
+a:hover{color:#bb3c15;text-decoration:underline;}
+ul li a:hover{color:#bb3c15;text-decoration:underline;}
+hr{background:#ddd;color:#ddd;clear:both;float:none;width:100%;height:.1em;margin:.5em 0;border:none;}
+hr.space{background:#fff;color:#fff;}
+table{border-top:1px solid #eee;border-left:1px solid #eee;}
+th, td{padding:5px;border-bottom:1px solid #eee;border-right:1px solid #eee;vertical-align:top;}
+th{font-weight:bold;text-align:center;background:#f8f8f8;}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-style:inherit;font-weight:inherit;}
+input,button,textarea,select{ font-family:"微软雅黑";outline: none;}
+textarea, input[type='text'], input[type='password'], select{ padding:0;}
+input, select{cursor:pointer;}input[type='text'],input[type='password']{cursor:text;}label{cursor:pointer;}
+.clear{ clear:both; }
+img{border:none;}
+/*页面整体css*/
+
+
+body { background:#FFF; margin:0; width:100%; padding:0;font-size:14px; font-family:"微软雅黑"; color:#4e4e4e; }
+
+
+/* CSS空白 */
+.blank1 { margin:0 auto; height:1px; font-size:1px; clear:both; overflow:hidden }
+.blank2 { margin:0 auto; height:2px; font-size:1px; clear:both; overflow:hidden }
+.blank3 { margin:0 auto; height:3px; font-size:1px; clear:both; overflow:hidden }
+.blank5 { margin:0 auto; height:5px; font-size:1px; clear:both; overflow:hidden }
+.blank8 { margin:0 auto; height:8px; font-size:1px; clear:both; overflow:hidden }
+.blank10 { margin:0 auto; height:10px; font-size:1px; clear:both; overflow:hidden }
+.blank11 { margin:0 auto; height:11px; font-size:1px; clear:both; overflow:hidden }
+.blank12 { margin:0 auto; height:12px; font-size:1px; clear:both; overflow:hidden }
+.blank13 { margin:0 auto; height:13px; font-size:1px; clear:both; overflow:hidden }
+.blank14 { margin:0 auto; height:14px; font-size:1px; clear:both; overflow:hidden }
+.blank15 { margin:0 auto; height:15px; font-size:1px; clear:both; overflow:hidden }
+.blank16 { margin:0 auto; height:16px; font-size:1px; clear:both; overflow:hidden }
+.blank18 { margin:0 auto; height:18px; font-size:1px; clear:both; overflow:hidden }
+.blank20 { margin:0 auto; height:20px; font-size:1px; clear:both; overflow:hidden }
+.blank23 { margin:0 auto; height:23px; font-size:1px; clear:both; overflow:hidden }
+.blank25 { margin:0 auto; height:25px; font-size:1px; clear:both; overflow:hidden }
+.blank50 { margin:0 auto; height:30px; font-size:1px; clear:both; overflow:hidden }
+
+
+
+
+/* 登录搜索*/
+
+.sy_toptp{
+	margin:2% auto;
+     width:90%; 
+     height:56px; 
+     background-image:url("../images/denglu_03.png")/*tpa=http://www.sdcii.com/psapp/resources/default/images/denglu_03.png*/; 
+     background-position:center center; 
+     background-size:100% auto;
+     background-repeat:no-repeat; }
+
+.demo{ width:90%; margin: 0 auto;background: #fff;}
+
+ .md-offset {width:100%;margin:0 auto;	
+}
+.forget-pwd .heading {
+	display: block;font-family:"微软雅黑";
+	font-size:18px;
+color:#414141;
+	padding:0 0 4% 0;
+text-align: center;
+}
+.forget-pwd .form-group { margin-bottom:5%;
+	padding:0;
+	position: relative;
+}
+.forget-pwd .form-control { 
+	background: #fff;
+	border-radius:1px;
+	border: 1px solid #dbdbdb; width:88%;font-size:14px; font-family:"微软雅黑"; color:#939393;
+	box-shadow: none;
+	height:40px; 
+	padding-left:12%;
+}
+.forget-pwd .form-contro2{background: #fff; 
+    float:left;
+	overflow:hidden;
+	border: 1px solid #dbdbdb;
+	 width:56%;
+	border-radius:1px;
+	font-size:14px;
+	 font-family:"微软雅黑"; 
+	 color:#939393;
+	box-shadow: none;
+	height: 40px;
+	padding-left:12%;
+	}
+
+.forget-pwd .form-control:focus {
+	background: #fcfcfc;
+	border: 1px solid #94604a;
+	box-shadow: none;
+	outline: 0 none;
+}
+.forget-pwd .form-contro2:focus {
+	background: #fcfcfc;
+	border: 1px solid #94604a;
+	box-shadow: none;
+	outline: 0 none;
+}
+.forget-pwd .form-group i {width:42px; height:42px;
+	position: absolute;
+	top:0;
+	left:0px;
+	color: #c8c8c8;
+
+}
+.form-group .yanzm{border: 1px solid #dbdbdb; width:28%; height:40px; float:right;border-radius:1px; }
+.form-group .yanzm img{ width:100%; height:100%;}
+.form-group .fa-user{ background-image:url("../images/denglu_07.png")/*tpa=http://www.sdcii.com/psapp/resources/default/images/denglu_07.png*/; background-size:19px 19px;background-repeat:no-repeat;
+	background-position: center center;}
+	.form-group .fa-lock{ background-image:url("../images/denglu_10.png")/*tpa=http://www.sdcii.com/psapp/resources/default/images/denglu_10.png*/; background-size:19px 17px;background-repeat:no-repeat;
+	background-position: center center;}
+	.form-group .fa-yzm{background-image:url("../images/denglu_10.png")/*tpa=http://www.sdcii.com/psapp/resources/default/images/denglu_10.png*/; background-size:19px 17px;background-repeat:no-repeat;
+	background-position: center center;}
+	
+.forget-pwd .form-control:focus + i {
+	color: #00b4ef;
+}
+
+.jzm_wjm{ width:100%; margin:3% auto;}
+.forget-pwd .main-checkbox {
+	float: left;
+	width: 13px;
+	height: 13px;
+	background: #fff;
+	border-radius:1px;
+	position: relative;
+	margin:0px 0 0 2px;
+	border: 1px solid #c7c7c7;
+}
+.forget-pwd .main-checkbox label {
+	width: 13px;
+	height: 13px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+.forget-pwd .main-checkbox label:after {
+	content: "";
+	width: 8px;
+	height: 4px;
+	position: absolute;
+	top:3px;
+	left:2px;
+	border: 1px solid #94604a;
+	border-top: none;
+	border-right: none;
+	background: transparent;
+	opacity: 0;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.forget-pwd .main-checkbox input[type=checkbox] {
+	visibility: hidden;
+}
+.forget-pwd .main-checkbox input[type=checkbox]:checked + label:after {
+	opacity: 1;
+}
+.forget-pwd .text {
+	float:left;
+	margin-left: 7px;
+	line-height:14px;font-size:14px; font-family:"微软雅黑"; color:#9a9a9a;
+	text-transform: capitalize;
+}
+.forget-pwd .wangjimm {
+	float: right;
+	font-size:14px; font-family:"微软雅黑"; color:#94604a;
+	padding:0px;line-height:14px;
+	border: none;
+	text-transform: capitalize; display:block;
+	
+}
+.forget-pwd .wangjimm a{color:#94604a;}
+.forget-pwd .wangjimm span{ color:#818181; padding-right:10px; border-right:1px solid #818181; margin-right:10px;}
+.forget-pwd .wangjimm span a{color:#818181;}
+
+.dengl_zc{ width:100%; margin:7% auto 6% auto; overflow:hidden;}
+.dengl_zc .btn-default{ width:100%; height:42px; line-height:42px; background:#94604a; color:#fff;font-size:18px; font-family:"微软雅黑";  border:none;border-radius:1px; }
+.dengl_zc .btn-default:hover{background:#7c4a35; }
+
+
+.ksdl{ width:100%; margin:0 auto; padding-bottom:6%; background-image:url("../images/denglu_25.png")/*tpa=http://www.sdcii.com/psapp/resources/default/images/denglu_25.png*/; background-size:1px 1px;background-repeat: repeat-x;
+	background-position: center 8px; overflow:hidden; border-bottom:1px solid #dbdbdb;}
+.ksdl_bt{text-align:center; width:100%;margin:0 auto;}	
+.ksdl h3{background-color:#fff;display:inline-block; padding:0 20px; margin:0 auto; font-weight: normal; color:#414141;font-size:14px; font-family:"微软雅黑"; line-height:16px;}
+.ksdl ul{ width:122%; color:#999999;font-size:15px; font-family:"微软雅黑"; margin:4% auto 0 auto;}
+.ksdl ul li{ float:left;color:#999999;width:27%; height:80px; line-height:120px;padding-left:0px; display:block; text-align:center;}
+.ksdl ul li a{ color:#999999;}
+.ksdl ul li a:hover{color:#94604a;}
+
+.btn-facebook{ background-image:url("../images/denglu_19.png")/*tpa=http://www.sdcii.com/psapp/resources/default/images/denglu_19.png*/; background-size:42px 42px;background-repeat: no-repeat;
+	background-position: center top;}
+.btn-weixin{ background-image:url("../images/denglu_21.png")/*tpa=http://www.sdcii.com/psapp/resources/default/images/denglu_21.png*/; background-size:42px 42px;background-repeat: no-repeat;
+	background-position: center top;}
+.btn-google-plus{ background-image:url("../images/denglu_23.png")/*tpa=http://www.sdcii.com/psapp/resources/default/images/denglu_23.png*/; background-size:42px 42px;background-repeat: no-repeat;
+	background-position: center top;}
+	
+
+/* 底部 */
+.footer{width:100%; margin:1% auto 0 auto;}
+.footer_diz{line-height:24px; margin:2% auto; text-align:center;width:100%;font-size:12px; font-family:"微软雅黑"; color:#969696; }
+
+@media all and (min-width:650px){
+.sy_toptp{
+width:100%;
+height:90px;
+background-image:url("../images/denglu_03.png")/*tpa=http://www.sdcii.com/psapp/resources/default/images/denglu_03.png*/; 
+background-position:center bottom; 
+background-size:533px 56px;
+background-repeat:no-repeat; }	
+	
+	
+.demo{ width:90%; margin:2% auto 0 auto ; border:1px solid #e2e2e2;background: #fff;}
+ .md-offset {width:480px;margin:0 auto;	
+}
+.forget-pwd .heading {
+	display: block;font-family:"微软雅黑";
+	font-size: 24px;
+color:#414141;
+	padding:5% 0;
+text-align: center;
+}
+.forget-pwd .form-control { 
+	background: #fff;
+	border-radius:1px;
+	border: 1px solid #dbdbdb; width:438px;font-size:16px; font-family:"微软雅黑"; color:#939393;
+	box-shadow: none;
+	height:40px; 
+	padding-left:42px;
+}
+.forget-pwd .form-contro2{background: #fff; 
+    float:left;
+	overflow:hidden;
+	border: 1px solid #dbdbdb;
+	 width:278px;
+	border-radius:1px;
+	font-size:16px;
+	 font-family:"微软雅黑"; 
+	 color:#939393;
+	box-shadow: none;
+	height: 40px;
+	padding-left:42px;
+	}
+
+
+.forget-pwd .form-group i {width:42px; height:40px;
+	position: absolute;
+	top:0;
+	left:0px;
+	color: #c8c8c8;
+
+}
+.form-group .yanzm{border: 1px solid #dbdbdb; width:146px; height:40px; float:right;border-radius:1px; }
+
+
+.ksdl{ width:100%; margin:0 auto 8% auto; background-image:url("../images/denglu_25.png")/*tpa=http://www.sdcii.com/psapp/resources/default/images/denglu_25.png*/; background-size:1px 1px;background-repeat: repeat-x;
+	background-position: center 8px; overflow:hidden; border-bottom: none;}
+.ksdl_bt{text-align:center; width:480px;margin:0 auto;}	
+.ksdl h3{background-color:#fff;display:inline-block; padding:0 20px; margin:0 auto; font-weight: normal; color:#414141;font-size:14px; font-family:"微软雅黑"; line-height:16px;}
+.ksdl ul{ width:122%; color:#999999;font-size:15px; font-family:"微软雅黑"; margin:4% auto 0 auto;}
+.ksdl ul li{ float:left;color:#999999;width:22%; height:48px; line-height:48px;padding-left:52px;  text-align: left;}
+.ksdl ul li a{ color:#999999;}
+.ksdl ul li a:hover{color:#94604a;}
+
+.btn-facebook{ background-image:url("../images/denglu_19.png")/*tpa=http://www.sdcii.com/psapp/resources/default/images/denglu_19.png*/; background-size:42px 42px;background-repeat: no-repeat;
+	background-position: left center;}
+.btn-weixin{ background-image:url("../images/denglu_21.png")/*tpa=http://www.sdcii.com/psapp/resources/default/images/denglu_21.png*/; background-size:42px 42px;background-repeat: no-repeat;
+	background-position: left center;}
+.btn-google-plus{ background-image:url("../images/denglu_23.png")/*tpa=http://www.sdcii.com/psapp/resources/default/images/denglu_23.png*/; background-size:42px 42px;background-repeat: no-repeat;
+	background-position: left center;}
+	
+	
+}
+
+
+@media all and (min-width:1000px){
+	
+.sy_toptp{
+width:100%;
+height:100px;
+background-image:url("../images/denglu_03.png")/*tpa=http://www.sdcii.com/psapp/resources/default/images/denglu_03.png*/; 
+background-position:center bottom; 
+background-size:533px 56px;
+background-repeat:no-repeat; }
+
+.demo{ width:1000px; margin:2% auto 0 auto; border:1px solid #e2e2e2;background: #fff;}
+
+ .md-offset {width:480px;margin:0 auto;	
+}
+.forget-pwd .heading {
+	display: block;font-family:"微软雅黑";
+	font-size: 30px;
+color:#414141;
+	padding:5% 0;
+text-align: center;
+}
+.forget-pwd .form-group { margin-bottom:5%;
+	padding:0;
+	position: relative;
+}
+.forget-pwd .form-control { 
+	background: #fff;
+	border-radius:1px;
+	border: 1px solid #dbdbdb; width:438px;font-size:16px; font-family:"微软雅黑"; color:#939393;
+	box-shadow: none;
+	height:46px; 
+	padding-left:42px;
+}
+.forget-pwd .form-contro2{background: #fff; 
+    float:left;
+	overflow:hidden;
+	border: 1px solid #dbdbdb;
+	 width:278px;
+	border-radius:1px;
+	font-size:16px;
+	 font-family:"微软雅黑"; 
+	 color:#939393;
+	box-shadow: none;
+	height: 46px;
+	padding-left:42px;
+	}
+
+
+.forget-pwd .form-group i {width:42px; height:46px;
+	position: absolute;
+	top:0;
+	left:0px;
+	color: #c8c8c8;
+
+}
+.form-group .yanzm{border: 1px solid #dbdbdb; width:146px; height:46px; float:right;border-radius:1px; }
+.form-group .yanzm img{ width:100%; height:100%;}
+.form-group .fa-user{ background-image:url("../images/denglu_07.png")/*tpa=http://www.sdcii.com/psapp/resources/default/images/denglu_07.png*/; background-size:19px 19px;background-repeat:no-repeat;
+	background-position: center center;}
+	.form-group .fa-lock{ background-image:url("../images/denglu_10.png")/*tpa=http://www.sdcii.com/psapp/resources/default/images/denglu_10.png*/; background-size:19px 17px;background-repeat:no-repeat;
+	background-position: center center;}
+	.form-group .fa-yzm{background-image:url("../images/denglu_10.png")/*tpa=http://www.sdcii.com/psapp/resources/default/images/denglu_10.png*/; background-size:19px 17px;background-repeat:no-repeat;
+	background-position: center center;}
+	
+.forget-pwd .form-control:focus + i {
+	color: #00b4ef;
+}
+
+.jzm_wjm{ width:480px; margin:0 auto;}
+.forget-pwd .main-checkbox {
+	float: left;
+	width: 13px;
+	height: 13px;
+	background: #fff;
+	border-radius:1px;
+	position: relative;
+	margin:0px 0 0 2px;
+	border: 1px solid #c7c7c7;
+}
+.forget-pwd .main-checkbox label {
+	width: 13px;
+	height: 13px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+.forget-pwd .main-checkbox label:after {
+	content: "";
+	width: 8px;
+	height: 4px;
+	position: absolute;
+	top:3px;
+	left:2px;
+	border: 1px solid #94604a;
+	border-top: none;
+	border-right: none;
+	background: transparent;
+	opacity: 0;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.forget-pwd .main-checkbox input[type=checkbox] {
+	visibility: hidden;
+}
+.forget-pwd .main-checkbox input[type=checkbox]:checked + label:after {
+	opacity: 1;
+}
+.forget-pwd .text {
+	float:left;
+	margin-left: 7px;
+	line-height:14px;font-size:14px; font-family:"微软雅黑"; color:#9a9a9a;
+	text-transform: capitalize;
+}
+.forget-pwd .wangjimm {
+	float: right;
+	font-size:14px; font-family:"微软雅黑"; color:#94604a;
+	padding:0px;line-height:14px;
+	border: none;
+	text-transform: capitalize; display:block;
+	
+}
+.forget-pwd .wangjimm a{color:#94604a;}
+.forget-pwd .wangjimm span{ color:#818181; padding-right:10px; border-right:1px solid #818181; margin-right:10px;}
+.forget-pwd .wangjimm span a{color:#818181;}
+
+.dengl_zc{ width:480px; margin:7% auto 6% auto; overflow:hidden;}
+.dengl_zc .btn-default{ width:100%; height:56px; line-height:56px; background:#94604a; color:#fff;font-size:18px; font-family:"微软雅黑";  border:none;border-radius:1px; }
+.dengl_zc .btn-default:hover{background:#7c4a35; }
+
+
+.ksdl{ width:100%; margin:0 auto 8% auto; background-image:url("../images/denglu_25.png")/*tpa=http://www.sdcii.com/psapp/resources/default/images/denglu_25.png*/; background-size:1px 1px;background-repeat: repeat-x;
+	background-position: center 8px; overflow:hidden;}
+.ksdl_bt{text-align:center; width:480px;margin:0 auto;}	
+.ksdl h3{background-color:#fff;display:inline-block; padding:0 20px; margin:0 auto; font-weight: normal; color:#414141;font-size:14px; font-family:"微软雅黑"; line-height:16px;}
+.ksdl ul{ width:122%; color:#999999;font-size:15px; font-family:"微软雅黑"; margin:4% auto 0 auto;}
+.ksdl ul li{ float:left;color:#999999;width:22%; height:48px; line-height:48px;padding-left:52px;  text-align: left;}
+.ksdl ul li a{ color:#999999;}
+.ksdl ul li a:hover{color:#94604a;}
+
+.btn-facebook{ background-image:url("../images/denglu_19.png")/*tpa=http://www.sdcii.com/psapp/resources/default/images/denglu_19.png*/; background-size:42px 42px;background-repeat: no-repeat;
+	background-position: left center;}
+.btn-weixin{ background-image:url("../images/denglu_21.png")/*tpa=http://www.sdcii.com/psapp/resources/default/images/denglu_21.png*/; background-size:42px 42px;background-repeat: no-repeat;
+	background-position: left center;}
+.btn-google-plus{ background-image:url("../images/denglu_23.png")/*tpa=http://www.sdcii.com/psapp/resources/default/images/denglu_23.png*/; background-size:42px 42px;background-repeat: no-repeat;
+	background-position: left center;}
+	
+
+
+	
+	
+}

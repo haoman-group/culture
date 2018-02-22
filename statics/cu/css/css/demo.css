@@ -1,0 +1,68 @@
+﻿.sidebar {
+  display: block;
+  float: left;
+  width:100%;
+  background: #0F4F7D;
+}
+.content {
+  display: block;
+  overflow: hidden;
+  width: auto;
+}
+
+
+.sidebar-nav ul {
+	border-bottom: 1px solid #165A8C;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sidebar-nav a,
+.sidebar-nav a:hover,
+.sidebar-nav a:focus,
+.sidebar-nav a:active {
+  outline: none;
+}
+.sidebar-nav ul li,
+.sidebar-nav ul a {
+  display: block;
+}
+.sidebar-nav ul a {
+  padding: 15px 20px 15px 40px;
+  color:#CFD9E3;
+  border-top: 1px solid #165A8C;
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.05) inset;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+ 
+}
+.sidebarT{
+	
+	background-image: url(../images/sjk/left-icon.png);
+  background-repeat: no-repeat;
+  background-position: 15px center;
+}
+.sidebar-nav ul a:hover,
+.sidebar-nav ul a:focus,
+.sidebar-nav ul a:active {
+  color: #fff;
+  text-decoration: none;
+}
+.sidebar-nav ul ul a {
+  padding: 10px 30px;
+
+}
+.sidebar-nav ul ul a:hover,
+.sidebar-nav ul ul a:focus,
+.sidebar-nav ul ul a:active {
+  background-color: #03395F;
+}
+.sidebar-nav ul li.choose{
+	background-color: #03395F;
+}
+.sidebar-nav-item {
+  padding-left: 5px;
+}
+.sidebar-nav-item-icon {
+  padding-right: 5px;
+}

@@ -1,0 +1,502 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" /><title>人才信息</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="sdcii" />
+<meta name="copyright" content="sdcii.com" />
+<meta name="renderer" content="webkit"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" href="/favicon.ico" />
+<link href="../templates/default/css/index.php-act=search&op=index&cate_id=1143&key=2&order=2.css" tppabs="http://www.sdcii.com:82/templates/default/css/common.css" rel="stylesheet" type="text/css" />
+<link href="../templates/default/css/index.php-act=search&op=index&cate_id=1273&area_id=23.css" tppabs="http://www.sdcii.com:82/templates/default/css/resume.css" rel="stylesheet" type="text/css" />
+<script src="../templates/default/js/jquery.js" tppabs="http://www.sdcii.com:82/templates/default/js/jquery.js" type='text/javascript' ></script>
+<script src="../templates/default/js/index.php-act=search&op=index&cate_id=1273&area_id=32" tppabs="http://www.sdcii.com:82/templates/default/js/jquery.resume-search.js" type='text/javascript'></script>
+<script src="../data/index.php-act=search&op=index&cate_id=1143&area_id=12" tppabs="http://www.sdcii.com:82/data/cache_classify.js" type="text/javascript" charset="utf-8"></script>
+<script src="../templates/default/js/index.php-act=search&op=index&cate_id=1143&area_id=35" tppabs="http://www.sdcii.com:82/templates/default/js/jquery.autocomplete.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		allaround("/");
+	    // 职位类别填充数据 
+		job_filldata("#job_list", QS_jobs_parent, QS_jobs, "#result-list-job", "#aui_outer_job", "#job_result_show", "#jobcategory", "/");
+		// 所属行业填充数据
+		trade_filldata("#trad_list", QS_trade, "#aui_outer", "#result-list-trade", "#trade_result_show", "#trade", "/");
+		// 工作地区填充数据
+		city_filldata("#city_list", QS_city_parent, QS_city, "#result-list-city", "#aui_outer_city", "#city_result_show", "#citycategory", "/");
+		// 专业类别填充数据
+		major_filldata("#major_list", QS_major_parent, QS_major, "#major_tabnav", "#aui_outer_major", "#result-list-major", "#major_result_show", "#major", "/");
+	});
+</script>
+</head>
+<body >
+<!-- 头部 -->
+<div id="header">
+<div class="container-index header-main clearfix">
+		<div class="logo-box f-left">
+		<a href="../index-2.htm" tppabs="http://www.sdcii.com:82/"><img src="../data/images/index.php-act=search&op=index&cate_id=1143&area_id=34" tppabs="http://www.sdcii.com:82/data/images/logo.gif" alt="山东省文化人才网" border="0" align="absmiddle" width="350" height="70.18"/></a>
+		<a href="../index-1.htm" tppabs="http://www.sdcii.com/" class="back-index f-right"></a>
+		</div>
+	</div>
+	<div class="top-nav-wrap">
+		<div class="top-nav clearfix">
+			<ul class="f-left">
+												<li><a href="../index.php-act=search&op=index&cate_id=1143&area_id=22.htm" tppabs="http://www.sdcii.com:82/index.php" target="_self" class="nav-li ">首  页</a></li>
+			    				<li><a href="../jobs/index.htm" tppabs="http://www.sdcii.com:82/jobs/" target="_self" class="nav-li ">个人求职</a></li>
+			    				<li><a href="../company/index.php-act=search&op=index&cate_id=1143&area_id=22.htm" tppabs="http://www.sdcii.com:82/company/index.php" target="_self" class="nav-li ">名企招聘</a></li>
+			    				<li><a href="../index.php-act=search&op=index&cate_id=1143&area_id=13.htm" tppabs="http://www.sdcii.com:82/zhuanjia" target="_self" class="nav-li ">专家智库</a></li>
+			    				<li><a href="index.htm" tppabs="http://www.sdcii.com:82/resume/" target="_self" class="nav-li active">高校专区</a></li>
+			    				<li><a href="javascript:if(confirm('http://www.sdcii.com:82/index.php?act=search&op=index&cate_id=1143&area_id=19  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/index.php?act=search&op=index&cate_id=1143&area_id=19'" tppabs="http://www.sdcii.com:82/activity" target="_self" class="nav-li ">活动专区</a></li>
+			    				<li><a href="../news/index.htm" tppabs="http://www.sdcii.com:82/news/" target="_self" class="nav-li ">新闻资讯</a></li>
+			    				<li><a href="javascript:if(confirm('http://www.sdcii.com:82/user/index.php?act=search&op=index&cate_id=1143&area_id=28  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/user/index.php?act=search&op=index&cate_id=1143&area_id=28'" tppabs="http://www.sdcii.com:82/user/login.php" target="_self" class="nav-li ">简历中心</a></li>
+			    			</ul>
+			<div class="nav-right f-right">
+								<span class="login-reg"><a href="../psapp/member/logon.do.htm" tppabs="http://www.sdcii.com/psapp/member/logon.do" class="underline">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="../psapp/member/logon.do.htm" tppabs="http://www.sdcii.com/psapp/member/logon.do" class="underline">注册</a></span>
+							</div>
+		</div>
+	</div>
+	
+</div>
+<!-- 头部结束 -->
+<script src="../templates/default/js/index.php-act=search&op=index&cate_id=1143&area_id=20" tppabs="http://www.sdcii.com:82/templates/default/js/jquery.header.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		header();
+	});
+</script><div class="page_location link_bk">
+当前位置：<a href="../index-2.htm" tppabs="http://www.sdcii.com:82/">首页</a>&nbsp;>&nbsp;<a href="index.htm" tppabs="http://www.sdcii.com:82/resume/">求职信息</a>
+</div>
+<div class="container">
+	<div id="filterSearch">
+		<div class="search-tab clearfix">
+			<a href="javascript:if(confirm('http://www.sdcii.com:82/resume/index.php?act=search&op=index&cate_id=1145&area_id=35  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/resume/index.php?act=search&op=index&cate_id=1145&area_id=35'" tppabs="http://www.sdcii.com:82/resume/resume-list.php" class="s-tab-item f-left active">简历搜索</a>
+		</div>
+		<div class="top-search clearfix">
+			<div class="t-search-box f-left">
+				<div class="type-input-box f-left">
+					<div class="key">请输入院校名称</div>
+					<input type="text" name="key" id="key" style="display:none;"/>
+					<input name="jobcategory" id="jobcategory" type="hidden" value="" />
+					<input name="trade" id="trade" type="hidden" value="" />
+					<input name="citycategory" id="citycategory" type="hidden" value=""/>
+					<input name="major" id="major" type="hidden" value="" />
+					<input name="experience" id="experience" type="hidden" value=""/>
+					<input name="resumetag" id="resumetag" type="hidden" value=""/>
+					<input name="education" id="education" type="hidden" value=""/>
+					<input name="sex" id="sex" type="hidden" value=""/>
+					<input name="photo" id="photo" type="hidden" value=""/>
+					<input name="talent" id="talent" type="hidden" value=""/>
+					<input name="settr" id="settr" type="hidden" value=""/>
+				</div>
+			</div>
+			<div class="t-search-btn f-left"><input type="button" detype="QS_resumelist" id="searcnbtn" value="搜&nbsp;索" /></div>
+		</div>
+		<div class="fliter-wrap" style="border-bottom:none;">
+			<div class="filter-drop clearfix">
+				<div class="filter-item f-left">
+					<div class="choose-item">
+						<div class="choose-control">
+							<span class="cc-default" id="job_result_show">选择意向职位</span><i class="choose-icon"></i>
+							<!-- 职位类别弹出框 -->
+							<div class="aui_outer" id="aui_outer_job">
+								<table class="aui_border">
+									<tbody>
+										<tr>
+											<td class="aui_c">
+												<div class="aui_inner">
+													<table class="aui_dialog">
+														<tbody>
+															<tr>
+																<td class="aui_main">
+																	<div class="aui_content" style="padding: 0px;">
+																		<div class="LocalDataMultiC">
+																			<div class="selector-header"><span class="selector-title">职位选择</span><div></div><span id="jb-selector-save" class="selector-save">确定</span><span class="selector-close">X</span><div class="clear"></div></div>
+
+																			<div class="data-row-head"><div class="data-row"><div class="data-row-side">最多选 <strong class="text-warning">3</strong> 项&nbsp;&nbsp;已选 <strong id="ars" class="text-warning">0</strong> 项</div><div id="result-list-job" class="result-list data-row-side-ra"></div></div><div class="cla"></div></div>
+																			<div class="data-row-list data-row-main" id="job_list">
+																				<!-- 列表内容 -->
+																			</div>
+																		</div>
+																	</div>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- 职位类别弹出框 End-->
+						</div>
+					</div>
+				</div>
+				<div class="filter-item f-left">
+					<div class="choose-item">
+						<div class="choose-control">
+							<span class="cc-default" id="trade_result_show">选择意向行业</span><i class="choose-icon"></i>
+							<!-- 所属行业弹出框 -->
+							<div class="aui_outer" id="aui_outer">
+								<table class="aui_border">
+									<tbody>
+										<tr>
+											<td class="aui_c">
+												<div class="aui_inner">
+													<table class="aui_dialog">
+														<tbody>
+															<tr>
+																<td class="aui_main">
+																	<div class="aui_content">
+																		<div class="items jquery-localdata">
+																			<div class="selector-header"><span class="selector-title">行业选择</span><div></div><span id="tr-selector-save" class="selector-save">确定</span><span class="selector-close">X</span><div class="clear"></div></div>
+
+																			<div class="data-row-head"><div class="data-row"><div class="data-row-side">最多选 <strong class="text-warning">3</strong> 项&nbsp;&nbsp;已选 <strong id="arstrade" class="text-warning">0</strong> 项</div><div id="result-list-trade" class="result-list data-row-side-ra"></div></div><div class="cla"></div></div>
+																			<div class="item-table">
+																				<table class="options-table options-table-7">
+																					<tbody class="item-list"><tr><td class="bno"><table><tbody id="trad_list">
+																						<!-- 列表内容 -->
+																					</tbody></table></td></tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</div>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- 所属行业弹出框 End-->
+						</div>
+					</div>
+				</div>
+				<div class="filter-item f-left">
+					<div class="choose-item">
+						<div class="choose-control">
+							<span class="cc-default" id="city_result_show">选择意向地区</span><i class="choose-icon"></i>
+							<!-- 工作地区弹出框 -->
+							<div class="aui_outer" style="left:-396px;" id="aui_outer_city">
+								<table class="aui_border">
+									<tbody>
+										<tr>
+											<td class="aui_c">
+												<div class="aui_inner">
+													<table class="aui_dialog">
+														<tbody>
+															<tr>
+																<td class="aui_main">
+																	<div class="aui_content" style="padding: 0px;">
+																		<div class="LocalDataMultiC" style="width:623px;">
+																			<div class="selector-header"><span class="selector-title">地区选择</span><div></div><span id="ct-selector-save" class="selector-save">确定</span><span class="selector-close">X</span><div class="clear"></div></div>
+
+																			<div class="data-row-head"><div class="data-row"><div class="data-row-side data-row-side-c">最多选 <strong class="text-warning">3</strong> 项&nbsp;&nbsp;已选 <strong id="arscity" class="text-warning">0</strong> 项</div><div id="result-list-city" class="result-list data-row-side-ra"></div></div><div class="cla"></div></div>
+																			<div class="data-row-list data-row-main" id="city_list">
+																				<!-- 列表内容 -->
+																			</div>
+																		</div>
+																	</div>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- 工作地区弹出框 End-->
+						</div>
+					</div>
+				</div>
+				<div class="filter-item f-left">
+					<div class="choose-item">
+						<div class="choose-control">
+							<span class="cc-default" id="major_result_show">选择专业类别</span><i class="choose-icon"></i>
+							<!-- 专业类别弹出框 -->
+							<div class="aui_outer" style="left:-445px;" id="aui_outer_major">
+								<table class="aui_border">
+									<tbody>
+										<tr>
+											<td class="aui_c">
+												<div class="aui_inner">
+													<table class="aui_dialog">
+														<tbody>
+															<tr>
+																<td class="aui_main">
+																	<div class="aui_content">
+																		<div class="items jquery-localdata">
+																			<div class="selector-header"><span class="selector-title">专业类别</span><div></div><span id="mj-selector-save" class="selector-save">确定</span><span class="selector-close">X</span><div class="clear"></div></div>
+
+																			<div class="data-row-head"><div class="data-row"><div class="data-row-side">最多选 <strong class="text-warning">3</strong> 项&nbsp;&nbsp;已选 <strong id="arsmajor" class="text-warning">0</strong> 项</div><div id="result-list-major" class="result-list data-row-side-ra"></div></div><div class="cla"></div></div>
+																			<ul class="tabnav" id="major_tabnav"></ul>
+
+																			<div class="item-table majorbb">
+																				<table class="options-table options-table-7">
+																					<tbody class="item-list"><tr><td class="bno"><table id="major_list"></table></td></tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</div>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- 专业类别弹出框 End-->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="filter-list-wrap clearfix">
+				<div class="fl-type f-left">工作经验：</div>
+				<div class="fl-content r-choice f-left">
+															<div class="fl-content-li" type="experience" code="74">无经验</div>
+										<div class="fl-content-li" type="experience" code="75">1年以下</div>
+										<div class="fl-content-li" type="experience" code="76">1-3年</div>
+										<div class="fl-content-li" type="experience" code="77">3-5年</div>
+										<div class="fl-content-li" type="experience" code="78">5-10年</div>
+										<div class="fl-content-li" type="experience" code="79">10年以上</div>
+									</div>
+			</div>
+			<div class="filter-list-wrap clearfix">
+				<div class="fl-type f-left">特长标签：</div>
+				<div class="fl-content f-left forShowMore" id="fliterMore">
+															<div class="fl-content-li" type="resumetag" code="166">形象好</div>
+										<div class="fl-content-li" type="resumetag" code="167">气质佳</div>
+										<div class="fl-content-li" type="resumetag" code="168">能出差</div>
+										<div class="fl-content-li" type="resumetag" code="169">很幽默</div>
+										<div class="fl-content-li" type="resumetag" code="170">技术精悍</div>
+										<div class="fl-content-li" type="resumetag" code="171">有亲和力</div>
+										<div class="fl-content-li" type="resumetag" code="172">高学历</div>
+										<div class="fl-content-li" type="resumetag" code="173">经验丰富</div>
+										<div class="fl-content-li" type="resumetag" code="174">能加班</div>
+										<div class="fl-content-li" type="resumetag" code="175">海归</div>
+										<div class="fl-content-li" type="resumetag" code="176">会开车</div>
+										<div class="fl-content-li" type="resumetag" code="177">口才好</div>
+										<div class="fl-content-li" type="resumetag" code="178">声音甜美</div>
+										<div class="fl-content-li" type="resumetag" code="179">会应酬</div>
+										<div class="fl-content-li" type="resumetag" code="180">诚实守信</div>
+										<div class="fl-content-li" type="resumetag" code="181">外语好</div>
+										<div class="fl-content-li" type="resumetag" code="182">性格开朗</div>
+										<div class="fl-content-li" type="resumetag" code="183">有上进心</div>
+										<div class="fl-content-li" type="resumetag" code="184">人脉广</div>
+										<div class="fl-content-li" type="resumetag" code="185">知识丰富</div>
+										<div class="fl-content-li" type="resumetag" code="186">才艺多</div>
+										<a href="javascript:;" class="show-more">展开</a>
+				</div>
+			</div>
+			<div class="filter-list-wrap clearfix">
+				<div class="fl-type f-left">更多筛选：</div>
+				<div class="fl-content f-left">
+					<div class="saixuan">
+												<div class="saixuans">
+							<div class="line"></div>
+														<a defvalue="65" type="education" href="javascript:;">初中</a>
+														<a defvalue="66" type="education" href="javascript:;">高中</a>
+														<a defvalue="67" type="education" href="javascript:;">中技</a>
+														<a defvalue="68" type="education" href="javascript:;">中专</a>
+														<a defvalue="69" type="education" href="javascript:;">大专</a>
+														<a defvalue="70" type="education" href="javascript:;">本科</a>
+														<a defvalue="71" type="education" href="javascript:;">硕士</a>
+														<a defvalue="72" type="education" href="javascript:;">博士</a>
+														<a defvalue="73" type="education" href="javascript:;">博后</a>
+													</div>
+						最高学历
+					</div>
+					<div class="saixuan">
+						<div class="saixuans">
+							<div class="line"></div>
+							<a defvalue="1" type="sex" href="javascript:;">男</a>
+							<a defvalue="2" type="sex" href="javascript:;">女</a>
+						</div>
+						性别要求
+					</div>
+					<div class="saixuan">
+						<div class="saixuans">
+							<div class="line"></div>
+							<a defvalue="1" type="photo" href="javascript:;">有</a>
+							<a defvalue="0" type="photo" href="javascript:;">无</a>
+						</div>
+						简历照片
+					</div>
+					<div class="saixuan">
+						<div class="saixuans">
+							<div class="line"></div>
+							<a defvalue="1" type="talent" href="javascript:;">普通</a>
+							<a defvalue="2" type="talent" href="javascript:;">高级</a>
+						</div>
+						简历等级
+					</div>
+					<div class="saixuan">
+												<div class="saixuans">
+							<div class="line"></div>
+							<a defvalue="3" type="settr" href="javascript:;">3天内</a>
+							<a defvalue="7" type="settr" href="javascript:;">7天内</a>
+							<a defvalue="15" type="settr" href="javascript:;">15天内</a>
+							<a defvalue="30" type="settr" href="javascript:;">30天内</a>
+						</div>
+						更新时间
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="data-box">
+		<div class="data-title">
+			<h3>照片简历</h3>
+			<a href="javascript:if(confirm('http://www.sdcii.com:82/resume/index.php?act=search&op=index&cate_id=1144&area_id=13  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/resume/index.php?act=search&op=index&cate_id=1144&area_id=13'" tppabs="http://www.sdcii.com:82/resume/resume-list.php?photo=1" target="_blank" class="right-link">更多>></a>
+		</div>
+		<div class="photo-resumes-list clearfix">
+								</div>
+	</div>
+	<div class="data-box">
+		<div class="data-title">
+			<h3>最新简历</h3>
+			<a href="javascript:if(confirm('http://www.sdcii.com:82/resume/index.php?act=search&op=index&cate_id=1145&area_id=35  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/resume/index.php?act=search&op=index&cate_id=1145&area_id=35'" tppabs="http://www.sdcii.com:82/resume/resume-list.php" class="right-link">更多>></a>
+		</div>
+		<div class="newst-resume-list clearfix">
+									<div class="newst-resume-item f-left">
+				<div class="name-date"><a href="javascript:if(confirm('http://www.sdcii.com:82/resume/index.php?act=search&op=index&cate_id=1273&area_id=26  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/resume/index.php?act=search&op=index&cate_id=1273&area_id=26'" tppabs="http://www.sdcii.com:82/resume/resume-show.php?id=14" target="_blank">何女士</a><span>2016-09-13</span></div>
+				<div class="resume-detail">本科 | 1-3年 | 意向：会展业务拓展,储备干部,文案/策划</div>
+			</div>
+					</div>
+	</div>
+</div>
+
+	<div class="f_link">
+		<div class="job_box">
+				<div class="box_tit">
+					<div class="tit">友情链接</div> <div class="more link_bk"><a href="javascript:if(confirm('http://www.sdcii.com:82/link/index.php?act=search&op=index&cate_id=1144&area_id=26  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/link/index.php?act=search&op=index&cate_id=1144&area_id=26'" tppabs="http://www.sdcii.com:82/link/add_link.php" target="_blank">申请>></a></div>
+					<div class="clear"></div>
+				</div>
+				<div class="box_content">
+										<div class="link_name link_bk">
+																										</div>
+				</div>
+			</div>
+	</div>
+
+<div class="foot">
+	<div class="footer_box">
+		<div class="box link_bk">
+				<div class="list">
+					<h4>关于我们</h4>
+					<div class="foot_list">
+						<ul>
+																			<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/explain/index.php?act=search&op=index&cate_id=1144&area_id=31  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/explain/index.php?act=search&op=index&cate_id=1144&area_id=31'" tppabs="http://www.sdcii.com:82/explain/explain-show.php?id=1">联系我们</a></li>
+													<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/explain/index.php?act=search&op=index&cate_id=1144&area_id=33  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/explain/index.php?act=search&op=index&cate_id=1144&area_id=33'" tppabs="http://www.sdcii.com:82/explain/explain-show.php?id=2">网站简介</a></li>
+													<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/explain/index.php?act=search&op=index&cate_id=1144&area_id=25  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/explain/index.php?act=search&op=index&cate_id=1144&area_id=25'" tppabs="http://www.sdcii.com:82/explain/explain-show.php?id=4">合作共赢</a></li>
+													<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/index.php?act=search&op=index&cate_id=1144&area_id=11  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/index.php?act=search&op=index&cate_id=1144&area_id=11'" tppabs="http://www.sdcii.com:82/suggest">意见反馈</a></li>
+						</ul>
+						<ul>
+																						<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/explain/index.php?act=search&op=index&cate_id=1144&area_id=0  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/explain/index.php?act=search&op=index&cate_id=1144&area_id=0'" tppabs="http://www.sdcii.com:82/explain/explain-show.php?id=5">网站声明</a></li>
+													</ul>
+					</div>
+				</div>
+				<div class="list">
+					<h4>帮助中心</h4>
+					<div class="foot_list">
+						<ul>
+							<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/help/index.php?act=search&op=get_booth_goods&cate_id=1144  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/help/index.php?act=search&op=get_booth_goods&cate_id=1144'" tppabs="http://www.sdcii.com:82/help/help-list.php?id=4">注册与登录</a></li>
+							<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/help/index.php?act=search&op=index&cate_id=1145&order=0&key=0  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/help/index.php?act=search&op=index&cate_id=1145&order=0&key=0'" tppabs="http://www.sdcii.com:82/help/help-list.php?id=5">密码找回</a></li>
+							<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/help/index.php?act=search&op=index&cate_id=1145&key=1&order=2  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/help/index.php?act=search&op=index&cate_id=1145&key=1&order=2'" tppabs="http://www.sdcii.com:82/help/help-list.php?id=8">认证管理</a></li>
+							<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/help/index.php?act=search&op=index&cate_id=1144&area_id=2  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/help/index.php?act=search&op=index&cate_id=1144&area_id=2'" tppabs="http://www.sdcii.com:82/help/help-list.php?id=10">招聘管理 </a></li>
+						</ul>
+						<ul>
+							<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/help/index.php?act=search&op=index&cate_id=1145&key=2&order=2  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/help/index.php?act=search&op=index&cate_id=1145&key=2&order=2'" tppabs="http://www.sdcii.com:82/help/help-list.php?id=17">求职管理</a></li>
+							<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/help/index.php?act=search&op=index&cate_id=1145&key=3&order=2  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/help/index.php?act=search&op=index&cate_id=1145&key=3&order=2'" tppabs="http://www.sdcii.com:82/help/help-list.php?id=13">充值消费 </a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list">
+					<h4>个人求职</h4>
+					<div class="foot_list">
+						<ul>
+							<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/jobs/index.php?act=search&op=index&cate_id=1144&area_id=9  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/jobs/index.php?act=search&op=index&cate_id=1144&area_id=9'" tppabs="http://www.sdcii.com:82/jobs/jobs-list.php">职位搜索</a></li>
+							<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/explain/index.php?act=search&op=index&cate_id=1145&area_id=1  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/explain/index.php?act=search&op=index&cate_id=1145&area_id=1'" tppabs="http://www.sdcii.com:82/explain/explain-show.php?id=6">职场指南</a></li>
+							<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/jobs/index.php?act=search&op=index&cate_id=1145&area_id=2  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/jobs/index.php?act=search&op=index&cate_id=1145&area_id=2'" tppabs="http://www.sdcii.com:82/jobs/jobs-list.php?nature=63">兼职招聘</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list">
+					<h4>企业服务</h4>
+					<div class="foot_list">
+						<ul>
+							<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/user/company/index.php?act=search&op=index&cate_id=1145&area_id=9  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/user/company/index.php?act=search&op=index&cate_id=1145&area_id=9'" tppabs="http://www.sdcii.com:82/user/company/company_jobs.php?act=addjobs">发布职位</a></li>
+							<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/resume/index.php?act=search&op=index&cate_id=1145&area_id=35  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/resume/index.php?act=search&op=index&cate_id=1145&area_id=35'" tppabs="http://www.sdcii.com:82/resume/resume-list.php">简历搜索</a></li>
+						</ul>
+						<ul>
+							<li><a target="_blank" href="../psapp/member/logon.do.htm" tppabs="http://www.sdcii.com/psapp/member/logon.do">企业注册</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clear"></div>
+				
+				
+		        <div class="weixin">
+		        	<div class="comment">
+		        		<p>服务热线</p>
+		        		<p class="phone_number">000-00000000</p>
+		        	</div>
+			</div>
+		</div>
+	</div>
+		
+  
+  <div class="copyright"> 网站备案：鲁ICP备15025590号-1<br />
+Copyright @ 2016 sdcii.com All Right Reserved <br />山东省文化人才版权所有</em></a><br />
+</div>
+</div>
+<!-- 回到顶部组件 -->
+<div class="back_to_top" id="back_to_top">
+	<div class="back" style="display:none;">
+		<div>回到顶部</div>
+	</div>
+	<div class="steer">
+		<div onclick="javascript:location.href='../index.php-act=search&op=index&cate_id=1144&area_id=11.htm'/*tpa=http://www.sdcii.com:82/index.php?act=search&op=index&cate_id=1144&area_id=11*/">我要建议</div>
+	</div>
+</div>
+<script>
+	$(function(){
+		//回到顶部组件出现设置
+		$(window).scroll(function(){
+			if($(window).scrollTop()>200){
+				$(".back").fadeIn(400);
+			}else{
+				$(".back").fadeOut(400);
+			}
+		})
+
+		//回到顶部hover效果
+		$("index.php-act=search&op=index&cate_id=1145&area_id=12.htm"/*tpa=http://www.sdcii.com:82/resume/index.php?act=search&op=index&cate_id=1145&area_id=12*/).hover(function(){
+			$(this).find("div").css("display","block");
+		},function(){
+			$(this).find("div").css("display","none");
+		})
+
+		//设置滚回顶部方法
+		$(".back").click(function(){
+			$("body,html").animate({scrollTop:0}, 500);
+			return false;
+		})
+	});
+	$(function(){
+		$(".foot_list ul:odd li").css("width", 62);
+		$(".weixin_img:last").css("margin-right", 0);
+	})
+</script>
+</body>
+</html>

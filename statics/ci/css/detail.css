@@ -1,0 +1,93 @@
+.presentation_left {
+  display: inline-block;
+  width: 430px;
+  border: 1px solid #EBEBEB;
+  margin: 0px 28px;
+  position: relative;
+}
+.presentation_left img {
+  width: 428px;
+  height: 335px;
+  border-bottom: 1px solid #EBEBEB;
+}
+.presentation_left p {
+  width: 430px;
+  text-align: right;
+  line-height: 70px;
+  /*margin-bottom: 18px;*/
+  margin-top: 5px;
+  text-align: center;
+}
+.presentation_left p span {
+  color: #B1B1B1;
+  font-size: 16px;
+  margin: 0 10px;
+}
+.presentation_left p span img{
+  width: 20px;
+  height: 19px;
+}
+.prestentation_right {
+  display: inline-block;
+  width: 580px;
+  vertical-align: top;
+}
+.prestentation_right h5 {
+  border-bottom: 1px dashed #CACACA;
+  font-size: 20px;
+  padding-bottom: 12px;
+}
+.prestentation_right dl {
+  height: 216px;
+  margin-top: 20px;
+  border-bottom: 1px dashed #CACACA;
+}
+.prestentation_right dl dt {
+  color: #ABAAAA;
+  font-size: 16px;
+  width: 80px;
+  position: relative;
+  float: left;
+  line-height: 35px;
+  display: inline-block;
+}
+.prestentation_right dl dt::after {
+  content: ' :';
+  position: absolute;
+  right: 0px;
+}
+.prestentation_right dl dd {
+  width: 485px;
+  color: #242424;
+  font-size: 16px;
+  float: left;
+  padding-left: 15px;
+  line-height: 35px;
+  display: inline-block;
+}
+.prestentation_right dl dd img {
+  height: 30px;
+  width: 35px;
+  border: 1px solid #DBDBDB;
+  margin-right: 15px;
+}
+.prestentation_right ul li {
+  color: #ABAAAA;
+  font-size: 16px;
+  width: 80px;
+  position: relative;
+  line-height: 35px;
+  display: block;
+}
+.prestentation_right ul li::after {
+  content: ' :';
+  position: absolute;
+  right: 0px;
+}
+.prestentation_right ul p {
+  display: block;
+  width: 580px;
+  color: #242424;
+  font-size: 16px;
+}
+/*# sourceMappingURL=detail.css.map */

@@ -1,0 +1,41 @@
+.visitRegister{/*border: 1px solid #eee;*/padding: 18px;/*margin-top: 40px;*/}
+.visitRegister .ul_form{border: 1px solid #eee; padding-top: 20px;}
+.visitRegister .bespeak_tab { border-bottom: 1px solid #d0d6d9; }
+.visitRegister .bespeak_tab li { float: left; width: 50%; text-align: center; padding-bottom: 16px; }
+.visitRegister .bespeak_tab li.on { border-bottom: 2px solid #93262b; position: relative; bottom: -1px; }
+.visitRegister .bespeak_tab li.on:after { content: ''; width: 0; height: 0; border: 5px solid transparent; border-bottom: 5px solid #93262b; position: absolute; left: 50%; margin-left: -2.5px; bottom: 0; }
+.visitRegister .bespeak_tab li a { font-size: 16px; color: #14191e; }
+.visitRegister .bespeak_tab li.on a { font-size: 16px; color: #93262a; }
+.visitRegister .bespeak_tab li span { font-size: 14px; color: #ff0000; }
+.visitRegister .bespeak_form { width: 740px; margin: 40px auto 0; }
+.visitRegister .bespeak_form dt { float: left; width: 100px; line-height: 36px; text-align: right; font-size: 16px; color: #383838; font-weight: normal; }
+.visitRegister .bespeak_form dd { font-size: 12px; color: #222; line-height: 36px; margin-left: 120px; margin-bottom: 17px; position: relative; }
+.visitRegister .bespeak_form dd input,.visitRegister .bespeak_form dd select { width: 250px; height: 36px; line-height: 36px; border: 1px solid #eee; box-sizing: border-box; margin-right: 10px; text-indent: 5px; }
+.visitRegister .bespeak_form dd textarea { width: 610px; height: 180px; border: 1px solid #eee; box-sizing: border-box; resize: none; padding: 5px; }
+.visitRegister .bespeak_form dd input[type="submit"] { width: 268px; height: 56px; border-radius: 4px; background-color: #e13239; text-align: center; line-height: normal; font-size: 22px; color: #fff; }
+.visitRegister .bespeak_form dd.hr:after { content: ''; width: 1100px; height: 1px; background-color: transparent; border-bottom: 1px dashed #c8c8c8; position: absolute; bottom: 0; left: 50%; margin-left: -600px; }
+.visitRegister .bespeak_form i{font-style: normal;color: #f00; }
+.visitRegister .tuijian li { float: left; width: 25%; padding: 0 10px; box-sizing: border-box; }
+.visitRegister .tuijian li .li { border: 1px solid #d8d8d8; }
+.visitRegister .tuijian li .img { width: 100%; height: 188px; }
+.visitRegister .tuijian li .img img { width: 100%; height: 100%; }
+.visitRegister .tuijian li h6 { font-size: 18px; color: #333; line-height: 20px; padding: 0 14px; }
+.visitRegister .tuijian li p { font-size: 14px; color: #6e6e6e; margin: 0; padding: 0 14px; }
+.visitRegister .tuijian li input { display: block; margin: 17px auto; width: 100px; height: 34px; text-align: center; line-height: 34px; background-color: #93262a; font-size: 16px; color: #fff; border: none; outline: none; }
+
+
+.visitRegister h5{font-size: 20px;color: #14191e;border-bottom: 1px solid #93262b;padding: 18px 0 18px 10px;}
+.visitRegister .tips{font-size: 14px;color: #ABABAB;padding-left: 10px;margin: 20px 0;}
+.visitRegister .tips span{font-size: 16px;padding-right: 10px;}
+.visitRegister .tips i{font-style: normal;color: #f00;}
+.visitRegister .table{padding: 0 10px;}
+.visitRegister .table table{border: 1px solid #eee;width: 100%;}
+/*.visitRegister .table table th{width: 80px;text-align: right;padding-right: 18px;}*/
+.visitRegister .table table td{padding: 12px;}
+.visitRegister .table table td span{padding-right: 12px;min-width: 80px;text-align: right;display: inline-block;font-size: 12px;}
+.visitRegister .table table td i{font-style: normal;color: #f00;padding-left: 5px;}
+.visitRegister .table table input,.visitRegister .table table select{width: 218px;height: 36px;line-height: 36px;border: 1px solid #eee;text-indent: 5px;}
+.visitRegister .table table .small input,.visitRegister .table table .small select{width: 120px;height: 36px;}
+.visitRegister .table table textarea{width: 950px;height: 165px;border: 1px solid #eee;resize: none;padding: 5px;}
+.visitRegister .submit{text-align: center;padding: 43px 0;}
+.visitRegister .submit input[type="submit"]{width: 392px;height: 68px;text-align: center;line-height: 68px;color: #fff;font-size: 25px;background: #E13239;border: none;}

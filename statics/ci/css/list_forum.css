@@ -1,0 +1,355 @@
+.map {
+  width: 1191px;
+  height: 59px;
+  background-color: #f5f5f5;
+  margin: 0 auto;
+}
+.forum_banner {
+  width: 1191px;
+  height: 395px;
+  margin: 0 auto;
+}
+.forum_set_div {
+  width: 1191px;
+  height: 68px;
+  margin: 0 auto;
+  padding-top: 18px;
+}
+.forum_set_div div {
+  height: 50px;
+  float: left;
+}
+.forum_set_div .forum_online {
+  width: 540px;
+  padding-left: 21px;
+}
+.forum_set_div .forum_online span {
+  font: 16px/48px "微软雅黑";
+}
+.forum_set_div .forum_online span b {
+  color: #3bbef3;
+  font: 16px/48px "微软雅黑";
+}
+.forum_set_div form {
+  float: right;
+  width: 441px;
+  height: 46px;
+  border-radius: 46px;
+  border: 1px solid #dadada;
+  background: #f8f8f8;
+}
+.forum_set_div form input[type=text] {
+  width: 80%;
+}
+.forum_set_div form input[type=submit] {
+  background: url(../images/search.png) no-repeat center;
+  float: right;
+  color: transparent;
+  cursor: pointer;
+}
+.forum_set_div form input {
+  font-size: 16px;
+  color: #dadada;
+  background: transparent;
+  line-height: 46px;
+  text-indent: 22px;
+}
+.forum_set_div .forum_reg {
+  font: 16px/48px "微软雅黑";
+  padding-left: 25px;
+}
+.forum_set_div .forum_reg a {
+  padding-bottom: 5px;
+}
+.forum_set_div .forum_reg a:hover {
+  border-bottom: 2px solid #2058c2;
+  color: #2058c2;
+}
+.forum_g_div {
+  width: 1191px;
+  height: 344px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+.forum_g_div div {
+  height: 294px;
+  border: 1px solid #eeeeee;
+  float: left;
+}
+.forum_g_div .forum_notice {
+  width: 575px;
+  margin-right: 20px;
+  padding: 0 20px;
+}
+.forum_g_div .forum_notice .forum_notice_content {
+  width: 100%;
+  height: 234px;
+  border: none;
+}
+.forum_g_div .forum_notice .forum_notice_content ul {
+  width: 100%;
+  height: 230px;
+}
+.forum_g_div .forum_notice .forum_notice_content ul li {
+  height: 48px;
+  font: 18px/48px "微软雅黑";
+}
+.forum_g_div .forum_notice .forum_notice_content ul p {
+  font: 16px/28px "微软雅黑";
+  text-indent: 2em;
+  color: #696b76;
+  text-decoration: underline;
+}
+.forum_g_div .forum_express {
+  width: 595px;
+  padding-left: 15px;
+  padding-right: 20px;
+}
+.forum_g_div .forum_g_top {
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-bottom: 2px solid #900;
+}
+.forum_g_div .forum_g_top h3 {
+  width: auto;
+  float: left;
+  font: 23px/53px "微软雅黑";
+  margin-top: 7px;
+  text-indent: 10px;
+}
+.forum_g_div .forum_g_top a {
+  display: block;
+  float: right;
+  font: 14px/53px "微软雅黑";
+  margin-top: 7px;
+}
+#forum_acticle {
+  width: 1190px;
+  height: 515px;
+  margin: 0 auto;
+}
+#forum_acticle .forum_screen {
+  width: 100%;
+  height: 40px;
+}
+#forum_acticle .forum_screen ul {
+  width: 282px;
+  height: 40px;
+  overflow: hidden;
+  border: 1px solid #adadad;
+}
+#forum_acticle .forum_screen ul li {
+  display: block;
+  float: left;
+  width: 70px;
+  height: 40px;
+  cursor: pointer;
+  text-align: center;
+  font: 20px/30px "微软雅黑";
+}
+#forum_acticle .forum_screen ul .li_default {
+  background: #900;
+  color: #FFFFFF;
+}
+#forum_acticle .forum_screen ul .li_default a{color: #ffffff}
+#forum_acticle .forum_screen ul .li_hot1 {
+  background: #e6e6e6;
+}
+#forum_acticle .forum_theme {
+  width: 100%;
+  height: 68px;
+  padding-left: 20px;
+}
+#forum_acticle .forum_theme span {
+  font: 18px/58px "微软雅黑";
+}
+#forum_acticle .forum_acticle_title {
+  width: 100%;
+  height: 407px;
+  border: 1px solid #eeeeee;
+  border-bottom: none;
+}
+#forum_acticle .forum_acticle_title .acticle_div {
+  width: 100%;
+  height: 343px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+}
+#forum_acticle .forum_acticle_title .acticle_div .acticle_list {
+  width: 100%;
+  height: 41px;
+}
+#forum_acticle .forum_acticle_title .acticle_div .acticle_list li {
+  font: 16px/32px "微软雅黑";
+  float: left;
+  padding-top: 8px;
+  color: #696b76;
+  border-bottom: 1px dashed #eaeaea;
+}
+#forum_acticle .forum_acticle_title .acticle_div .acticle_list .order {
+  width: 38px;
+  border: none;
+}
+#forum_acticle .forum_acticle_title .acticle_div .acticle_list .order span {
+  width: 22px;
+  height: 22px;
+  color: #FFFFFF;
+  display: inline-block;
+  background: red;
+  text-align: center;
+  line-height: 22px;
+  border-radius: 4px;
+}
+#forum_acticle .forum_acticle_title .acticle_div .acticle_list .order .order_2 {
+  background-color: #ffbf01;
+}
+#forum_acticle .forum_acticle_title .acticle_div .acticle_list .order .order_3 {
+  background-color: #91d14d;
+}
+#forum_acticle .forum_acticle_title .acticle_div .acticle_list .order .order_4 {
+  background-color: #3bbef3;
+}
+#forum_acticle .forum_acticle_title .acticle_div .acticle_list .order .order_5 {
+  background-color: #7c9ade;
+}
+#forum_acticle .forum_acticle_title .acticle_div .acticle_list .order .order_6 {
+  background-color: #c480c8;
+}
+#forum_acticle .forum_acticle_title .acticle_div .acticle_list .order .order_7 {
+  background-color: #f78335;
+}
+#forum_acticle .forum_acticle_title .acticle_div .acticle_list .order .order_8 {
+  background-color: #42cd7d;
+}
+#forum_acticle .forum_acticle_title .acticle_div .acticle_list .title {
+  width: 770px;
+}
+#forum_acticle .forum_acticle_title .acticle_div .acticle_list .author {
+  width: 110px;
+}
+#forum_acticle .forum_acticle_title .acticle_div .acticle_list .see {
+  width: 60px;
+}
+#forum_acticle .forum_acticle_title .acticle_div .acticle_list .send_time {
+  width: 90px;
+  font-size: 12px;
+  text-align: center;
+}
+.forum_send_div {
+  width: 1190px;
+  height: 505px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #eeeeee;
+}
+.forum_send_div h3 {
+  font: 18px/20px "微软雅黑";
+  padding-top: 22px;
+}
+.forum_send_div h3 img {
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+}
+.forum_send_div p {
+  /*padding-left: 22px;*/
+  padding-top: 15px;
+  font: 16px/30px "微软雅黑";
+}
+.forum_send_div .forum_send_title {
+  width: 1150px;
+  height: 45px;
+}
+.forum_send_div .forum_send_title input {
+  width: 490px;
+  height: 30px;
+  margin-left: 19px;
+}
+.forum_send_div .forum_send_content {
+  width: 1150px;
+  height: 175px;
+}
+.forum_send_div .forum_send_content textarea {
+  width: 1030px;
+  height: 156px;
+  margin-left: 15px;
+  border: none;
+  resize: none;
+  vertical-align: middle;
+}
+.forum_send_div .forum_send_bt {
+  width: 1150px;
+  height: 73px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 13px;
+}
+.forum_send_div .forum_send_bt button ,.forum_send_div .forum_send_bt .btn {
+  width: 131px;
+  height: 34px;
+  border-radius: 34px;
+  background-color: #900;
+  font: 16px/34px "微软雅黑";
+  color: #FFFFFF;
+  display: inline-block;
+  margin-left: 45px;
+  padding-top:0px;
+}
+.forum_send_div .forum_send_bt .edit_pre {
+  float: right;
+  display: inline-block;
+  margin-right: 25px;
+}
+.forum_send_div .forum_send_bt .edit_pre span {
+  display: inline-block;
+  width: 70px;
+  height: 22px;
+  border: 1px solid #a1a1a1;
+  text-align: center;
+  color: #a1a1a1;
+  cursor: pointer;
+}
+/*# sourceMappingURL=list_forum.css.map */
+
+.forum_express ul{
+
+}
+
+.forum_express ul li{
+  text-align:left;
+  margin-top:10px;
+}
+.forum_express ul li span {
+  font-size:16px;
+  display:inline-block;
+}
+.forum_express ul li .tit{
+  text-align:left;
+  width:330px;
+  height:20px;
+  overflow:hidden;
+}
+.forum_express ul li .tit span{
+  margin-right:5px;
+  color: rgba(56, 76, 148, 0.97);
+}
+.forum_express ul li .date{
+  width:120px;
+  text-align:center;
+}
+.forum_express ul li .views{
+  width:40px;
+  text-align:center;
+}
+.forum_express ul li .posts{
+  width:40px;
+  text-align:center;
+}
+.forum_express ul .hd span{
+  font-size:14px;
+  color:gray;
+}

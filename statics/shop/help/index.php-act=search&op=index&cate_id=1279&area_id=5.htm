@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" /><title>帮助</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="sdcii" />
+<meta name="copyright" content="sdcii.com" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link href="../templates/default/css/index.php-act=search&op=index&cate_id=1143&key=2&order=2.css" tppabs="http://www.sdcii.com:82/templates/default/css/common.css" rel="stylesheet" type="text/css" />
+<link href="../templates/default/css/index.php-act=search&op=index&cate_id=1279&area_id=24.css" tppabs="http://www.sdcii.com:82/templates/default/css/help.css" rel="stylesheet" type="text/css" />
+<script src="../templates/default/js/jquery.js" tppabs="http://www.sdcii.com:82/templates/default/js/jquery.js" type='text/javascript' ></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".nav_son").first().css("display","block");
+	$(".help_nav").first().removeClass("t");
+	$(".help_nav").first().addClass("s");
+	$(".help_nav").click(function(){
+		$(".help_nav").removeClass("s");
+		$(".help_nav").addClass("t");
+		$(".nav_son").slideUp("fast");
+		$(this).removeClass("t");
+		$(this).addClass("s");
+		$(this).next(".nav_son").slideDown("fast");
+	});
+	$("#help_searcform #search_go").click(function()
+	{
+		if ($("#help_searcform #key").val()=="" || $("#key").val()=="请输入关键字...")
+			{
+				alert("请输入关键字");
+				return false;
+			}
+	$("body").append('<div id="pageloadingbox">页面加载中....</div><div id="pageloadingbg"></div>');
+	$("#pageloadingbg").css("opacity", 0.5);
+	$.get("http://www.sdcii.com:82/plus/index.php?act=search&op=index&cate_id=1273&area_id=33", {"act":"QS_helpsearch","key":$("#help_searcform #key").val(),"page":1},
+			function (data,textStatus)
+			 {
+				 window.location.href=data;
+			 }
+		);
+	});
+	$("#help_searcform #key").focus(function(){
+	if ($("#key").val()=="请输入关键字...")
+	{
+	$("#help_searcform #key").css('color','').val('');
+	}  
+	});
+});
+</script>
+</head>
+<body >
+<!-- 头部 -->
+<div id="header">
+<div class="container-index header-main clearfix">
+		<div class="logo-box f-left">
+		<a href="../index-2.htm" tppabs="http://www.sdcii.com:82/"><img src="../data/images/index.php-act=search&op=index&cate_id=1143&area_id=34" tppabs="http://www.sdcii.com:82/data/images/logo.gif" alt="山东省文化人才网" border="0" align="absmiddle" width="350" height="70.18"/></a>
+		<a href="../index-1.htm" tppabs="http://www.sdcii.com/" class="back-index f-right"></a>
+		</div>
+	</div>
+	<div class="top-nav-wrap">
+		<div class="top-nav clearfix">
+			<ul class="f-left">
+												<li><a href="../index.php-act=search&op=index&cate_id=1143&area_id=22.htm" tppabs="http://www.sdcii.com:82/index.php" target="_self" class="nav-li ">首  页</a></li>
+			    				<li><a href="../jobs/index.htm" tppabs="http://www.sdcii.com:82/jobs/" target="_self" class="nav-li ">个人求职</a></li>
+			    				<li><a href="../company/index.php-act=search&op=index&cate_id=1143&area_id=22.htm" tppabs="http://www.sdcii.com:82/company/index.php" target="_self" class="nav-li ">名企招聘</a></li>
+			    				<li><a href="../index.php-act=search&op=index&cate_id=1143&area_id=13.htm" tppabs="http://www.sdcii.com:82/zhuanjia" target="_self" class="nav-li ">专家智库</a></li>
+			    				<li><a href="../resume/index.htm" tppabs="http://www.sdcii.com:82/resume/" target="_self" class="nav-li ">高校专区</a></li>
+			    				<li><a href="../index.php-act=search&op=index&cate_id=1143&area_id=19.htm" tppabs="http://www.sdcii.com:82/activity" target="_self" class="nav-li ">活动专区</a></li>
+			    				<li><a href="../news/index.htm" tppabs="http://www.sdcii.com:82/news/" target="_self" class="nav-li ">新闻资讯</a></li>
+			    				<li><a href="javascript:if(confirm('http://www.sdcii.com:82/user/index.php?act=search&op=index&cate_id=1143&area_id=28  \n\n该文件无法用 Teleport Ultra 下载, 因为 服务器报告该文件未找到。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/user/index.php?act=search&op=index&cate_id=1143&area_id=28'" tppabs="http://www.sdcii.com:82/user/login.php" target="_self" class="nav-li ">简历中心</a></li>
+			    			</ul>
+			<div class="nav-right f-right">
+								<span class="login-reg"><a href="../psapp/member/logon.do.htm" tppabs="http://www.sdcii.com/psapp/member/logon.do" class="underline">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="../psapp/member/logon.do.htm" tppabs="http://www.sdcii.com/psapp/member/logon.do" class="underline">注册</a></span>
+							</div>
+		</div>
+	</div>
+	
+</div>
+<!-- 头部结束 -->
+<script src="../templates/default/js/index.php-act=search&op=index&cate_id=1143&area_id=20" tppabs="http://www.sdcii.com:82/templates/default/js/jquery.header.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		header();
+	});
+</script><!-- 当前位置 -->
+<div class="page_location link_bk">
+	当前位置：<a href="../index-2.htm" tppabs="http://www.sdcii.com:82/">首页</a>&nbsp;>&nbsp;<a href="index.htm" tppabs="http://www.sdcii.com:82/help/">帮助</a>
+</div>
+	<!-- 主体内容 -->
+	<div class="container link_bk">
+		<div class="about_left">
+			<h2 class="about_tit">帮助中心</h2>
+			<ul>
+												<li class="help_nav t"><a href="javascript:void(0);">账户管理</a></li>
+				<ul class="nav_son" style="display:none;">
+															<li><a href="index.php-act=search&op=get_booth_goods&cate_id=1144.htm" tppabs="http://www.sdcii.com:82/help/help-list.php?id=4">注册与登录</a></li>
+										<li><a href="index.php-act=search&op=index&cate_id=1145&order=0&key=0.htm" tppabs="http://www.sdcii.com:82/help/help-list.php?id=5">密码找回与重置</a></li>
+										<li><a href="index.php-act=search&op=index&cate_id=1279&area_id=21.htm" tppabs="http://www.sdcii.com:82/help/help-list.php?id=6">账户状态</a></li>
+										<li><a href="index.php-act=search&op=index&cate_id=1279&area_id=3.htm" tppabs="http://www.sdcii.com:82/help/help-list.php?id=7">资料与头像</a></li>
+										<li><a href="index.php-act=search&op=index&cate_id=1145&key=1&order=2.htm" tppabs="http://www.sdcii.com:82/help/help-list.php?id=8">手机与邮箱认证</a></li>
+										<!-- <li class="active"><a href="#">职位推广</a></li> -->
+				</ul>
+								<li class="help_nav t"><a href="javascript:void(0);">我是企业</a></li>
+				<ul class="nav_son" style="display:none;">
+															<li><a href="index.php-act=search&op=index&cate_id=1279&area_id=16.htm" tppabs="http://www.sdcii.com:82/help/help-list.php?id=9">职位发布与管理</a></li>
+										<li><a href="index.php-act=search&op=index&cate_id=1144&area_id=2.htm" tppabs="http://www.sdcii.com:82/help/help-list.php?id=10">职位推广</a></li>
+										<li><a href="index.php-act=search&op=index&cate_id=1279&area_id=8.htm" tppabs="http://www.sdcii.com:82/help/help-list.php?id=11">招聘管理</a></li>
+										<li><a href="index.php-act=search&op=index&cate_id=1145&key=3&order=2.htm" tppabs="http://www.sdcii.com:82/help/help-list.php?id=13">充值与消费</a></li>
+										<li><a href="index.php-act=search&op=index&cate_id=1279&area_id=17.htm" tppabs="http://www.sdcii.com:82/help/help-list.php?id=15">资料与地图</a></li>
+										<!-- <li class="active"><a href="#">职位推广</a></li> -->
+				</ul>
+								<li class="help_nav t"><a href="javascript:void(0);">我是个人</a></li>
+				<ul class="nav_son" style="display:none;">
+															<li><a href="index.php-act=search&op=index&cate_id=1279&area_id=18.htm" tppabs="http://www.sdcii.com:82/help/help-list.php?id=16">简历创建与管理</a></li>
+										<li><a href="index.php-act=search&op=index&cate_id=1145&key=2&order=2.htm" tppabs="http://www.sdcii.com:82/help/help-list.php?id=17">求职管理</a></li>
+										<!-- <li class="active"><a href="#">职位推广</a></li> -->
+				</ul>
+							</ul>
+		</div>
+		<div class="help_sreach clearfix" id="help_searcform">
+			<div class="f-left"><input type="text" class="input_text_300" placeholder="请输入问题关键字" name="key" id="key" /></div>
+			<div class="f-left"><input type="submit" value="搜索" class="but70lan" id="search_go" /></div>
+			<div class="f-left hot-help">热门关键字：<a href="index.php-act=search&op=index&cate_id=1279&area_id=10.htm" tppabs="http://www.sdcii.com:82/help/help-search.php?key=%D5%D2%BB%D8%C3%DC%C2%EB">找回密码</a><a href="index.php-act=search&op=index&cate_id=1279&area_id=14.htm" tppabs="http://www.sdcii.com:82/help/help-search.php?key=%D6%C3%B6%A5">置顶</a><a href="index.php-act=search&op=index&cate_id=1279&area_id=7.htm" tppabs="http://www.sdcii.com:82/help/help-search.php?key=%CD%C6%BC%F6">推荐</a><a href="javascript:if(confirm('http://www.sdcii.com:82/help/index.php?act=search&op=index&cate_id=1279&area_id=6  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/help/index.php?act=search&op=index&cate_id=1279&area_id=6'" tppabs="http://www.sdcii.com:82/help/help-search.php?key=%C4%A3%B0%E6">模版</a><a href="index.php-act=search&op=index&cate_id=1279&area_id=5.htm" tppabs="http://www.sdcii.com:82/help/help-search.php?key=%B5%E7%D7%D3%B5%D8%CD%BC">电子地图</a></div>
+		</div>
+		<div class="about_right">
+			
+			<div class="about_r_tit">
+				常见问题
+			</div>
+			<div class="about_r_content">
+				<ul>
+															<li>没有相关信息！</li>
+									</ul>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<!-- 主体内容 结束 -->
+	
+<div class="foot">
+	<div class="footer_box">
+		<div class="box link_bk">
+				<div class="list">
+					<h4>关于我们</h4>
+					<div class="foot_list">
+						<ul>
+																			<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/explain/index.php?act=search&op=index&cate_id=1144&area_id=31  \n\n该文件无法用 Teleport Ultra 下载, 因为 服务器报告该文件未找到。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/explain/index.php?act=search&op=index&cate_id=1144&area_id=31'" tppabs="http://www.sdcii.com:82/explain/explain-show.php?id=1">联系我们</a></li>
+													<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/explain/index.php?act=search&op=index&cate_id=1144&area_id=33  \n\n该文件无法用 Teleport Ultra 下载, 因为 服务器报告该文件未找到。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/explain/index.php?act=search&op=index&cate_id=1144&area_id=33'" tppabs="http://www.sdcii.com:82/explain/explain-show.php?id=2">网站简介</a></li>
+													<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/explain/index.php?act=search&op=index&cate_id=1144&area_id=25  \n\n该文件无法用 Teleport Ultra 下载, 因为 服务器报告该文件未找到。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/explain/index.php?act=search&op=index&cate_id=1144&area_id=25'" tppabs="http://www.sdcii.com:82/explain/explain-show.php?id=4">合作共赢</a></li>
+													<li><a target="_blank" href="../index.php-act=search&op=index&cate_id=1144&area_id=11.htm" tppabs="http://www.sdcii.com:82/suggest">意见反馈</a></li>
+						</ul>
+						<ul>
+																						<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/explain/index.php?act=search&op=index&cate_id=1144&area_id=0  \n\n该文件无法用 Teleport Ultra 下载, 因为 服务器报告该文件未找到。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/explain/index.php?act=search&op=index&cate_id=1144&area_id=0'" tppabs="http://www.sdcii.com:82/explain/explain-show.php?id=5">网站声明</a></li>
+													</ul>
+					</div>
+				</div>
+				<div class="list">
+					<h4>帮助中心</h4>
+					<div class="foot_list">
+						<ul>
+							<li><a target="_blank" href="index.php-act=search&op=get_booth_goods&cate_id=1144.htm" tppabs="http://www.sdcii.com:82/help/help-list.php?id=4">注册与登录</a></li>
+							<li><a target="_blank" href="index.php-act=search&op=index&cate_id=1145&order=0&key=0.htm" tppabs="http://www.sdcii.com:82/help/help-list.php?id=5">密码找回</a></li>
+							<li><a target="_blank" href="index.php-act=search&op=index&cate_id=1145&key=1&order=2.htm" tppabs="http://www.sdcii.com:82/help/help-list.php?id=8">认证管理</a></li>
+							<li><a target="_blank" href="index.php-act=search&op=index&cate_id=1144&area_id=2.htm" tppabs="http://www.sdcii.com:82/help/help-list.php?id=10">招聘管理 </a></li>
+						</ul>
+						<ul>
+							<li><a target="_blank" href="index.php-act=search&op=index&cate_id=1145&key=2&order=2.htm" tppabs="http://www.sdcii.com:82/help/help-list.php?id=17">求职管理</a></li>
+							<li><a target="_blank" href="index.php-act=search&op=index&cate_id=1145&key=3&order=2.htm" tppabs="http://www.sdcii.com:82/help/help-list.php?id=13">充值消费 </a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list">
+					<h4>个人求职</h4>
+					<div class="foot_list">
+						<ul>
+							<li><a target="_blank" href="../jobs/index.php-act=search&op=index&cate_id=1144&area_id=9.htm" tppabs="http://www.sdcii.com:82/jobs/jobs-list.php">职位搜索</a></li>
+							<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/explain/index.php?act=search&op=index&cate_id=1145&area_id=1  \n\n该文件无法用 Teleport Ultra 下载, 因为 服务器报告该文件未找到。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/explain/index.php?act=search&op=index&cate_id=1145&area_id=1'" tppabs="http://www.sdcii.com:82/explain/explain-show.php?id=6">职场指南</a></li>
+							<li><a target="_blank" href="../jobs/index.php-act=search&op=index&cate_id=1145&area_id=2.htm" tppabs="http://www.sdcii.com:82/jobs/jobs-list.php?nature=63">兼职招聘</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list">
+					<h4>企业服务</h4>
+					<div class="foot_list">
+						<ul>
+							<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/user/company/index.php?act=search&op=index&cate_id=1145&area_id=9  \n\n该文件无法用 Teleport Ultra 下载, 因为 服务器报告该文件未找到。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/user/company/index.php?act=search&op=index&cate_id=1145&area_id=9'" tppabs="http://www.sdcii.com:82/user/company/company_jobs.php?act=addjobs">发布职位</a></li>
+							<li><a target="_blank" href="../resume/index.php-act=search&op=index&cate_id=1145&area_id=35.htm" tppabs="http://www.sdcii.com:82/resume/resume-list.php">简历搜索</a></li>
+						</ul>
+						<ul>
+							<li><a target="_blank" href="../psapp/member/logon.do.htm" tppabs="http://www.sdcii.com/psapp/member/logon.do">企业注册</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clear"></div>
+				
+				
+		        <div class="weixin">
+		        	<div class="comment">
+		        		<p>服务热线</p>
+		        		<p class="phone_number">000-00000000</p>
+		        	</div>
+			</div>
+		</div>
+	</div>
+		
+  
+  <div class="copyright"> 网站备案：鲁ICP备15025590号-1<br />
+Copyright @ 2016 sdcii.com All Right Reserved <br />山东省文化人才版权所有</em></a><br />
+</div>
+</div>
+<!-- 回到顶部组件 -->
+<div class="back_to_top" id="back_to_top">
+	<div class="back" style="display:none;">
+		<div>回到顶部</div>
+	</div>
+	<div class="steer">
+		<div onclick="javascript:location.href='../index.php-act=search&op=index&cate_id=1144&area_id=11.htm'/*tpa=http://www.sdcii.com:82/suggest*/">我要建议</div>
+	</div>
+</div>
+<script>
+	$(function(){
+		//回到顶部组件出现设置
+		$(window).scroll(function(){
+			if($(window).scrollTop()>200){
+				$(".back").fadeIn(400);
+			}else{
+				$(".back").fadeOut(400);
+			}
+		})
+
+		//回到顶部hover效果
+		$("index.php-act=search&op=index&cate_id=1145&area_id=12.htm"/*tpa=http://www.sdcii.com:82/help/index.php?act=search&op=index&cate_id=1145&area_id=12*/).hover(function(){
+			$(this).find("div").css("display","block");
+		},function(){
+			$(this).find("div").css("display","none");
+		})
+
+		//设置滚回顶部方法
+		$(".back").click(function(){
+			$("body,html").animate({scrollTop:0}, 500);
+			return false;
+		})
+	});
+	$(function(){
+		$(".foot_list ul:odd li").css("width", 62);
+		$(".weixin_img:last").css("margin-right", 0);
+	})
+</script>
+</body>
+</html>

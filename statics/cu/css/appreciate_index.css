@@ -1,0 +1,27 @@
+.shaixuan{width: 1200px;margin: 20px auto 0;}
+.shaixuan dl{overflow: hidden;padding-left: 10px}
+.shaixuan dl dd,.shaixuan dl dt{display: inline;line-height: 30px;}
+.shaixuan dl dt{color: #787d82;margin-right: 25px}
+.shaixuan dl dd{margin-right: 22px;padding: 0 10px;}
+/*筛选颜色的变化css*/
+.back_dd{background: #93262a;color: white;}
+
+.ggwh_Content ul.itemlist {overflow: hidden;padding: 20px;list-style: none;}
+.ggwh_Content ul.itemlist  li.item{float: left;width: 270px;}
+.ggwh_Content ul.itemlist  li.item img{float: left;width: 270px;}
+.ggwh_Content ul.itemlist  li.item {margin-right: 25px;margin-bottom: 20px;box-shadow:5px 5px 8px #d8d8d8;}
+.ggwh_Content ul.itemlist  li:nth-child(4n){margin-right: 0;}
+.ggwh_Content ul.itemlist  li.item img{height: 230px;}
+.ggwh_Content ul.itemlist  li.item p{color:#8e8e91 }
+.ggwh_Content ul.itemlist  li.item p,.ggwh_Content ul li h5{font-size: 14px;padding-left: 10px;margin-bottom: 20px}
+.ggwh_Content ul.itemlist  li.item h5{font-size: 16px;line-height: 16px;margin-top: 15px;margin-bottom: 5px}
+.ggwh_Content ul.itemlist  li.item img{cursor: pointer;}
+
+
+.img_details{width: 100%;height: 100%;background: rgba(0,0,0,0.5);position: fixed;top: 0;left: 0}
+.tupian{background: white;width: 1200px;height: 600px;position: absolute;top: 50%;left: 50%;margin-left: -600px;margin-top: -300px;}
+.top_button{height: 40px;}
+.top_button span{display: inline-block;float: right;width: 26px;height: 25px;margin-top: 8px;margin-right: 30px;cursor:pointer;background: url(../../cu/images/images/close.png)}
+.tupian img{width: 1100px;display: block;margin:0 auto;height: 560px}
+
+.img_details{display: none;}

@@ -1,0 +1,43 @@
+.memcontent{ padding-top: 16px;}
+.ultmenu{ border: solid 1px #E7E7E7;}
+.ultmenu dl{ border-bottom: 1px solid #e7e7e7; padding-bottom: 8px;}
+.ultmenu dl:last-child{border-bottom: none;}
+.ultmenu dt a,.ultmenu dd a{ display: block; padding-left: 20px;}
+.ultmenu dt{line-height:44px; font-weight: bold; font-size: 14px; background: #F7F7F7; margin-bottom: 6px;}
+.ultmenu dd{line-height: 32px; font-size: 13px;}
+.ultmenu dt a{ color: #333;}
+.ultmenu dd a{ color: #777;}
+.ultmenu dd a:hover{ background: #f0f0f0;}
+.urtnav{ line-height: 36px; }
+.urtnav .as{  margin-bottom: -1px;border-bottom: 1px solid #e7e7e7;}
+.urtnav .as:after{ position: relative; clear: both; content: " "; display: block;}
+.urtnav .as a{ float: left; border: 1px solid #E7E7E7; background: #e7e7e7; padding: 0 20px; font-size: 14px; margin-bottom: -1px;  margin-left: -1px;}
+.urtnav .as a.on{ /*color: #E60012;*/ border-bottom: 1px solid #fff; font-weight: bold; background: #fff;}
+.urtnav .as a:first-child{ margin-left: 0px;}
+.dlurtsear{ overflow: hidden;zoom:1; padding-bottom: 16px; }
+.dlurtsear dt,.dlurtsear dd{ float: left; padding: 16px 10px 0px 0; line-height: 28px; min-height: 20px;}
+.dlurtsear .btnsear{ padding: 4px 16px;line-height: 16px;}
+.tburt{ color: #999; width: 100%; border-top: solid 1px #E7E7E7;}
+.tburt tr{ border-bottom: solid 1px #E7E7E7;}
+.tburt tr:first-child{ font-weight: bold; color: #666;}
+.tburt th,.tburt td{ line-height: 36px;}
+.tburt th{}
+.tburt td{}
+.tburt td img{width: 80px;height: 80px;margin: 5px 0}
+
+.dluform{}
+h2.new_box_add{width:100%;text-align:left;font-size:13px;color:#252525;line-height:50px;font-weight:normal; }
+h2.new_box_add strong{color:#c8161d; margin-right:10px;}
+.dluform dt{float:left;text-align:right;width:70px;font-size:12px;color:#1d1d1d; line-height: 30px; }
+.dluform dt i{color:#c8161d;}
+.dluform dd{margin-left:90px; margin-bottom:20px; font-size:12px;color:#1d1d1d; position: relative;line-height: 30px}
+/*.dluform dd i.error{right:0;}*/
+.dluform .areas select{ width:90px; height: 30px; line-height: 30px; border:1px solid #ccc; padding-left:5px;}
+.dluform dd input{width:213px;height:27px;padding:1px 0;text-indent:5px;border:1px solid #cdcdcd;font-size:12px;}
+.dluform dd select{width:122px;height:20px;}
+.dluform dd .detailed{width:410px; height: 70px; background:#f5f5f5; resize:none;}
+.dluform dd.default{font-size:12px;color:#686868;margin-left:90px; margin-bottom: 35px;}
+.dluform dd input[type='checkbox']{vertical-align:-3px;margin-right:5px;}
+.dluform .ddbtns{}
+.dluform .ddbtns input{text-indent: 0; color:#888888;  width: auto; padding: 0 16px; margin-right: 20px; }
+.dluform .ddbtns input:first-child{ background:#c8161d; color: #fff; }

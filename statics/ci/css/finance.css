@@ -1,0 +1,78 @@
+
+.finan_l{ width:360px; border:1px solid #d8d8d8; margin-right: 20px; float: left; }
+.finan_l h2{ color:#900; font-size: 20px; font-weight: normal; margin:20px; padding-bottom: 10px; border-bottom:1px solid #900; height: 40px; line-height: 40px; }
+.finan_l h2 .apply{width:55px; height: 25px; text-align: center; line-height: 25px;color:#fff; margin-top: 10px; font-size:15px; border-radius: 5px; float: right;
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#5b94f0), to(#2b60bf));
+    background: -ms-linear-gradient(top, #5b94f0,  #2b60bf);
+    background:-moz-linear-gradient(top,#5b94f0,#2b60bf);
+    background: -webkit-linear-gradient(top, #5b94f0, #2b60bf);
+    background: -o-linear-gradient(top, #5b94f0, #2b60bf);
+}
+.finan_l .explain{color:#131926; font-size: 16px; background: #f6f6f6;border:1px solid #c8c8c8;  height: 27px; width:280px; text-align: center; line-height: 27px; margin: 0 auto;}
+.finan_l .finlul{padding:0 40px;}
+.finan_l .finlul li{overflow: hidden; text-overflow: ellipsis; white-space:normal; ;}
+.finan_l .finlul .star_enterprise{height:50px; border-bottom: 1px solid #d8d8d8; line-height: 55px; overflow: hidden;}
+.finan_l .finlul .star_enterprise .allstar{float:left; position:relative;background: url(../images/allstar.png) no-repeat 0 20px; width:112px; height: 50px; display: inline-block; }
+.finan_l .finlul .star_enterprise .colourstar{ position:absolute; left:0; top:0;background: url(../images/colourstar.png) no-repeat 0 20px; height: 50px; display: inline-block;}
+
+.finan_l .finlul .star_enterprise .enterprise{font-size: 16px; color:#383838;}
+.finan_l .finlul li p{font-size: 14px; color:#808080; height: 40px; line-height: 40px;}
+.finan_l .more{display: block; text-align: right; font-size: 16px; color:#333333;border-top:1px solid #d8d8d8; margin: 0 20px; height: 35px; line-height: 35px; padding-right: 5px; }
+
+
+.finan_r{  width:815px;  float: right;}
+.finan_r .rcon{border:1px solid #d8d8d8; padding:15px; overflow: hidden; margin-bottom: 20px;}
+.finan_r .rcon .rcontop{color:#900; font-size: 20px;margin-bottom: 15px; border-bottom: 1px solid #900;  height: 45px;  line-height: 45px; padding:0 5px;}
+.finan_r .rcon .rcontop span{ font-size: 14px; margin-left:8px;}
+
+.finan_r .rcon .rcontop .more{color:#4d4d4d; float:right;font-size: 16px;height: 35px; line-height: 35px; margin-top: 5px;}
+
+.agentul li{float: left; margin: 0px 12px;}
+.agentul li h3{text-align: center;font-size: 16px; color:#131926;}
+.agentul li p{text-align: center;font-size: 13px; color:#a0a0a0;}
+
+.rcon .cre{width:380px;}
+.rcon .cre h4{border-bottom: 1px solid #eeeeee; height: 38px; margin-bottom: 7px; line-height: 38px; padding-left: 10px; font-size: 16px; color: #131926;font-weight: normal;}
+.rcon .credit_l{float: left;}
+.rcon .credit_l li{float: left; position: relative;  margin: 9px;}
+.rcon .credit_l li p{background: #fff; opacity: 0.7; position: absolute; text-align: center; line-height: 30px; font-size: 13px; color: #181818; left:0; right:0; bottom:0;}
+.rcon .credit_r{float: right;}
+.rcon .credit_r ul{padding-top:10px; }
+.rcon .credit_r li a{border-bottom: dashed 1px #eee; height:39px; line-height:39px;font-size: 16px; color:#696b76; display: block;}
+.rcon .credit_r li .spanlist{font-size: 16px;color: #de2d2d;}
+
+.yinhang{margin-top: 20px; border:1px solid #eee; clear: both; padding:20px;}
+.yinhang .titp{font-size: 20px; color:#4d4d4d; border-bottom: 1px solid #2058c2; height: 38px; margin-bottom: 20px; }
+.yinhang a{display: inline-block; margin-left: 20px; height: 56px;  margin-right: 75px;}
+.yinhang a .fund{ width:258px; border-radius: 5px; background: #a0a0a0; height:44px;}
+.yinhang a P{margin-top: 12px; text-align: center;font-size: 16px;color: #131926;}
+
+.brandattr{background: #f7f7f7; border:1px solid #eee; padding:15px; margin-bottom: 20px;}
+.brandattr .brandl{margin-bottom: 7px;}
+.brandattr .brandl .bluea{height: 30px; background: #900;  color:#fff; text-align: center; line-height: 30px; display: inline-block;}
+.brandattr .brandl dt{float: left; line-height: 30px; width:85px; text-align: right; font-size: 14px; color:#787d82;}
+.brandattr .brandl dd a{line-height:30px;margin-right:15px; color:#14191e;display: inline-block;padding: 0 10px;}
+
+.analysis{padding:20px; background: #f7f7f7; border:1px solid #eee; }
+.analysis h3{ line-height: 40px;border-bottom: 1px solid #2058c2; font-size: 18px; font-weight: normal;padding-left:15px; }
+.analysis h3 span{ color:#4480df; }
+.analysis .anaul{overflow:hidden;padding-left: 7px;}
+.analysis .anaul .anaimg{position:relative;width:235px; height: 170px; background: #fff; border:1px solid #eee;padding:15px;}
+.analysis .anaul .anaimg a{display: inline-block;}
+.analysis .anaul .anaimg .posspan{position:absolute; right:18px; top:15px; width:70px; height: 70px;}
+.analysis .anaul .anaimg .spirit1{background: url(../images/spirit1.png) no-repeat;}
+.analysis .anaul .anaimg .spirit2{ background: url(../images/spirit2.png) no-repeat;}
+.analysis .anaul .anaimg .spirit3{background: url(../images/spirit3.png) no-repeat;}
+.analysis .anaul li{float: left; margin: 10px 6px;}
+.analysis .anaul li .allp{padding:0 20px; }
+.analysis .anaul li .allp p{color:#898989; line-height:25px;}
+.analysis .anaul li .allp .entryname{font-size: 14px; clolor:#242424; margin-top: 10px;}
+
+.area-map{margin: 34px 0 45px;}
+.area-map .map img:first-child{border: 1px solid #4480df;}/*margin-right: 20px;*/
+.area-map .desc{width: 450px;}
+.area-map .desc h5{font-size: 16px;color: #000;font-weight: normal;}
+.area-map .desc p{font-size: 14px;color: #242424;margin-top: 36px;text-indent: 2em;line-height: 23px;}
+
+
+

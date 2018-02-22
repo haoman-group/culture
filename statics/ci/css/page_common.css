@@ -1,0 +1,27 @@
+.page_div {
+  text-align: center;
+  color: #696b76;
+  font-size: 12px;
+  height: 115px;
+  padding: 40px 0;
+}
+.page_div .pageindex {
+  display: none;
+}
+.page_div .all {
+  display: inline-block;
+  margin: 0 4px;
+}
+.page_div .current {
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1px solid #ccc;
+  background: #3398db none repeat scroll 0 0;
+}
+.page_div a {
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1px solid #ccc;
+  margin: 0 4px;
+}
+/*# sourceMappingURL=page_common.css.map */

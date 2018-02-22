@@ -1,0 +1,169 @@
+.shdbox{ box-shadow: 0px 0px 10px 0px #ddd;}
+.cardshowcon{}
+.cardshowlt{ float: left;width: 864px;}
+.cardshowrt{ float: right; width:316px; }
+.cshowmain{border: 1px solid #e4e4e4;}
+.cardshowcon .maintit{ background: #e3ebf2;}
+.cardshowcon .maintit strong{ font-size: 18px; font-weight: normal; color: #275aba;line-height: 54px; position: relative;  padding-left: 26px; display: block; }
+.cardshowcon .maintit strong:before{ content: ""; top: 16px; width: 3px; height: 24px; background: #275aba; left: 12px; position: absolute;}
+.cardparas{ padding: 40px;}
+.cardparas .prodimg{ float: left; width:378px; height: 328px; }
+.cardparas .dlprod{ margin-left: 424px; line-height: 60px;font-size: 16px;color: #5d5d5d; }
+.cardparas .dlprod dt,.cardparas .dlprod dd{ min-height: 60px;}
+.cardparas .dlprod dt{ float: left; width: 80px; position: relative; }
+.cardparas .dlprod dt:after{ position: absolute; content: ":"; right: 0px;}
+.cardparas .dlprod dd{ margin-left: 118px;}
+.cardparas .dlprod dd h1{ font-size: 24px; font-weight: normal; color: #2e2e32;}
+.cardparas .dlprod .price{ color: #ef4e23;}
+.cardparas .dlprod .price strong{ font-size: 30px; font-weight: normal;}
+.cardhuitit{ line-height: 52px; border-top:1px solid #e4e4e4;border-bottom:1px solid #e4e4e4; margin-bottom: 20px;}
+.cardhuitit strong{ font-size: 22px; font-weight: normal;color:#ef4e23; position:relative; display: inline-block; padding: 0px 20px 0px 30px;}
+.cardhuitit span{ color: #275aba; font-size: 16px; margin-left: 16px; }
+.cardhuitit strong:after{ height: 32px; width: 1px; background: #e4e4e4; top: 12px; right: 0px; position: absolute; content: "";}
+.dlcardinfo{}
+.dlcardinfo dt{ border-bottom: 2px solid #6c6968;}
+.dlcardinfo dt a{ background:#6c6968; border-radius: 4px 4px 0px 0px; line-height: 28px; display: inline-block; margin-left:56px; font-size: 15px; color: #fff;
+    padding: 0px 24px; position: relative;top: 2px;}
+.dlcardinfo dt a.on{background:#275aba;}
+.dlcardinfo dt a:after{ content: ""; position: absolute; border-width:6px 6px 0px 6px;
+    border-style:solid; border-color:#6c6968 transparent transparent transparent; bottom: -6px; left: 45%;}
+.dlcardinfo dt a.on:after{border-color:#275aba transparent transparent transparent;}
+.dlcardinfo dd{ padding: 38px 30px; font-size:18px; color: #6c6968; line-height: 30px;min-height: 430px; }
+.dlcardinfo dd cite{display: block; font-style: normal;}
+.dlcardinfo dd h5{ font-size: 18px; font-weight: normal; line-height: 50px;}
+.dlcardinfo dd p{ text-indent: 2em;}
+
+.listbox .listlf{width: 926px;border: 1px solid #ccc;float: left;}
+.listbox .listlf .tit{line-height: 36px;background: #f5f5f5;border-bottom: 1px solid #ccc;}
+.listbox .listlf .tit h5{line-height:36px;float: left;font-size: 18px;color: #4d4d4d;font-weight: normal;margin: 0 70px 0 25px;}
+.listbox .listlf .tit ul{float: left;}
+.listbox .listlf .tit ul li{float: left;border-right: 1px solid #ccc;}
+.listbox .listlf .tit ul li a{font-size: 12px;color: #4d4d4d;padding: 0 9px;display: block;}
+.listbox .listlf .tit ul li.on a{font-size: 14px;color: #fff;background: #0e53d4;}
+.listbox .listlf .tit ul li a img{margin-left: 5px;}
+.listbox .listlf .txt{padding: 0 27px 27px;}
+.listbox .listlf dl{border-bottom: 1px solid #ccc;padding: 27px 0;}
+.listbox .listlf dl:last-child{border-bottom: none;}
+.listbox .listlf dl dt{float: left;}
+.listbox .listlf dl dd{margin-left: 147px;}
+.listbox .listlf dl dd h5{font-size: 16px;color: #4d4d4d;font-weight: normal;position: relative;top: -5px;}
+.listbox .listlf dl dd p{font-size: 12px;color: #4d4d4d;line-height: 30px;}
+.listbox .listlf dl dd .btn{text-align: right;}
+.listbox .listlf dl dd .btn input{width: 87px;height: 28px;border-radius: 3px;text-align: center;line-height: 28px;cursor: pointer;}
+.listbox .listlf dl dd .btn input:nth-child(1){background: #ff3c3c;color: #fff;font-size: 14px;}
+.listbox .listlf dl dd .btn input:nth-child(2){background: #f5f5f5 url(../images/star1.png) no-repeat 5px center;color: #4d5157;font-size: 12px;margin-left: 15px;text-indent: 10px;}
+.listbox .listrg{float: right;width: 258px;border: 1px solid #ccc;padding-bottom: 20px;}
+.listbox .listrg h5{line-height: 36px;background: #f5f5f5;border-bottom: 1px solid #ccc;font-size: 14px;color: #4d4d4d;font-weight: normal;text-indent: 14px;}
+.listbox .listrg a{margin: 28px 0 0;display: block;text-align: center;}
+
+.cardshowrt .mapbox{ padding: 6px 0px 6px 6px; margin-bottom: 16px;}
+.cardshowrt .mapbox img{ width: 306px; display: block;}
+.cardshowrt .rtbox{}
+.cardshowrt .ulguess{ margin:0px 10px; color: #3b3b3b; font-size: 16px; padding-bottom: 16px;}
+.cardshowrt .ulguess li{ border-bottom: 1px solid #e2e2e2; padding:16px 12px 12px;}
+.cardshowrt .ulguess li:last-child{ border-bottom: none;}
+.cardshowrt .ulguess li .tit{}
+.cardshowrt .ulguess li img{ display: block; width:264px; }
+.ulstars{ width: 110px; overflow: hidden;zoom:1; background: url(../images/cardstar.png) repeat-x; height: 16px;}
+.ulstars .li{ width: 22px; float: left; height: 16px; padding: 0px; font-size: 0px;}
+.ulstars p{ display: block; height: 16px; background: url("../images/cardstar.png") 0px -20px repeat-x;}
+.cardshowrt .ulguess .ulstars{ margin: 12px 0;}
+
+
+.cardcon{ color: #5f5f5f; }
+.cardcon a{ color: #5f5f5f;}
+/*.cardcon img{ display: block;}*/
+.cardban{ min-width: 1200px;}
+.cardban img{ display: block; width: 100%;}
+.cardlt{ width: 368px; float: left;}
+.cardrt{ width: 814px; float: right;}
+.cardmem{border: 1px solid  #e4e4e4; padding: 15px 0 20px; margin-bottom: 18px;}
+.cardmem h5{font-size: 20px;color: #4d4d4d;border-bottom: 1px solid  #e4e4e4;font-weight: normal;padding: 0 0 12px 16px;}
+.cardmem form{padding: 24px 30px 0;}
+.cardmem form input{margin-left: 52px;width: 72px;height: 32px;text-align: center;line-height: 32px;background: linear-gradient(#36bfe9,#1a77cf);border-radius: 3px;font-size: 18px;color: #fff;cursor: pointer;}
+.cardcell{ border: 1px solid  #e4e4e4; padding: 6px 16px 20px; margin-bottom: 18px;}
+.cardcell .tit{ font-size: 20px; text-indent: 12px; border-bottom:2px solid #900; line-height: 50px; color: #4d4d4d; margin-bottom: 16px;}
+.cardcell .tit a{font-size: 16px;color: #333;float: right;padding-right: 12px;position: relative;top: 5px;}
+.cardcell .cardindexintro{ font-size: 16px; line-height: 30px;}
+.cardcell .cardindexintro p{ text-indent: 2em;}
+.cardcell .tit .finance_tit { float: left; }
+.cardcell .tit .finance_tit dt { float: left; font-size: 63px;line-height: 55px;color: #990000;font-weight: normal; margin-right: 5px; }
+.cardcell .tit .finance_tit dd { float: left; }
+.cardcell .tit .finance_tit dd span {display: block;font-size: 22px; color: #4d4d4d;line-height: 25px;margin: 0;}
+.cardcell .tit .finance_tit dd i {font-style: normal; font-weight: bold;margin: 0;}
+.cardcell .tit .finance_tit dd strong {display: block;font-size: 24px; color: #990000;line-height: 25px;font-weight: normal;}
+.cardcell .tit .clearfix .finan_l .credit_finance {height:74px;/*background: url(../ci/images/credit_fiance1.png) no-repeat;*/}
+.discountPro {  }
+.discountPro li { float: left; width: 245px; height: 310px; border: 1px solid #eee; margin-left: 22px; position: relative; }
+.discountPro li:nth-of-type(1):before { content: '最新'; width: 60px; height: 25px; text-align: center; line-height: 25px; background-color: #93262a; font-size: 16px; color: #fff; position: absolute; left: -1px; top: -1px; z-index: 2; }
+.discountPro li:nth-of-type(2):before { content: '火爆'; width: 60px; height: 25px; text-align: center; line-height: 25px; background-color: #93262a; font-size: 16px; color: #fff; position: absolute; left: -1px; top: -1px; z-index: 2; }
+.discountPro li:nth-of-type(3):before { content: '热门'; width: 60px; height: 25px; text-align: center; line-height: 25px; background-color: #93262a; font-size: 16px; color: #fff; position: absolute; left: -1px; top: -1px; z-index: 2; }
+.discountPro li:first-child { margin-left: 0; }
+.discountPro li .img { width: 100%; height: 180px; overflow: hidden; margin: 0; }
+.discountPro li .img img { width: 100%; height: 100%; }
+.discountPro li .desc { padding: 0 10px; }
+.discountPro li .desc h5 { font-size: 18px; color: #333; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; padding: 10px 0; }
+.discountPro li .desc p { font-size: 14px; color: #666; line-height: 20px; height: 40px; overflow: hidden; }
+.discountPro li .desc span { font-size: 14px; color: #999; float: right; margin-top: 20px; }
+.wonderfulAct li { float: left; width: 377px; height: 274px; border: 1px solid #eee; margin-left: 26px; position: relative; }
+.wonderfulAct li:first-child { margin-left: 0; }
+.wonderfulAct li .img { width: 100%; height: 190px; overflow: hidden; margin: 0; }
+.wonderfulAct li .img img { width: 100%; height: 100%; }
+.wonderfulAct li .desc { padding: 0 10px; }
+.wonderfulAct li .desc h5 { font-size: 18px; color: #333; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; padding: 10px 0; }
+.wonderfulAct li .desc strong { display: block; font-size: 14px; color: #fff; float: right; background-color: #93262a; padding: 0 10px 0 20px; font-weight: normal; line-height: 24px; position: relative; right: -10px; }
+.wonderfulAct li .desc strong:before { content: ''; width: 0px; height: 0px; border: 12px solid transparent; border-left: 12px solid #fff; position: absolute; left: 0; top: 0; }
+.wonderfulAct li .desc span { display: block; font-size: 14px; color: #999; margin-top: 20px; }
+
+.cardsublt{ width: 390px; float: left;}
+.cardsubrt{ width: 360px; float: left;}
+.cardsubtit{ color: #131926; margin-bottom: 12px; border-bottom: 1px solid #e4e4e4; padding-bottom: 12px; font-size: 16px; text-indent: 8px; }
+.ulguanzhu{ font-size: 16px;}
+.ulguanzhu li{  line-height: 18px;}
+.ulguanzhu li em{ font-style: normal;  line-height: 29px; display: inline-block; color: #de2d2d; text-align: center; width: 70px;}
+.cardre{ font-size: 14px;}
+.cardre a{ color: #808080;}
+.cardre .pic{ display: block; width: 194px; float: left;}
+.cardre ul{ width: 420px;}
+.cardre ul li{ line-height: 28px;float: left;margin-right: 20px; margin-left: 20px;}
+.cardre ul li:last-child{ margin-bottom: 0;}
+.cardre ul li em{ display: inline-block; width: 44px; text-align: center; height: 22px; color: #fff; background: #b81818; font-style: normal; margin-right: 8px;}
+.ulelsere{ font-size: 14px; color: #808080;}
+.ulelsere a{ color: #808080;}
+.ulelsere li{ overflow: hidden;zoom:1; margin-bottom: 10px;}
+.ulelsere li p{ display: block; margin-right:174px; line-height: 20px;}
+.ulelsere li p em{ font-weight: bold; font-style: normal; color: #de2d2d; margin-right: 4px;}
+.ulelsere img{ float: right;}
+.ulcardlogos{ text-align: center; font-size: 14px;}
+.ulcardlogos li{ float: left; width: 22%;margin-right: 24px;margin-top:10px;}
+.ulcardlogos li img{ margin: 0 auto; margin-bottom: 8px;}
+.ulcardlogos li .name{}
+.ulcardcontact{ font-size: 14px;}
+.ulcardcontact li{ float: left;margin-top: 17px;}
+.ulcardcontact li img{ display: inline-block; vertical-align: middle; margin-right: 20px;height: 30px;width: 30px;}
+
+.lianmeng{background: #f4f4f4;padding: 1px 1px 136px;}
+.lianmeng li{float: left;margin: 44px 0 0 54px;}
+.lianmeng li a{display: block;width: 230px;height: 130px;padding: 30px 0 18px;background: #fff;text-align: center;box-sizing: border-box;}
+.lianmeng li h5{font-size: 16px;color: #3f3f3f;margin-top: 12px;}
+
+.yuda{padding: 38px;border: 1px solid #ccc;}
+.yuda h5{font-size: 20px;color: #222;padding-bottom: 12px;border-bottom: 1px solid #457cda;font-weight: normal;}
+.yuda .txt{padding: 32px;}
+.yuda p{font-size: 16px;color: #696b76;text-indent: 2em;line-height: 30px;}
+.yuda ul li{float: left;margin: 26px;text-align: center;}
+.yuda ul li h6{font-size: 12px;color: #686868;font-weight: normal;padding: 16px 0 0;}
+
+.contact h5{line-height: 56px;background: #e2ebf2;font-weight: normal;text-indent: 10px;}
+.contact h5 span{font-size: 18px;color: #0140b5;border-left: 3px solid #0140b5;padding-left: 10px;}
+.contact dl{margin-top: 66px;}
+.contact dt{float: left;}
+.contact dd{margin-left: 405px;}
+.contact dd h1{font-size: 30px;font-weight: normal;color: #000;margin: 50px 0;}
+.contact dd p{font-size: 24px;color: #000;line-height: 35px;}
+.contact dd p span{padding-left: 60px;}
+
+.page {padding: 50px;text-align: center;padding-right: 0;}
+.page li {display: inline-block;font-size: 12px;color: #333;margin: 0 4px;}
+.page li a {display: block;font-size: 12px;color: #333;padding: 8px 10px;border: 1px solid #ccc;}
+.page li.on a {background: #3398db;color: #fff;}

@@ -1,0 +1,76 @@
+.search-area{width:1200px;height:45px;border:1px solid #c2c2c2;border-radius:5px;background:#f8f8f8; position: relative; margin-top: 3px;margin-left: 14px;overflow: hidden;margin-left: 20px;margin-top: 10px;}
+.search-point{width:87px;height:219px;float: left;}
+.search-box{width: 944px;height: 43px;font-size: 14px;background: #f8f8f8; float: left;}
+.search-category{font-size: 20px;font-family: "宋体", Verdana;color:#c2c2c2; text-align: center;line-height: 45px;}
+.search-submit{font-size: 16px;font-family: "宋体", Verdana; background: #f8f8f8;text-align: center;line-height: 45px;}
+.search-form{width: 160px;height: 45px;border: 1px solid red; background: black;float:right;}
+.search-icon{display: block;position: absolute;left: 1150px;top: 10px}
+.recommd-login{width: 1200px;margin:20px auto;height: 300px;}
+.key-recommd-img{width: 900px;border: 1px solid #c2c2c2;height: 280px;float: left}
+.login-register{border: 1px solid #c2c2c2;height: 280px;width: 260px;float: right;margin-top: -280px;}
+/*登录*/
+.login-register .member-login{width: 215px;height: 63px;border-bottom: 1px solid #900;margin-top: 12px;margin-left: 20px;position: relative}
+.login-password{width: 218px;height: 35px;border: 1px solid #c2c2c2; margin-top: 30px;margin-left: 20px}
+.login-password .login-pic{width: 40px;height: 33px;background: #EEEEEE;float: left;}
+.login-password input{width: 175px; height: 33px;font-size: 16px}
+.login-password-1{width: 218px;height: 35px;border: 1px solid #c2c2c2;margin-top: 15px;margin-left: 20px;}
+.login-password-1 .login-pic{width: 40px;height: 33px;background: #EEEEEE;float: left}
+.login-password-1 input{width: 175px; height: 33px;font-size: 16px}
+.login-code{margin-top: 13px;margin-left: 20px;}
+.login-code input{border: 1px solid #c2c2c2;width: 110px;height: 33px;font-size: 16px;margin-top: 5px;}
+
+.btns input{background: #900;color: white; width: 55px; height: 24px; border-radius: 6%;margin-top: 30px;}
+.log{width:55px;height: 25px;background: #900;color: white;margin-top: 0px;margin-left: 40px;}
+.log-reg{width:55px;height: 25px;background: #237CCD;color: white;margin-top: 20px;margin-left: 60px;}
+.register-logo{width: 1200px;margin: 0 auto;}
+.register-logo a{margin-left: 20px;}
+.project-present{width: 1160px;margin-left:20px; border-bottom:1px solid #900;margin-top: 20px; }
+
+.project-present p{float: right;margin-top: 25px;font-family: "Adobe Heiti Std";   font-size: 18px;}
+
+.search-area{ margin: 0px auto  ; }
+.search-term{width: 1200px;margin: 0 auto;background:#EFEFEF;height: 40px}
+.search-way{width: 140px;float: left; height: 40px;background: #4782DC;color: white;font-family: 黑体;font-size: 16px;text-align: center;line-height: 40px;}
+.search-way1{width: 140px;height: 40px;float: left;color: #568ADD;font-family: 黑体;font-size: 16px;text-align: center;line-height: 40px;}
+.classify ul li{list-style: none;display: block;float: left;padding:20px 20px;text-align: center;}
+.classify{width: 1200px;background: #EFEFEF; margin: 0 auto; height: 250px;}
+.search-item{width: 1200px;font-size: 14px;padding-left: 20px;}
+.search-job{width: 1190px;height: 35px;font-size: 14px;margin: 20px auto}
+.search-job .key{width: 95px;height: 35px;text-align: center;float: left;line-height: 35px;margin-left:0px}
+.search-job .value{float: left;text-align:center; line-height: 35px;display: block;float: left}
+.search-job .value a{text-align: center;margin-left: 10px;}
+.value .limit{background: #4782DC;width: 60px;height: 30px;display: block;float: left;text-align: center;line-height: 30px;}
+.industry-list{width: 1200px;margin: 20px auto;background: #F7F7F7;}
+.industry-list span{font-size: 18px;height: 70px;line-height: 70px;margin-left: 20px;}
+.list-img{width: 1200px;margin: 0 auto;height: auto;}
+.list-img a{margin-left: 20px;}
+.clearfix{width: 1200px;margin: 0px auto;}
+
+.lists{width:274px;border: 1px solid #c2c2c2; height: 293px;margin-left: 20px;float: left;margin-top: 20px;}
+.lists span{font-size:15px;text-align: center;font-family: "Adobe Heiti Std";margin-left: 17px;}
+.lists p{font-size: 14px;margin-left: 17px;font-family: "Adobe Heiti Std";color: #c2c2c2;}
+
+
+.brandattr{background: #f7f7f7; border:1px solid #eee; margin-bottom: 20px;}
+.brandattr .brandl{margin-bottom: 20px;}
+.brandattr .brandl .bluea{height: 30px; background: #4480df;  color:#fff; text-align: center; line-height: 30px; display: inline-block;}
+.brandattr .brandl dt{float: left; line-height: 30px; width:85px; text-align: right; font-size: 14px; color:#787d82;}
+.brandattr .brandl dd a{margin-right:0px; color:#14191e;display: inline-block;padding: 0 16px;}
+.brandl a{font-family:Adobe Heiti Std}
+
+/*项目内容*/
+.list-content{width: 1200px;margin-top: 20px;overflow: hidden;border: 1px solid #F0F0F0; padding-bottom:30px; }
+.in-list{width: 275px;height: 290px;border: 1px solid #EEEEEE;margin-left: 20px;margin-top: 20px; display: inline-block;}
+.img1{width: 270px;padding: 20px;height: 202px;}
+
+.in-list p{font-size: 13px;font-family: "Adobe Heiti Std";color: #c2c2c2;}
+/*.tubiao{border:1px solid #EEEEEE; margin-top: 20px; padding: 20px 0px 0 20px;}*/
+/*.tubiao a{display: block;margin-bottom: 20px; height: 188px; background: url("../images/news/shenbao.jpg") no-repeat;}*/
+/*.tubiao a:hover{ background-position-y: -200px; -ms-background-position-y: -250px;}*/
+/*.tubiao .aprojlist{ background-position-x: 0px; -ms-background-position-x: 0px;}*/
+/*.tubiao .aprojfabu{ background-position-x: -294px; -ms-background-position-x: 0px;}*/
+/*.tubiao .aprojshenbao{ background-position-x: -600px; -ms-background-position-x: -583px;}*/
+
+
+
+/*.in-list p{font-size: 14px;margin-left: 17px;font-family: "Adobe Heiti Std";color: #c2c2c2;}*/

@@ -1,0 +1,103 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: "微软雅黑";
+}
+body{
+	
+	min-height: 100%;
+	background: url(../images/sxbwyBg.jpg) no-repeat center top;
+	background-color: #101010;
+	}
+a:link,a:visited,a:hover,a:active{text-decoration: none;}
+.clear{
+	clear: both;
+}
+.wrap{
+	width: 1344px;
+	height: 100%;
+	margin: auto;	
+}
+.header{
+	height:155px;
+	padding-left: 35px;
+	background-color: rgba(225,225,225,0.9);
+	line-height: 155px;
+}
+.header a{color: black;}
+.content{
+	margin-top: 10px;
+	padding: 23px 35px 40px 35px;
+	background-color: rgba(225,225,225,0.9);
+}
+.bwgInfo{
+	font-size: 18px;
+	line-height: 35px;
+	text-indent: 2em;
+	padding-left: 28px;
+	margin-top: 35px;
+}
+.bwgNavbar{
+	height: 56px;
+	background-color: #D5D5D5;
+	line-height: 56px;
+	padding-left: 20px;
+	margin-top: 20px;
+}
+.bwgNavbar span{
+	font-size: 16px;
+	color: #C00000;
+}
+.bwgNavbar span:first-child{
+	font-size: 23px;
+	color: black;
+}
+
+.contentLeft{
+	width: 278px;
+	height: 548px;
+	float: left;
+	background-color: #D5D5D5;
+}
+.contentRight{
+	width: 990px;
+	height: 1050px;
+	float: right;
+	background-color: white;
+	padding-left: 8px;
+}
+.contentLeft ul{
+	list-style: none;
+}
+.contentLeft ul li{
+	width: 278px;
+	height: 53px;
+	line-height: 53px;
+	
+}
+.contentLeft ul li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: black;
+	padding-left: 36px;
+	font-size: 18px;
+}
+.contentLeft ul li a.active{
+	background-color: #EF3939;
+	color: white;
+}
+
+.cpInfo{width: 238px;float: left;margin-right: 7px;margin-top:8px ;}
+.cpInfo div{width: 238px;height: 53px;background-color:#E5E3E3 ;text-align: center;line-height: 53px;font-size: 16px;}
+
+.foot{
+	font-size: 14px;
+	color: #898989;
+	text-align: center;
+	padding-top: 65px;
+	padding-bottom: 20px;
+}
+.foot a{
+	color:#898989;
+}

@@ -1,0 +1,439 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" /><title>新闻资讯</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="sdcii" />
+<meta name="copyright" content="sdcii.com" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link href="../templates/default/css/index.php-act=search&op=index&cate_id=1143&key=2&order=2.css" tppabs="http://www.sdcii.com:82/templates/default/css/common.css" rel="stylesheet" type="text/css" />
+<link href="../templates/default/css/index.php-act=search&op=index&cate_id=1273&area_id=31.css" tppabs="http://www.sdcii.com:82/templates/default/css/news.css" rel="stylesheet" type="text/css" />
+<script src="../templates/default/js/jquery.js" tppabs="http://www.sdcii.com:82/templates/default/js/jquery.js" type='text/javascript' ></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".search_news").click(function(){
+		var key = $("#key").val();
+		news_search_location(key);
+	});
+	function news_search_location(key)
+	{
+		$("body").append('<div id="pageloadingbox">页面加载中....</div><div id="pageloadingbg"></div>');
+		$("#pageloadingbg").css("opacity", 0.5);
+		$.get("http://www.sdcii.com:82/plus/index.php?act=search&op=index&cate_id=1273&area_id=33", {"act":"QS_newssearch","key":key},
+				function (data,textStatus)
+				 {
+					 window.location.href=data;
+				 }
+			);
+	}
+	$(".hot li:eq(3)").css("margin-bottom", 0);
+});
+</script>
+</head>
+<body >
+<!-- 头部 -->
+<div id="header">
+<div class="container-index header-main clearfix">
+		<div class="logo-box f-left">
+		<a href="../index-2.htm" tppabs="http://www.sdcii.com:82/"><img src="../data/images/index.php-act=search&op=index&cate_id=1143&area_id=34" tppabs="http://www.sdcii.com:82/data/images/logo.gif" alt="山东省文化人才网" border="0" align="absmiddle" width="350" height="70.18"/></a>
+		<a href="../index-1.htm" tppabs="http://www.sdcii.com/" class="back-index f-right"></a>
+		</div>
+	</div>
+	<div class="top-nav-wrap">
+		<div class="top-nav clearfix">
+			<ul class="f-left">
+												<li><a href="../index.php-act=search&op=index&cate_id=1143&area_id=22.htm" tppabs="http://www.sdcii.com:82/index.php" target="_self" class="nav-li ">首  页</a></li>
+			    				<li><a href="../jobs/index.htm" tppabs="http://www.sdcii.com:82/jobs/" target="_self" class="nav-li ">个人求职</a></li>
+			    				<li><a href="../company/index.php-act=search&op=index&cate_id=1143&area_id=22.htm" tppabs="http://www.sdcii.com:82/company/index.php" target="_self" class="nav-li ">名企招聘</a></li>
+			    				<li><a href="../index.php-act=search&op=index&cate_id=1143&area_id=13.htm" tppabs="http://www.sdcii.com:82/zhuanjia" target="_self" class="nav-li ">专家智库</a></li>
+			    				<li><a href="../resume/index.htm" tppabs="http://www.sdcii.com:82/resume/" target="_self" class="nav-li ">高校专区</a></li>
+			    				<li><a href="../index.php-act=search&op=index&cate_id=1143&area_id=19.htm" tppabs="http://www.sdcii.com:82/activity" target="_self" class="nav-li ">活动专区</a></li>
+			    				<li><a href="index.htm" tppabs="http://www.sdcii.com:82/news/" target="_self" class="nav-li active">新闻资讯</a></li>
+			    				<li><a href="javascript:if(confirm('http://www.sdcii.com:82/user/index.php?act=search&op=index&cate_id=1143&area_id=28  \n\n该文件无法用 Teleport Ultra 下载, 因为 服务器报告该文件未找到。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/user/index.php?act=search&op=index&cate_id=1143&area_id=28'" tppabs="http://www.sdcii.com:82/user/login.php" target="_self" class="nav-li ">简历中心</a></li>
+			    			</ul>
+			<div class="nav-right f-right">
+								<span class="login-reg"><a href="../psapp/member/logon.do.htm" tppabs="http://www.sdcii.com/psapp/member/logon.do" class="underline">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="../psapp/member/logon.do.htm" tppabs="http://www.sdcii.com/psapp/member/logon.do" class="underline">注册</a></span>
+							</div>
+		</div>
+	</div>
+	
+</div>
+<!-- 头部结束 -->
+<script src="../templates/default/js/index.php-act=search&op=index&cate_id=1143&area_id=20" tppabs="http://www.sdcii.com:82/templates/default/js/jquery.header.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		header();
+	});
+</script><!-- 当前位置 -->
+<div class="page_location link_bk">
+	当前位置：<a href="../index-2.htm" tppabs="http://www.sdcii.com:82/">首页</a>&nbsp;>&nbsp;<a href="index.htm" tppabs="http://www.sdcii.com:82/news/">新闻资讯</a>
+</div>
+	<!-- 主体内容 -->
+	<div class="container link_bk">
+		
+		<!-- 左边内容 -->
+		<div class="left_area">
+			<div class="index_info">
+																<div class="index_img"><a target="_blank" href="index.php-act=search&op=index&cate_id=1144&area_id=23.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=28"><img src="../data/images/2016/03/18/index.php-act=search&op=index&cate_id=1273&area_id=25" tppabs="http://www.sdcii.com:82/data/images/2016/03/18/1458291945241.jpg" alt="年终奖拖累你跳槽了吗?" width="320" height="180"/></a></div>
+												<div class="index_txt">
+																				<div class="tit_txt">
+						<h3><a target="_blank" href="index.php-act=search&op=index&cate_id=1144&area_id=23.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=28">年终奖拖累你跳槽了吗?</a></h3>
+						<p>
+	临近年底，职场又将迎来新的骚动期，而此时伺机跳槽的职场人都避免不了一个困惑，就是年终奖金拿不拿了？因为有些企业为了防止员工在年底时跳槽，会...<a href="index.php-act=search&op=index&cate_id=1144&area_id=23.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=28" target="_blank">[查看全文]</a></p>
+					</div>
+															<ul>
+																<li><a href="index.php-act=search&op=index&cate_id=1273&area_id=11.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=27"  target="_blank">想转行 你准备好了吗?</a></li>
+											<li><a href="javascript:if(confirm('http://www.sdcii.com:82/news/index.php?act=search&op=index&cate_id=1273&area_id=0  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/news/index.php?act=search&op=index&cate_id=1273&area_id=0'" tppabs="http://www.sdcii.com:82/news/news-show.php?id=25"  target="_blank">职业规划师的互联网跳槽观</a></li>
+											<li><a href="javascript:if(confirm('http://www.sdcii.com:82/news/index.php?act=search&op=get_booth_goods&cate_id=1273  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/news/index.php?act=search&op=get_booth_goods&cate_id=1273'" tppabs="http://www.sdcii.com:82/news/news-show.php?id=24"  target="_blank">细节决定你的网申成败</a></li>
+											<li><a href="javascript:if(confirm('http://www.sdcii.com:82/news/index.php?act=search&op=index&cate_id=1279&order=0&key=0  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/news/index.php?act=search&op=index&cate_id=1279&order=0&key=0'" tppabs="http://www.sdcii.com:82/news/news-show.php?id=23"  target="_blank">毕业生网申求职误区</a></li>
+											<div class="clear"></div>
+					</ul>
+				</div>
+				<dic class="clear"></dic>
+			</div>
+		</div>
+		<!-- 右边内容 -->
+		<div class="right_area">
+			<div class="right_search">
+				<input type="text" class="input_text_180" name="key" id="key"/>
+				<input type="button" value="搜索" class="but70lan search_news" />
+			</div>
+			<div class="clear"></div>
+			<div class="right_box">
+				<div class="title_box">
+					<h5>热点推荐</h5>
+				</div>
+				<div class="list" style="height:100px;">
+					<ol class="hot">
+																		<li class="hot0"><a href="javascript:if(confirm('http://www.sdcii.com:82/news/index.php?act=search&op=index&cate_id=1279&key=1&order=2  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/news/index.php?act=search&op=index&cate_id=1279&key=1&order=2'" tppabs="http://www.sdcii.com:82/news/news-show.php?id=26" target="_blank">从会计到室内设计师的寻梦蜕变</a></li>
+												<li class="hot1"><a href="javascript:if(confirm('http://www.sdcii.com:82/news/index.php?act=search&op=index&cate_id=1279&key=2&order=2  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/news/index.php?act=search&op=index&cate_id=1279&key=2&order=2'" tppabs="http://www.sdcii.com:82/news/news-show.php?id=22" target="_blank">知己知彼轻松通过网申关</a></li>
+												<li class="hot2"><a href="index.php-act=search&op=index&cate_id=1144&area_id=4.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=21" target="_blank">嫉妒送给我们的三份大礼</a></li>
+												<li class="hot3"><a href="index.php-act=search&op=index&cate_id=1144&area_id=27.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=20" target="_blank">求职中如何维护自己的合法权益</a></li>
+											</ol>
+				</div>
+			</div>
+
+
+		</div>
+		<div class="clear"></div>
+		<!--广告位 资讯首页中间横幅2-->
+						<div class="ad_1000"><a target="_blank" href=""><img src="../data/comads/2016/03/19/index.php-act=search&op=index&cate_id=1279&key=3&order=2" tppabs="http://www.sdcii.com:82/data/comads/2016/03/19/1458368424163.gif" alt="" width="1200" height="67" /></a></div>
+				<!--广告位结束 -->
+		<div class="information_bbox">
+									<div class="information_box">
+				<div class="job_box l">
+					<div class="box_tit">
+						<h4>职业指导 </h4><a target="_blank" href="index.php-act=search&op=index&cate_id=1144&area_id=19.htm" tppabs="http://www.sdcii.com:82/news/news-list.php?id=2">更多>></a>
+					</div>
+					<div class="box_content">
+						<div class="info_box">
+							<div class="img_box">
+																																<a href="javascript:void(0);"><img width="90" height="90" border="0" src="../templates/default/images/index/index.php-act=search&op=index&cate_id=1279&area_id=1" tppabs="http://www.sdcii.com:82/templates/default/images/index/no_pic.jpg" alt="" /></a>
+																							</div>
+							<div class="info_content">
+																								<a target="_blank" href="index.php-act=search&op=index&cate_id=1143&area_id=26.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=76"><h5>使高校成为坚持党领导的坚强阵地 习近平重要...</h5></a>
+								<p>
+
+	全国高校思想政治工作会议12月7日至8日在北京召开。中共中央总书记、国家...<a target="_blank" href="index.php-act=search&op=index&cate_id=1143&area_id=26.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=76">阅读全文>></a></p>
+															</div>
+							<div class="clear"></div>
+							<div class="info_list">
+								<ul>
+																											<li><a target="_blank" href="index.php-act=search&op=index&cate_id=1143&area_id=25.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=73">文化青岛建设创新发展行动纲要发布</a></li>
+																		<li><a target="_blank" href="index.php-act=search&op=index&cate_id=1144&key=1&order=2.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=64">艺术生毕业该何去何从，听听学姐学兄的故事</a></li>
+																		<li><a target="_blank" href="index.php-act=search&op=index&cate_id=1144&key=2&order=2.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=63">“双创”人才培养的供给侧改革</a></li>
+																		<li><a target="_blank" href="index.php-act=search&op=index&cate_id=1144&key=3&order=2.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=62">“一带一路”人才趋势：创新人才培养破解青...</a></li>
+																		<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/news/index.php?act=search&op=index&cate_id=1279&area_id=2  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/news/index.php?act=search&op=index&cate_id=1279&area_id=2'" tppabs="http://www.sdcii.com:82/news/news-show.php?id=60">艺术毕业生创业：专业是把双刃剑</a></li>
+																	</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+						<div class="information_box">
+				<div class="job_box l">
+					<div class="box_tit">
+						<h4>简历指南 </h4><a target="_blank" href="index.php-act=search&op=index&cate_id=1144&area_id=20.htm" tppabs="http://www.sdcii.com:82/news/news-list.php?id=3">更多>></a>
+					</div>
+					<div class="box_content">
+						<div class="info_box">
+							<div class="img_box">
+																																<a href="javascript:void(0);"><img width="90" height="90" border="0" src="../templates/default/images/index/index.php-act=search&op=index&cate_id=1279&area_id=1" tppabs="http://www.sdcii.com:82/templates/default/images/index/no_pic.jpg" alt="" /></a>
+																							</div>
+							<div class="info_content">
+																								<a target="_blank" href="index.php-act=search&op=index&cate_id=1144&area_id=21.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=11"><h5>玩转职场 健康style刷新简历 赢智能神器</h5></a>
+								<p>
+	活动时间：2014年7月23日-8月23日
+参与方法：点击活动页的“刷新简历”按...<a target="_blank" href="index.php-act=search&op=index&cate_id=1144&area_id=21.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=11">阅读全文>></a></p>
+															</div>
+							<div class="clear"></div>
+							<div class="info_list">
+								<ul>
+																											<li><a target="_blank" href="index.php-act=search&op=index&cate_id=1144&area_id=3.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=10">八年苦读，我为什么没当医生</a></li>
+																		<li><a target="_blank" href="index.php-act=search&op=index&cate_id=1144&area_id=16.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=9">形象决定你的收入！这是个看脸的世界</a></li>
+																		<li><a target="_blank" href="index.php-act=search&op=index&cate_id=1144&area_id=8.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=8">情商比智商更重要？揭穿职场最大谎言</a></li>
+																		<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/news/index.php?act=search&op=index&cate_id=1279&area_id=9  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/news/index.php?act=search&op=index&cate_id=1279&area_id=9'" tppabs="http://www.sdcii.com:82/news/news-show.php?id=7">职场年度最励志文章：纽约华人女教师的23条...</a></li>
+																		<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/news/index.php?act=search&op=index&cate_id=1279&area_id=35  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/news/index.php?act=search&op=index&cate_id=1279&area_id=35'" tppabs="http://www.sdcii.com:82/news/news-show.php?id=6">这些公司都是坑，千万不能去！</a></li>
+																	</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+						<div class="information_box">
+				<div class="job_box r">
+					<div class="box_tit">
+						<h4>面试宝典 </h4><a target="_blank" href="index.php-act=search&op=index&cate_id=1144&area_id=17.htm" tppabs="http://www.sdcii.com:82/news/news-list.php?id=4">更多>></a>
+					</div>
+					<div class="box_content">
+						<div class="info_box">
+							<div class="img_box">
+																																<a href="javascript:void(0);"><img width="90" height="90" border="0" src="../templates/default/images/index/index.php-act=search&op=index&cate_id=1279&area_id=1" tppabs="http://www.sdcii.com:82/templates/default/images/index/no_pic.jpg" alt="" /></a>
+																							</div>
+							<div class="info_content">
+																								<a target="_blank" href="index.php-act=search&op=index&cate_id=1144&area_id=10.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=18"><h5>你需要问HR什么问题</h5></a>
+								<p>
+	“你有什么问题要问我吗？”
+
+
+	当听到这个问题，一般就意味着一场面试...<a target="_blank" href="index.php-act=search&op=index&cate_id=1144&area_id=10.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=18">阅读全文>></a></p>
+															</div>
+							<div class="clear"></div>
+							<div class="info_list">
+								<ul>
+																											<li><a target="_blank" href="index.php-act=search&op=index&cate_id=1144&area_id=14.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=17">扩散：面试时8个细节帮你加分！</a></li>
+																		<li><a target="_blank" href="index.php-act=search&op=index&cate_id=1144&area_id=7.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=16">面试6要素必知！</a></li>
+																		<li><a target="_blank" href="index.php-act=search&op=index&cate_id=1144&area_id=6.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=15">求职者：把套话抛在脑后吧</a></li>
+																		<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/news/index.php?act=search&op=index&cate_id=1279&area_id=12  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/news/index.php?act=search&op=index&cate_id=1279&area_id=12'" tppabs="http://www.sdcii.com:82/news/news-show.php?id=14">面霸是这样炼成的</a></li>
+																		<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/news/index.php?act=search&op=index&cate_id=1279&area_id=34  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/news/index.php?act=search&op=index&cate_id=1279&area_id=34'" tppabs="http://www.sdcii.com:82/news/news-show.php?id=13">把100个面试问题变成5个</a></li>
+																	</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+						<div class="clear"></div>
+		</div>
+		<!--广告位 资讯首页中间横幅-->
+						<div class="ad_1000 m"><a target="_blank" href=""><img src="../data/comads/2016/03/17/index.php-act=search&op=index&cate_id=1279&area_id=22" tppabs="http://www.sdcii.com:82/data/comads/2016/03/17/1458217411272.gif" alt="" width="1200" height="67" /></a></div>
+				<!--广告位结束 -->
+		
+		<div class="information_bbox">
+									<div class="information_box">
+				<div class="job_box l">
+					<div class="box_tit">
+						<h4>职场八卦 </h4><a target="_blank" href="index.php-act=search&op=index&cate_id=1144&area_id=5.htm" tppabs="http://www.sdcii.com:82/news/news-list.php?id=5">更多>></a>
+					</div>
+					<div class="box_content" >
+						<div class="info_box">
+							<div class="img_box">
+																																<a href="javascript:void(0);"><img width="90" height="90" border="0" src="../templates/default/images/index/index.php-act=search&op=index&cate_id=1279&area_id=1" tppabs="http://www.sdcii.com:82/templates/default/images/index/no_pic.jpg" alt="" /></a>
+																							</div>
+							<div class="info_content">
+																								<a target="_blank" href="index.php-act=search&op=index&cate_id=1144&area_id=29.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=56"><h5>你必须知道的8个职场减负法则</h5></a>
+								<p>
+	周一清晨，阳光灿烂，可你却是心事重重的模样，这是新上司走马上任的第一周...<a target="_blank" href="index.php-act=search&op=index&cate_id=1144&area_id=29.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=56">阅读全文>></a></p>
+															</div>
+							<div class="clear"></div>
+							<div class="info_list">
+								<ul>
+																											<li><a target="_blank" href="index.php-act=search&op=index&cate_id=1144&area_id=15.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=53">单位里的8个禁忌，你犯过吗？</a></li>
+																		<li><a target="_blank" href="index.php-act=search&op=index&cate_id=1144&area_id=4.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=21">嫉妒送给我们的三份大礼</a></li>
+																		<li><a target="_blank" href="index.php-act=search&op=index&cate_id=1144&area_id=27.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=20">求职中如何维护自己的合法权益</a></li>
+																		<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/news/index.php?act=search&op=index&cate_id=1279&area_id=13  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/news/index.php?act=search&op=index&cate_id=1279&area_id=13'" tppabs="http://www.sdcii.com:82/news/news-show.php?id=19">施乐CEO给职场人的忠告</a></li>
+																	</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+						<div class="information_box">
+				<div class="job_box l">
+					<div class="box_tit">
+						<h4>劳动法苑 </h4><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/news/index.php?act=search&op=index&cate_id=1279&area_id=19  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/news/index.php?act=search&op=index&cate_id=1279&area_id=19'" tppabs="http://www.sdcii.com:82/news/news-list.php?id=6">更多>></a>
+					</div>
+					<div class="box_content" >
+						<div class="info_box">
+							<div class="img_box">
+																																<a href="javascript:void(0);"><img width="90" height="90" border="0" src="../templates/default/images/index/index.php-act=search&op=index&cate_id=1279&area_id=1" tppabs="http://www.sdcii.com:82/templates/default/images/index/no_pic.jpg" alt="" /></a>
+																							</div>
+							<div class="info_content">
+																								<a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/news/index.php?act=search&op=get_booth_goods&cate_id=1273  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/news/index.php?act=search&op=get_booth_goods&cate_id=1273'" tppabs="http://www.sdcii.com:82/news/news-show.php?id=24"><h5>细节决定你的网申成败</h5></a>
+								<p>
+	来源：智联问道 
+
+
+	原帖地址：http://wendao.zhaopin.com/asks/4f9500...<a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/news/index.php?act=search&op=get_booth_goods&cate_id=1273  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/news/index.php?act=search&op=get_booth_goods&cate_id=1273'" tppabs="http://www.sdcii.com:82/news/news-show.php?id=24">阅读全文>></a></p>
+															</div>
+							<div class="clear"></div>
+							<div class="info_list">
+								<ul>
+																											<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/news/index.php?act=search&op=index&cate_id=1279&order=0&key=0  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/news/index.php?act=search&op=index&cate_id=1279&order=0&key=0'" tppabs="http://www.sdcii.com:82/news/news-show.php?id=23">毕业生网申求职误区</a></li>
+																		<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/news/index.php?act=search&op=index&cate_id=1279&key=2&order=2  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/news/index.php?act=search&op=index&cate_id=1279&key=2&order=2'" tppabs="http://www.sdcii.com:82/news/news-show.php?id=22">知己知彼轻松通过网申关</a></li>
+																	</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+						<div class="information_box">
+				<div class="job_box r">
+					<div class="box_tit">
+						<h4>职场观察 </h4><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/news/index.php?act=search&op=index&cate_id=1279&area_id=28  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/news/index.php?act=search&op=index&cate_id=1279&area_id=28'" tppabs="http://www.sdcii.com:82/news/news-list.php?id=7">更多>></a>
+					</div>
+					<div class="box_content" >
+						<div class="info_box">
+							<div class="img_box">
+																																<a href="javascript:void(0);"><img width="90" height="90" border="0" src="../templates/default/images/index/index.php-act=search&op=index&cate_id=1279&area_id=1" tppabs="http://www.sdcii.com:82/templates/default/images/index/no_pic.jpg" alt="" /></a>
+																							</div>
+							<div class="info_content">
+																								<a target="_blank" href="index.php-act=search&op=index&cate_id=1143&area_id=32.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=77"><h5>第四批齐鲁文化英才评选揭晓 30名专业人才入...</h5></a>
+								<p>
+
+	山东省第四批齐鲁文化英才评选日前揭晓，共有理论、新闻、出版、文艺、文...<a target="_blank" href="index.php-act=search&op=index&cate_id=1143&area_id=32.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=77">阅读全文>></a></p>
+															</div>
+							<div class="clear"></div>
+							<div class="info_list">
+								<ul>
+																											<li><a target="_blank" href="index.php-act=search&op=index&cate_id=1143&area_id=31.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=75">青岛“人才特区”集聚创新型人才获全国基层...</a></li>
+																		<li><a target="_blank" href="index.php-act=search&op=index&cate_id=1143&area_id=33.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=74">文化部培训全国文化法治人才</a></li>
+																		<li><a target="_blank" href="index.php-act=search&op=index&cate_id=1143&area_id=11.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=72">青岛19家大型国企定向招聘 贫困人群占比40%</a></li>
+																		<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/news/index.php?act=search&op=index&cate_id=1279&area_id=20  \n\n该文件无法用 Teleport Ultra 下载, 因为 不可用, 或放弃了下载, 或项目即将停止。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/news/index.php?act=search&op=index&cate_id=1279&area_id=20'" tppabs="http://www.sdcii.com:82/news/news-show.php?id=54">探询职场成功的那些决定性因素</a></li>
+																		<li><a target="_blank" href="index.php-act=search&op=index&cate_id=1144&area_id=23.htm" tppabs="http://www.sdcii.com:82/news/news-show.php?id=28">年终奖拖累你跳槽了吗?</a></li>
+																	</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+						<div class="clear"></div>
+		</div>
+		
+		<div class="f_link">
+		<div class="job_box">
+				<div class="box_tit">
+					<div class="tits" style="float:left">友情链接</div> <div class="more link_bk"><a href="javascript:if(confirm('http://www.sdcii.com:82/link/index.php?act=search&op=index&cate_id=1144&area_id=26  \n\n该文件无法用 Teleport Ultra 下载, 因为 服务器报告该文件未找到。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/link/index.php?act=search&op=index&cate_id=1144&area_id=26'" tppabs="http://www.sdcii.com:82/link/add_link.php" target="_blank">申请>></a></div>
+					<div class="clear"></div>
+				</div>
+				<div class="box_contents">
+										<div class="link_name link_bk" style="overflow:hidden;">
+																										</div>
+				</div>
+			</div>
+	</div>
+	</div>
+	
+	<!-- 主体内容 结束 -->
+	
+<div class="foot">
+	<div class="footer_box">
+		<div class="box link_bk">
+				<div class="list">
+					<h4>关于我们</h4>
+					<div class="foot_list">
+						<ul>
+																			<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/explain/index.php?act=search&op=index&cate_id=1144&area_id=31  \n\n该文件无法用 Teleport Ultra 下载, 因为 服务器报告该文件未找到。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/explain/index.php?act=search&op=index&cate_id=1144&area_id=31'" tppabs="http://www.sdcii.com:82/explain/explain-show.php?id=1">联系我们</a></li>
+													<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/explain/index.php?act=search&op=index&cate_id=1144&area_id=33  \n\n该文件无法用 Teleport Ultra 下载, 因为 服务器报告该文件未找到。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/explain/index.php?act=search&op=index&cate_id=1144&area_id=33'" tppabs="http://www.sdcii.com:82/explain/explain-show.php?id=2">网站简介</a></li>
+													<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/explain/index.php?act=search&op=index&cate_id=1144&area_id=25  \n\n该文件无法用 Teleport Ultra 下载, 因为 服务器报告该文件未找到。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/explain/index.php?act=search&op=index&cate_id=1144&area_id=25'" tppabs="http://www.sdcii.com:82/explain/explain-show.php?id=4">合作共赢</a></li>
+													<li><a target="_blank" href="../index.php-act=search&op=index&cate_id=1144&area_id=11.htm" tppabs="http://www.sdcii.com:82/suggest">意见反馈</a></li>
+						</ul>
+						<ul>
+																						<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/explain/index.php?act=search&op=index&cate_id=1144&area_id=0  \n\n该文件无法用 Teleport Ultra 下载, 因为 服务器报告该文件未找到。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/explain/index.php?act=search&op=index&cate_id=1144&area_id=0'" tppabs="http://www.sdcii.com:82/explain/explain-show.php?id=5">网站声明</a></li>
+													</ul>
+					</div>
+				</div>
+				<div class="list">
+					<h4>帮助中心</h4>
+					<div class="foot_list">
+						<ul>
+							<li><a target="_blank" href="../help/index.php-act=search&op=get_booth_goods&cate_id=1144.htm" tppabs="http://www.sdcii.com:82/help/help-list.php?id=4">注册与登录</a></li>
+							<li><a target="_blank" href="../help/index.php-act=search&op=index&cate_id=1145&order=0&key=0.htm" tppabs="http://www.sdcii.com:82/help/help-list.php?id=5">密码找回</a></li>
+							<li><a target="_blank" href="../help/index.php-act=search&op=index&cate_id=1145&key=1&order=2.htm" tppabs="http://www.sdcii.com:82/help/help-list.php?id=8">认证管理</a></li>
+							<li><a target="_blank" href="../help/index.php-act=search&op=index&cate_id=1144&area_id=2.htm" tppabs="http://www.sdcii.com:82/help/help-list.php?id=10">招聘管理 </a></li>
+						</ul>
+						<ul>
+							<li><a target="_blank" href="../help/index.php-act=search&op=index&cate_id=1145&key=2&order=2.htm" tppabs="http://www.sdcii.com:82/help/help-list.php?id=17">求职管理</a></li>
+							<li><a target="_blank" href="../help/index.php-act=search&op=index&cate_id=1145&key=3&order=2.htm" tppabs="http://www.sdcii.com:82/help/help-list.php?id=13">充值消费 </a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list">
+					<h4>个人求职</h4>
+					<div class="foot_list">
+						<ul>
+							<li><a target="_blank" href="../jobs/index.php-act=search&op=index&cate_id=1144&area_id=9.htm" tppabs="http://www.sdcii.com:82/jobs/jobs-list.php">职位搜索</a></li>
+							<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/explain/index.php?act=search&op=index&cate_id=1145&area_id=1  \n\n该文件无法用 Teleport Ultra 下载, 因为 服务器报告该文件未找到。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/explain/index.php?act=search&op=index&cate_id=1145&area_id=1'" tppabs="http://www.sdcii.com:82/explain/explain-show.php?id=6">职场指南</a></li>
+							<li><a target="_blank" href="../jobs/index.php-act=search&op=index&cate_id=1145&area_id=2.htm" tppabs="http://www.sdcii.com:82/jobs/jobs-list.php?nature=63">兼职招聘</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list">
+					<h4>企业服务</h4>
+					<div class="foot_list">
+						<ul>
+							<li><a target="_blank" href="javascript:if(confirm('http://www.sdcii.com:82/user/company/index.php?act=search&op=index&cate_id=1145&area_id=9  \n\n该文件无法用 Teleport Ultra 下载, 因为 服务器报告该文件未找到。  \n\n你想在服务器上打开它?'))window.location='http://www.sdcii.com:82/user/company/index.php?act=search&op=index&cate_id=1145&area_id=9'" tppabs="http://www.sdcii.com:82/user/company/company_jobs.php?act=addjobs">发布职位</a></li>
+							<li><a target="_blank" href="../resume/index.php-act=search&op=index&cate_id=1145&area_id=35.htm" tppabs="http://www.sdcii.com:82/resume/resume-list.php">简历搜索</a></li>
+						</ul>
+						<ul>
+							<li><a target="_blank" href="../psapp/member/logon.do.htm" tppabs="http://www.sdcii.com/psapp/member/logon.do">企业注册</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clear"></div>
+				
+				
+		        <div class="weixin">
+		        	<div class="comment">
+		        		<p>服务热线</p>
+		        		<p class="phone_number">000-00000000</p>
+		        	</div>
+			</div>
+		</div>
+	</div>
+		
+  
+  <div class="copyright"> 网站备案：鲁ICP备15025590号-1<br />
+Copyright @ 2016 sdcii.com All Right Reserved <br />山东省文化人才版权所有</em></a><br />
+</div>
+</div>
+<!-- 回到顶部组件 -->
+<div class="back_to_top" id="back_to_top">
+	<div class="back" style="display:none;">
+		<div>回到顶部</div>
+	</div>
+	<div class="steer">
+		<div onclick="javascript:location.href='../index.php-act=search&op=index&cate_id=1144&area_id=11.htm'/*tpa=http://www.sdcii.com:82/suggest*/">我要建议</div>
+	</div>
+</div>
+<script>
+	$(function(){
+		//回到顶部组件出现设置
+		$(window).scroll(function(){
+			if($(window).scrollTop()>200){
+				$(".back").fadeIn(400);
+			}else{
+				$(".back").fadeOut(400);
+			}
+		})
+
+		//回到顶部hover效果
+		$("index.php-act=search&op=index&cate_id=1145&area_id=12.htm"/*tpa=http://www.sdcii.com:82/news/index.php?act=search&op=index&cate_id=1145&area_id=12*/).hover(function(){
+			$(this).find("div").css("display","block");
+		},function(){
+			$(this).find("div").css("display","none");
+		})
+
+		//设置滚回顶部方法
+		$(".back").click(function(){
+			$("body,html").animate({scrollTop:0}, 500);
+			return false;
+		})
+	});
+	$(function(){
+		$(".foot_list ul:odd li").css("width", 62);
+		$(".weixin_img:last").css("margin-right", 0);
+	})
+</script>
+</body>
+</html>

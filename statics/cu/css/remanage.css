@@ -1,0 +1,47 @@
+.content { width: 100%; min-width: 1190px; margin: 25px auto 0; }
+.manindexcon{ width: 1200px;}
+.topleft {width:585px;height: 135px;float: left;}
+.topright {width: 585px;height: 135px;float: left;}
+.main { text-align: left; margin-top: 20px; }
+.mainleft {width: 585px;height: 327px;float: left; overflow: hidden;}
+.mainright {width: 585px;height: 327px;background-color: #eceded;float: left;}
+.mainn2 {padding-top: 20px; text-align: left;}
+.mainnleft1 {width: 260px;height: 312px;float: left;}
+.rightnews {height: 237px;width: 505px;padding-top: 40px;padding-right: 35px;padding-bottom: 35px;padding-left: 35px;}
+.rightnews h1 {font-family: "Microsoft YaHei";font-size: 16px;font-weight: bold;color: #666;line-height: 28px;}
+.rightnews p {font-family: "Microsoft YaHei";font-size: 16px;padding-top: 20px;color: rgba(99,99,99,0.75);line-height: 25px;}
+.rightnews span {font-family: "Microsoft YaHei";font-size: 15px;color: rgba(99,99,99,0.75);margin-left: 285px;}
+.main1 {height: 152px;margin-top: 20px;margin-bottom: 20px;text-align: left;}
+.mainleft1 {width: 583px;height: 400px;float: left;border: #cdcbcb 1px solid;}
+.leftnews {width: 583px;height: 275px;float: left;}
+.leftnews1 {float: left;width: 500px;height: 120px;padding-right: 40px;padding-left: 40px;padding-top: 10px;padding-bottom: 15px;}
+.leftnews1 h1 {font-family: "Microsoft YaHei";font-size: 16px;font-weight: bold;color: #fff;}
+.main1 .mainleft1 .leftnews1 p {padding-top: 10px;padding-bottom: 10px;}
+.main1 .mainleft1 .leftnews1 span {font-family: "Microsoft YaHei";font-size: 14px;color: #fff;}
+.cc {padding-top: 10px;}
+.cc a {font-family: "Microsoft YaHei";font-size: 14px;font-weight: bold;color: #fff;}
+.main .mainright .rightnews a {font-family: "Microsoft YaHei";font-size: 15px;color: rgba(150,38,38,0.75);}
+.mainzj1 {width: 10px;height: 152px;background-color: #fff;float: left;}
+.mainright1 {width: 583px;height: 400px;float: left;border: #cdcbcb 1px solid;}
+.main1 .mainright1 .leftnews1 p {padding-top: 10px;padding-bottom: 10px;}
+.main1 .mainright1 .leftnews1 span {font-family: "Microsoft YaHei";font-size: 14px;color: #fff;}
+.main2 .mainleft2 .leftnews1 p {padding-top: 10px;padding-bottom: 10px;}
+.main2 .mainleft2 .leftnews1 span {font-family: "Microsoft YaHei";font-size: 14px;color: #fff;}
+.main2 .mainright2 .leftnews1 p {padding-top: 10px;padding-bottom: 10px;}
+.main2 .mainright2 .leftnews1 span {font-family: "Microsoft YaHei";font-size: 14px;color: #fff;}
+.main2 {height: 400px;margin-top: 20px;margin-bottom: 20px; text-align: left;}
+.mainleft2 {width: 583px;height: 400px;float: left;border: #cdcbcb 1px solid;}
+.mainzj2 {width: 10px;height: 152px;background-color: #fff;float: left;}
+.mainright2 {width: 583px;height: 400px;float: left;border: #cdcbcb 1px solid;}
+div#header {margin : -1px 0 0;}
+div#video-header {height : 683px;margin : -1px 0 0;}
+div#header div.wrap {height : 299px;background-position: 50% 0;background-repeat: no-repeat;}
+div#header div#slide-holder {z-index : 40;width : 645px;height : 327px;position : absolute;}
+div#header div#slide-holder div#slide-runner {width : 585px;height : 327px;overflow : hidden;position : absolute;}
+div#header div#slide-holder img {margin : 0;display : none;position : absolute;}
+div#header div#slide-holder div#slide-controls {left : 0;bottom : 0px;width : 585px;height : 46px;display : none;position : absolute;background : url(../images/public-service/slide-bg.png) 0 0;}
+div#header div#slide-holder div#slide-controls p.text {float : left;color : #fff;display : inline;font-size : 20px;line-height : 16px;margin : 15px 0 0 20px;text-transform : uppercase;}
+div#header div#slide-holder div#slide-controls p#slide-nav {float : right; height : 24px;display : inline;margin : 11px 15px 0 0;}
+div#header div#slide-holder div#slide-controls p#slide-nav a {float : left;width : 24px;height : 24px;display : inline;font-size : 14px;margin : 0 5px 0 0;line-height : 24px;font-weight : bold;text-align : center;text-decoration : none;background-position : 0 0;background-repeat : no-repeat;}
+div#header div#slide-holder div#slide-controls p#slide-nav a.on {background-position : 0 -24px;}
+div#header div#slide-holder div#slide-controls p#slide-nav a {background-image : url(../images/public-service/silde-nav.png);}

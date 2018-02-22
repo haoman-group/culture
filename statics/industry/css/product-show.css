@@ -1,0 +1,79 @@
+#logo{border-bottom: 1px solid #bbbec4;margin-bottom: 25px;padding-bottom: 10px;}
+#logo ul li.on a{padding-bottom: 25px;border-bottom: 2px solid #bb1616;}
+.content-box{border-collapse: collapse;}
+.content-box tr,.content-box td{vertical-align: top;}
+.content-box .side-lefts{width: 200px;height: auto;position: relative;}
+.content-box .side-lefts dl{background: transparent;margin-top: 17px;padding-bottom: 15px;border: 1px solid #eee;}
+.content-box .side-lefts dl:last-child{padding-bottom: 18px;}
+.content-box .side-lefts dl:last-child p{line-height: normal;padding-bottom: 12px;}
+.content-box .side-lefts dl:first-child{margin-top: 0;}
+.content-box .side-lefts dt{background: transparent;font-size: 18px;color: #4480df;text-align: center;border-bottom: 1px solid #4480df;line-height: 44px;margin-bottom: 6px;}
+.content-box .side-lefts dd{line-height: 28px;text-align: center;font-size: 14px;}
+.content-box .side-lefts dd .hidden{position: absolute;top: 45px;left: 190px;z-index: 9999;}
+.content-box .side-lefts dd:hover{background: #4480df;color: #fff;}
+.content-box .side-lefts dd:hover a{color: #fff;}
+.content-box .side-lefts dd a{line-height: 28px;font-size: 14px;color: #242424;}
+.content-box .content{width: 670px;height: auto;padding: 0 20px;box-sizing: border-box;}
+.content-box .content form{height: 45px;border: 1px solid #ccc;line-height: 45px;border-radius: 3px;background: #f8f8f8;}
+.content-box .content form input[type="text"]{width: 76%;height: 100%;text-indent: 5px;vertical-align: top;background: #f8f8f8;}
+.content-box .content form a{font-size: 16px;color: #1d1d1d;}
+.content-box .content form input[type="submit"]{width: 30px;height: 30px;text-indent: -9999px;background: url(../images/search.png) no-repeat center;margin-left: 10px;cursor: pointer;}
+.content-box .content .banner{margin: 8px 0;}
+.content-box .content .banner img{width: 670px;}
+.content-box .content dl{float: left;margin-left: 14px;margin-top: 20px;}
+.content-box .content dl:nth-of-type(2n+1){margin-left: 0;}
+.content-box .content dl:nth-of-type(1),.content-box .content dl:nth-of-type(2){margin-top: 3px;}
+/*.content-box .content dt{width: 165px;height: 57px;background: #4480df;color: #fff;text-align: center;line-height: 57px;font-size: 16px;}*/
+.content-box .content dt{width: 328px;height: 134px;background: #4480df;color: #fff;text-align: center;line-height: 57px;font-size: 16px;}
+.content-box .content dt a{display: block;}
+.content-box .content dd{width: 165px;height: 85px;margin-top: 8px;}
+.content-box .content dd img{width: 100%;height: 100%;}
+.content-box .content dd:nth-of-type(1){margin-top: 2px;}
+.content-box .content li{float: left;margin: 16px 0 0 12px;}
+.content-box .content li:nth-of-type(1){margin-left: 0;}
+.content-box .side-rights{width: 290px;height: auto;}
+.content-box .side-rights h5{width: 100%;height: 46px;background: #548ee9;text-align: center;line-height: 46px;color: #fff;font-size: 20px;}
+.content-box .side-rights dl{border: 1px solid #ccc;padding-bottom: 12px;}
+.content-box .side-rights dt{height: 46px;background: #e3ebf2;text-align: left;line-height: 46px;color: #575757;font-size: 16px;margin-top: 9px;padding-left: 12px;}
+.content-box .side-rights dt span{border-left: 3px solid #275aba;padding-left: 15px;}
+.content-box .side-rights dd{height: 80px;margin: 11px 9px 0 13px;}
+.content-box .side-rights dd a{float: left;width: 80px;height: 80px;background: red;margin-right: 12px;}
+.content-box .side-rights dd p{font-size: 14px;color: #575757;}
+.content-box .side-rights dd p.star{margin-top: 18px;}
+.content-box .side-rights dd p.star span{font-size: 14px;color: #575757;}
+.content-box .side-rights dd p.star i{font-size: 14px;color: #575757;font-style: normal;float: right;}
+.content-box .area{padding-left: 10px;}
+.content-box .area div{border: 1px solid #ccc;margin-top: 10px;}
+.content-box .area .area-box{background: #e3ebf2;height: 44px;line-height: 44px;padding-left: 12px;}
+.content-box .area li{float: left;line-height: 44px;font-size: 16px;}
+.content-box .area .area-box li:first-child a{border-left: 3px solid #275aba;}
+.content-box .area .area-box a{font-size: 16px;color: #575757;padding: 0 8px;}
+.content-box .area .area-img{padding: 17px 20px;}
+.content-box .area .area-img li{margin-left: 8px;}
+.content-box .area .area-img li:first-child{margin-left: 0;}
+.content-box .area .area-img a{display: block;width: 230px;height: 145px;}
+.content-box .area .area-img h5{line-height: 28px;font-size: 16px;color: #575757;font-weight: normal;text-align: center;margin-top: 14px;}
+.culture{border: 1px solid #ccc;padding: 26px 20px;margin-top: 20px;box-sizing: border-box;}
+.culture li{float: left;}
+.culture .title{border-bottom: 1px solid #2058c2;padding-bottom: 14px;padding-left: 5px;}
+.culture .title li{font-size: 18px;color: #4d4d4d;}
+.culture .title a{font-size: 18px;color: #4d4d4d;padding: 0 5px;}
+.culture .culture-list{margin-top: 20px;}
+.culture .culture-list li{width: 222px;height: 232px;border: 1px solid #ccc;margin-left: 9px;padding: 8px;box-sizing: border-box;}
+.culture .culture-list li:first-child{margin-left: 1px;}
+.culture .culture-list a{display: block;width: 207px;height: 169px;}
+.culture .culture-list h5{line-height: 28px;font-size: 16px;color: #131926;font-weight: normal;text-align: center;margin-top: 14px;}
+.maoli{border: 1px solid #ccc;padding: 12px 20px;margin: 20px auto 38px;box-sizing: border-box;}
+.maoli h5{border-bottom: 1px solid #2058c2;padding-bottom: 14px;padding-left: 5px;font-size: 18px;color: #4d4d4d;font-weight: normal;}
+.maoli div{width: 1148px;margin: 14px auto 0;}
+
+
+.travel{background: #f7f7f7;padding: 25px;}
+.travel dl{margin-top: 34px;}
+.travel dl:first-child{margin-top: 0;}
+.travel dl dt{width: 471px;height: 471px;padding: 10px;background: #fff;border: 1px solid #ccc;float: left;box-sizing: border-box;}
+.travel dl dt h5{font-size: 22px;color: #222;font-weight: normal;text-align: center;margin-top: 10px;}
+.travel dl dd{float: right;width: 672px;}
+.travel dl dd li{float: left;width: 212px;height: 227px;background: #fff;border: 1px solid #ccc;padding: 10px;box-sizing: border-box;margin: 0 0 0 10px;}
+.travel dl dd li:nth-last-of-type(1),.travel dl dd li:nth-last-of-type(2),.travel dl dd li:nth-last-of-type(3){margin-top: 17px;}
+.travel dl dd li h5{font-size: 12px;color: #242424;margin-top: 5px;font-weight: normal;text-align: center;}

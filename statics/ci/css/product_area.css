@@ -1,0 +1,6 @@
+.area-map .map .area_right{display: inline-block;vertical-align: top;border: none;margin-left: 37px}
+/*.area-map .map .area_right img{border: none}*/
+.area-map .map .area_right .area_scroll{width: 21px;height: 320px;position: relative;background: url("../images/right_g.jpg") no-repeat;}
+.area-map .map .area_right .area_scroll_del{width: 21px;height: 21px;background: url("../images/right_del.jpg") no-repeat;margin-top: 20px}
+.area-map .map .area_right .area_scroll_add{width: 21px;height: 21px;background: url("../images/right_add.jpg") no-repeat;margin-top: 8px}
+.area-map .map .area_right .area_scroll_btn{width: 22px;height: 6px;background: url("../images/right_a.jpg") no-repeat;position: absolute;bottom:160px;left: -1px}

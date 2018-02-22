@@ -1,0 +1,19 @@
+	* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -40px;
+	overflow: hidden;
+}
+.footer, .push {
+	height: 40px; 
+}
+.footer{
+	margin-top: 0px;
+}

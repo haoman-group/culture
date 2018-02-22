@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>系统信息</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+
+<link href="templates/default/css/base.css" tppabs="http://www.sdcii.com:81/shop/templates/default/css/base.css" rel="stylesheet" type="text/css">
+<link href="templates/default/css/home_header.css" tppabs="http://www.sdcii.com:81/shop/templates/default/css/home_header.css" rel="stylesheet" type="text/css">
+<link href="resource/font/font-awesome/css/font-awesome.min.css" tppabs="http://www.sdcii.com:81/shop/resource/font/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+<!--[if IE 7]>
+  <link rel="stylesheet" href="resource/font/font-awesome/css/font-awesome-ie7.min.css" tppabs="http://www.sdcii.com:81/shop/resource/font/font-awesome/css/font-awesome-ie7.min.css">
+<![endif]-->
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="../data/resource/js/html5shiv.js" tppabs="http://www.sdcii.com:81/data/resource/js/html5shiv.js"></script>
+      <script src="../data/resource/js/respond.min.js" tppabs="http://www.sdcii.com:81/data/resource/js/respond.min.js"></script>
+<![endif]-->
+<style type="text/css">
+body, .header-wrap { background-color: #FAFAFA;}
+.wrapper { width: 1000px;}
+#faq { display: none;}
+.msg { font: 100 36px/48px arial,"microsoft yahei"; color: #555; background-color: #FFF; text-align: center; width: 100%; border: solid 1px #E6E6E6; margin-bottom: 10px; padding: 120px 0;}
+.msg i { font-size: 48px; vertical-align: middle; margin-right: 10px;}
+</style>
+<script>var COOKIE_PRE = '877F_';var _CHARSET = 'utf-8';var SITEURL = 'index.htm'/*tpa=http://www.sdcii.com:81/shop*/;var SHOP_RESOURCE_SITE_URL = 'http://www.sdcii.com:81/shop/resource/';var RESOURCE_SITE_URL = '../data/resource/index.htm'/*tpa=http://www.sdcii.com:81/data/resource*/;var SHOP_TEMPLATES_URL = 'templates/default/index.htm'/*tpa=http://www.sdcii.com:81/shop/templates/default*/;</script>
+<script type="text/javascript" src="../data/resource/js/jquery.js" tppabs="http://www.sdcii.com:81/data/resource/js/jquery.js"></script>
+<script type="text/javascript" src="../data/resource/js/common.js" tppabs="http://www.sdcii.com:81/data/resource/js/common.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#details").children('ul').children('li').click(function(){
+		$(this).parent().children('li').removeClass("current");
+		$(this).addClass("current");
+		$('#search_act').attr("value",$(this).attr("act"));
+	});
+	var search_act = $("#details").find("li[class='current']").attr("act");
+	$('#search_act').attr("value",search_act);
+	$("#keyword").blur();
+});
+</script>
+</head>
+<body>
+<div id="append_parent"></div>
+<div id="ajaxwaitid"></div>
+<div class="public-top-layout w">
+  <div class="topbar wrapper">
+    <div class="user-entry">
+            您好，欢迎来到 <a href="../index-1.htm" tppabs="http://www.sdcii.com/" title="首页" alt="首页">山东省文化产业信息服务平台</a> 
+      <span>[<a href="../psapp/member/logon.do.htm" tppabs="http://www.sdcii.com/psapp/member/logon.do">登录</a>]</span> 
+      <span>[<a href="../psapp/member/forInsertMember.do-memberType=1.htm" tppabs="http://www.sdcii.com/psapp/member/forInsertMember.do?memberType=1">个人注册</a>]</span>
+      <span>[<a href="../psapp/member/forInsertMember.do-memberType=2.htm" tppabs="http://www.sdcii.com/psapp/member/forInsertMember.do?memberType=2">企业注册</a>]</span>
+          </div>
+    <div class="quick-menu">
+	  <dl>
+        <dt><a href="index.php-act=show_joinin&op=index.htm" tppabs="http://www.sdcii.com:81/shop/index.php?act=show_joinin&op=index" title="免费开店">免费开店</a><i></i></dt>
+        <dd>
+          <ul>
+		    <li><a href="index.php-act=show_joinin&op=index.htm" tppabs="http://www.sdcii.com:81/shop/index.php?act=show_joinin&op=index" title="招商入驻">招商入驻</a></li>
+            <li><a href="index.php-act=seller_login&op=show_login.htm" tppabs="http://www.sdcii.com:81/shop/index.php?act=seller_login&op=show_login" target="_blank" title="登录商家管理中心">商家登录</a></li>
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt><a href="../psapp/member/logon.do.htm" tppabs="http://www.sdcii.com:81/shop/index.php?act=member_order">我的订单</a><i></i></dt>
+        <dd>
+          <ul>
+            <li><a href="../psapp/member/logon.do.htm" tppabs="http://www.sdcii.com:81/shop/index.php?act=member_order&state_type=state_new">待付款订单</a></li>
+            <li><a href="../psapp/member/logon.do.htm" tppabs="http://www.sdcii.com:81/shop/index.php?act=member_order&state_type=state_send">待确认收货</a></li>
+            <li><a href="../psapp/member/logon.do.htm" tppabs="http://www.sdcii.com:81/shop/index.php?act=member_order&state_type=state_noeval">待评价交易</a></li>
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt><a href="../psapp/member/logon.do.htm" tppabs="http://www.sdcii.com:81/shop/index.php?act=member_favorites&op=fglist"></a><i></i></dt>
+        <dd>
+          <ul>
+            <li><a href="../psapp/member/logon.do.htm" tppabs="http://www.sdcii.com:81/shop/index.php?act=member_favorites&op=fglist">商品收藏</a></li>
+            <li><a href="../psapp/member/logon.do.htm" tppabs="http://www.sdcii.com:81/shop/index.php?act=member_favorites&op=fslist">店铺收藏</a></li>
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt>客户服务<i></i></dt>
+        <dd>
+          <ul>
+            <li><a href="index.php-act=article&op=article&ac_id=2.htm" tppabs="http://www.sdcii.com:81/shop/index.php?act=article&op=article&ac_id=2">帮助中心</a></li>
+            <li><a href="index.php-act=article&op=article&ac_id=5.htm" tppabs="http://www.sdcii.com:81/shop/index.php?act=article&op=article&ac_id=5">售后服务</a></li>
+            <li><a href="index.php-act=article&op=article&ac_id=6.htm" tppabs="http://www.sdcii.com:81/shop/index.php?act=article&op=article&ac_id=6">客服中心</a></li>
+          </ul>
+        </dd>
+      </dl>
+      	  <dl class="weixin">
+        <dt>关注我们<i></i></dt>
+        <dd>
+          <h4>扫描二维码<br/>
+            关注商城微信号</h4>
+          <img src="../data/upload/shop/common/05103307376868191.jpg" tppabs="http://www.sdcii.com:81/data/upload/shop/common/05103307376868191.jpg" > </dd>
+        </dl>
+    </div>
+  </div>
+</div>
+<div class="header-wrap"><header class="public-head-layout wrapper">
+  <h1 class="site-logo"><a href="index.htm" tppabs="http://www.sdcii.com:81/shop"><img src="../data/upload/shop/common/04966268013623457.png" tppabs="http://www.sdcii.com:81/data/upload/shop/common/04966268013623457.png" class="pngFix"></a></h1></header></div>
+<div class="msg">
+            <i class="icon-info-sign" style="color: #39C;"></i>
+                抱歉！您访问的页面不存在</div>
+<script type="text/javascript">
+	window.setTimeout("javascript:location.href='index.php-act=search&op=index&cate_id=285.htm'/*tpa=http://www.sdcii.com:81/shop/index.php?act=search&op=index&cate_id=285*/", 2000);
+</script>
+<div id="faq">
+  <div class="faq-wrapper">
+      </div>
+</div>
+<div id="footer" class="wrapper">
+  <p><a href="index.htm" tppabs="http://www.sdcii.com:81/shop">首页</a>
+      </p>
+  Copyright 2015 <a href="javascript:if(confirm('http://bbs.inspur.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://bbs.inspur.com/'" tppabs="http://bbs.inspur.com/" target="_blank">bbs.inspur.com</a> All rights reserved. <br />
+   </div>
+<script type="text/javascript" src="../data/resource/js/jquery.cookie.js" tppabs="http://www.sdcii.com:81/data/resource/js/jquery.cookie.js"></script>
+<link href="../data/resource/js/perfect-scrollbar.min.css" tppabs="http://www.sdcii.com:81/data/resource/js/perfect-scrollbar.min.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../data/resource/js/perfect-scrollbar.min.js" tppabs="http://www.sdcii.com:81/data/resource/js/perfect-scrollbar.min.js"></script>
+<script type="text/javascript" src="../data/resource/js/qtip/jquery.qtip.min.js" tppabs="http://www.sdcii.com:81/data/resource/js/qtip/jquery.qtip.min.js"></script>
+<link href="../data/resource/js/qtip/jquery.qtip.min.css" tppabs="http://www.sdcii.com:81/data/resource/js/qtip/jquery.qtip.min.css" rel="stylesheet" type="text/css">
+<!-- 对比 -->
+<script src="resource/js/compare.js" tppabs="http://www.sdcii.com:81/shop/resource/js/compare.js"></script>
+<script type="text/javascript">
+$(function(){
+	// Membership card
+	$('[nctype="mcard"]').membershipCard({type:'shop'});
+});
+</script>
+</body>
+</html>

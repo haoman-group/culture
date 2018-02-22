@@ -1,0 +1,78 @@
+.login-register {
+  width: 368px;
+  height: 324px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+.login-register .member-login {
+  width: 328px;
+  height: 63px;
+  border-bottom: 2px solid #245BBF;
+  margin-top: 12px;
+  margin-left: 20px;
+}
+.login-password {
+  width: 328px;
+  height: 35px;
+  border: 1px solid #c2c2c2;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.login-password .login-pic {
+  width: 40px;
+  height: 33px;
+  background: #EEEEEE;
+  float: left;
+}
+.login-password input {
+  /*width: 174px;*/
+  height: 33px;
+  font-size: 16px;
+}
+.login-password-1 {
+  width: 328px;
+  height: 35px;
+  border: 1px solid #c2c2c2;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.login-password-1 .login-pic {
+  width: 40px;
+  height: 33px;
+  background: #EEEEEE;
+  float: left;
+}
+.login-password-1 input {
+  width: 174px;
+  height: 33px;
+  font-size: 16px;
+}
+.login-code{margin-top: 30px;margin-left: 20px;}
+.login-code input{border: 1px solid #c2c2c2;width: 133px;height: 33px;font-size: 16px}
+.cardcon .login-code img{display: inline-block;}
+.log {
+  width: 55px;
+  height: 25px;
+  border-radius: 7%;
+  background: #237CCD;
+  color: white;
+  margin: 20px;
+  margin-left: 109px;
+  margin-top: 20px;
+}
+.log-reg {
+  width: 55px;
+  height: 25px;
+  border-radius: 7%;
+  background: #237CCD;
+  color: white;
+  margin: 20px;
+}
+.clearfix .consumer {
+  width: 780px;
+  height: 63px;
+  border-bottom: 1px solid #245BBF;
+  margin-top: 5px;
+  margin-left: 1px;
+}
+/*# sourceMappingURL=category_consume.css.map */

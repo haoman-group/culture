@@ -1,0 +1,12 @@
+.DS_Store
+\#runtime/*
+!\#runtime/.gitkeep
+d/file/*
+d/pdf/*
+.user.ini
+.vscode/*
+shuipf/Common/Conf/dataconfig.php
+.idea/*
+industry/\#runtime/*
+shop/Application/Runtime/*
+Ssoserver/config.php

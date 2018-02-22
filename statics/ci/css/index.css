@@ -1,0 +1,59 @@
+.sousuo{width: 1200px;height: 90px;}
+.indexsearbox{width:690px; float: left;}
+.search-form{width: 160px;height: 45px;border: 1px solid red; background: black;float:right;}
+.indexsearbox .inpsear{width: 440px;}
+.index_SearchRm{float: right; margin-right: 0; color: #444; font-size: 16px;}
+
+ /*æŽ¨èä½æ–°é—»*/
+.industry-news{width:920px; height: 278px;border: 1px solid #c2c2c2;position: relative;padding: 20px;margin-top: 20px;}
+.img-logo{width: 372px;height: 240px;}
+.left-img{width:372px;height: 230px; float: left;}
+.tuijianwei-news{width: 472px;height: 240px; float:left;margin-left: 20px;}
+.indursty-logo{width: 485px;height: 60px;border-bottom: 1px solid #2058c2;}
+.indursty-logo a{display: block;font-size: 18px;float: right;margin-top: 30px;}
+.commend-news{ color: #696b76;}
+.commend-news a{color: #696b76;}
+.commend-news ul{ padding-top: 8px;width: 505px;}
+.commend-news li{list-style:none; font-size: 14px;margin-left: 10px;margin-top: 7px; position: relative; padding-left: 16px;}
+.commend-news li:before{position: absolute; width: 8px; content: ""; height: 8px; border-radius: 50%; background: #2058c2; top: 6px; left: -4px;}
+.commend-news li span{float: right;}
+.datetime{float: right;margin-right: 22px}
+.login-register{width: 262px;height: 278px;border: 1px solid #c2c2c2;float: right;margin-top: -278px;position: relative;}
+.login-register .member-login{width: 220px;height: 63px;border-bottom: 1px solid #245BBF;margin-top: 18px;margin-left: 20px;}
+.login-password{width: 216px;height: 35px;border: 1px solid #c2c2c2;margin-top: 15px;margin-left: 20px}
+.login-password .login-pic{width: 40px;height: 33px;background: #EEEEEE;float: left}
+.login-password input{width: 174px; height: 33px;font-size: 16px}
+.login-password-1{width: 216px;height: 35px;border: 1px solid #c2c2c2;margin-top: 15px;margin-left: 20px}
+.login-password-1 .login-pic{width: 40px;height: 33px;background: #EEEEEE;float: left}
+.login-password-1 input{width: 174px; height: 33px;font-size: 16px}
+.login-code{margin-top: 15px;margin-left: 20px;}
+.login-code input{border: 1px solid #c2c2c2;width: 133px;height: 33px;font-size: 16px}
+.btns{ padding: 15px 0 0;}
+.content .login-register .btns{text-align: center}
+.btns input{background: #237CCD;color: white; width: 56px; height: 24px; text-align: center; border-radius: 6%;margin-top: -10px;}
+.btns .btnl{position: relative;margin-left: 0px;}
+.btns .btnr{position: relative;margin-left: 0px;}
+/*
+*/
+.lunbotu{width: 1118px; height:489px; border:  1px solid #c2c2c2;margin-top:28px;margin-right: 40px;margin-bottom:28px;margin-left:25px;position: relative}
+.lunbotu .first{width: 382px;border: 1px solid #c2c2c2;float: left}
+.lunbotu .first p{opacity: 0.9; width: 382px;height: 42px;background: #676767;margin-top: 35px;text-align: center;line-height: 44px;font-size: 24px;color: white;}
+.lunbotu.second{width:734px;float:left;border: none;height: 489px;margin-top: -20px;}
+.list-pic{margin-left: 20px}
+.list-pic img{width: 168px;height: 146px;display: block;text-align: center;}
+.miaoshu{background:#676767;width:100%;height: 42px;float: right; opacity:0.9; margin-left: 10px;margin-top: 1px;}
+.miaoshu p{width:367px;height: auto;color: white;text-align: center;line-height: 44px;font-family: "Microsoft YaHei";font-size: 18px;}
+.pro-right{width: 367px;border: 1px solid #c2c2c2;float: left;margin-top: -20px;}
+.left-triangle{background: #c2c2c2;width: 40px;height: 65px;position: absolute;left: -10px;top: 300px;opacity: integer;cursor:pointer;}
+.left-triangle p{text-align: center;line-height: 65px;font-size: 18px;color: white;}
+.right-triangle{background: #c2c2c2;width: 40px;height: 65px;position: absolute;left: 1152px;top: 300px;cursor:pointer;}
+.right-triangle p{text-align: center;line-height: 65px;font-size: 18px;color: white;}
+.log{width:55px;height: 25px;border-radius: 7%;position: absolute;left: 54px;top: 224px;background: #237CCD;color: white}
+.log-reg{width:55px;height: 25px;border-radius: 7%;position: absolute;left: 150px;top: 224px;background: #237CCD;color: white}
+/*ä¿®æ”¹*/
+.cul-pro{border: 1px solid #c2c2c2;}
+.cul-left{width: 580px;overflow: hidden;float: left;border-right: 1px solid #c2c2c2;height:439px;}
+.cul-left p{margin-top: 19px;   width: 100%;height: 42px;background: #676767;color: white;line-height: 42px;text-align: center;font-size: 24px;font-family: "Microsoft YaHei";float: left;}
+.cul-pro-right{float: left;width: 288px;text-align: center;border-right: 1px solid #c2c2c2;border-bottom: 1px solid #c2c2c2;}
+.cul-pro-right img{width: 288px;height: 218px;}
+.cul-pro-right p{width:100%;line-height: 42px; height: 42px;background:#676767;text-align: center;font-family: "Microsoft YaHei";font-size: 18px;color: white;opacity:0.9 }

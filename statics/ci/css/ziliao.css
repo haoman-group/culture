@@ -1,0 +1,15 @@
+.top{width: 900px;height: 150px;border-bottom-left-radius: 80px;border-top-left-radius: 80px;}
+.tianjia{width: 900px;overflow: hidden;background:white}
+.touxiang{width: 100px;height: 100px;overflow: hidden;border-top-left-radius: 60px;
+        border-bottom-left-radius: 60px;border-top-right-radius: 60px;border-bottom-right-radius: 60px;float: left;margin-left: 20px;margin-top: 25px;}
+.account{width: 200px;float: left;}
+.yonghu{padding-top: 20px;padding-left: 30px;color: #00a0e9}
+.nicheng{padding-top: 20px;padding-left: 30px;color: #00a0e9}
+.account-mid{width: 300px;height: 150px;float: left;margin-left: 100px;}
+.yue{padding-top: 20px;color: #00a0e9}
+.m-order{width: 900px;height: 150px;background: #F7F7F7; margin-top: 20px;}
+.condition{padding-top: 10px;padding-left:25px;font-family: "Adobe Heiti Std"}
+.order-content{margin-top: 20px;width:900px; }
+.order-content ul li{float: left}
+.img-list{width:150px;overflow: hidden;margin-left: 25px; margin-top: 20px;}
+.order-view{margin-left: 100px;margin-top: 30px;}

@@ -1,0 +1,16 @@
+ #nav form{border: none;width: 922px;line-height: 46px;font-size: 14px;color: #121212;text-indent: 15px;}
+ #nav form input[type="text"]{width: 448px;height: 30px;border: 1px solid #ccc;border-radius: 5px;text-indent: 10px;margin: 0 0 0 14px;}
+        #nav form select,#nav form button{width: 51px;height: 26px;border-radius: 5px;border: 1px solid #ccc;text-align: center;line-height: 26px;background: transparent;margin: 0 5px;}
+        #nav form a{padding: 0 7px;}
+        #content .industry .industry-left li{border-bottom: 1px dashed #e6e6e6;}
+        #content .industry .industry-left li:last-child{border-bottom: none;}
+        #content .industry .industry-left li a{color: #121212;}
+        #content .industry .industry-left li:first-child a{color: #bd1514;}
+        .industry-right .list{padding-left: 30px;}
+        .industry-right .list li{line-height: 48px;font-size: 14px;color: #393939;border-bottom: 1px solid #e6e6e6;}
+        .industry-right .list li a{margin-left: 10px;}
+        .industry-right .list li span{float: right;display: block;padding-right: 20px;}
+       .page {margin: 60px 0px 35px 0px;text-align: center;}
+       .page a,.page span.current,.page input {display: inline-block;padding: 8px 16px;border: 1px solid #999999;color: #363636;margin: 0 5px;}
+       .page span{margin: 0 5px;}
+       .page span.current {background-color: #93272D;color: white;}

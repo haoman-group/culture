@@ -1,0 +1,81 @@
+.hotspot-left {
+  width: 750px;
+  min-height: 100px;
+}
+.hotspot-left .left_div{
+  border:1px solid #ccc;
+}
+.hotspot-left .left_content_title {
+  width: 640px;
+  height: 115px;
+  margin: 0 auto;
+  padding-top: 25px;
+  border-bottom: 1px solid #ccc;
+}
+.hotspot-left .left_content_title h2 {
+  width: 100%;
+  height: auto;
+  font: 22px/30px "微软雅黑";
+  text-align: center;
+}
+.hotspot-left .left_content_title p {
+  width: 100%;
+  font: 12px/20px "微软雅黑";
+  text-align: center;
+  margin-top: 15px;
+}
+.hotspot-left .left_content_div {
+  min-height: 100px;
+  width: 640px;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+.hotspot-left .left_content_bottom {
+  width: 640px;
+  height: 100px;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+.hotspot-left .left_content_bottom div {
+  float: right;
+}
+.hotspot-left .left_content_bottom a {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  margin-left: 5px;
+}
+.hotspot-left .left_content_bottom a img {
+  width: 35px;
+  height: 35px;
+}
+.left_relate_article{
+  width: 753px;
+  height:128px;
+
+}
+.container .hotspot-right li span{
+	width: 18px;
+  height: 15px;
+  background: #CDCDCD;
+  color: white;
+  line-height: 18px;
+  margin-top: 6.5px;
+  text-align: center;
+  float: left;
+}
+.container .hotspot-right .on span{
+	width: 18px;
+  height: 15px;
+  background: #900;
+  color: white;
+  line-height: 15px;
+  margin-top: 6.5px;
+  text-align: center;
+  float: left;
+}
+/*# sourceMappingURL=show.css.map */
+.newsshowshare{ padding: 0px 20px 25px ;overflow:hidden;}
+.newsshowshare strong{ float: left; line-height: 32px; font-size: 14px; margin-right: 10px;}
+.newsshowshare .jiathis_style_32x32{ float: right; width: 200px; overflow: hidden; height: 32px;}
+/*.newsbox{margin-top: 16px;width: 420px;float: right;overflow: hidden;margin-right: 30px;}*/

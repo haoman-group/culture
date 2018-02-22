@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0,minimal-ui">
+<title>ä¼šå‘˜ç™»å½• </title>
+<link href="../resources/default/css/pingtai_dl.css" tppabs="http://www.sdcii.com/psapp/resources/default/css/pingtai_dl.css" rel="stylesheet" type="text/css" />
+<link href="../resources/default/css/style-metro.css" tppabs="http://www.sdcii.com/psapp/resources/default/css/style-metro.css" rel="stylesheet" type="text/css"/>
+<style>
+	#msg{
+		    width: 100%;
+		    text-align: center;
+		    height: 40px;
+		    line-height: 40px;
+		    background-color: red;
+		    color: #fff;
+		    filter: alpha(opacity=50);
+		    -moz-opacity: 0.5;
+		    -khtml-opacity: 0.5;
+		    opacity: 0.5;
+	}
+</style>
+ <script src="../js/cookies.js" tppabs="http://www.sdcii.com/psapp/js/cookies.js" type="text/javascript"></script>
+    <script src="../js/jquery-1.11.3.min.js" tppabs="http://www.sdcii.com/psapp/js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        $(function () {
+
+            first();
+
+            $(".logo").click(function () {
+
+                window.location.href = "../../index-1.htm"/*tpa=http://www.sdcii.com/*/;
+
+            });
+
+
+        });
+
+        $(document).keypress(function (event) {
+            var keyCode = event.keyCode || event.which;
+            if (keyCode == 13) {
+                event.keyCode = null;
+                event.which = null;
+                doOK();
+            }
+        });
+
+        function first() {
+            //ä¸Šæ¬¡ç™»å½•çš„å¸å·
+            var x = getCookie("APP_LOGINID");
+            if (x == null) {
+                $("#memberLoginId").focus();
+            } else {
+                $("#memberLoginId").val(x);
+                $("#memberPass").focus();
+            }
+        }
+
+        function doOK() {
+            var memberLoginId = $("#memberLoginId").val();
+            var memberPass = $("#memberPass").val();
+            //æ ¡éªŒå¸å·
+            if (!memberLoginId) {
+                $(".Prompt").show();
+                $("#msg").text('è¯·å¡«å†™ç™»å½•åï¼');
+                return;
+            }
+            if (!memberPass) {
+                $(".Prompt").show();
+                $("#msg").text('è¯·å¡«å†™ç™»å½•å¯†ç ï¼');
+                return;
+            }
+            $("#sub").attr('disabled', true);
+
+            //å°†ç”¨æˆ·è¾“å…¥çš„å¸å·å­˜å…¥cookie
+            var expdate = new Date();
+            expdate.setTime(expdate.getTime() + (24 * 60 * 60 * 1000 * 365));
+            setCookie("APP_LOGINID", memberLoginId, expdate, "/");
+            //æäº¤
+            memberLogin();
+        }
+
+        /**
+         * ç”¨æˆ·æ ¡éªŒ
+         * @param type type--loginId(éªŒè¯ç™»å½•åæ˜¯å¦å­˜åœ¨)ï¼Œemail(éªŒè¯Emailæ˜¯å¦å­˜åœ¨)ï¼ŒcheckCode(éªŒè¯ç )
+         * @param obj
+         */
+        function memberLogin() {
+            $(".Prompt").hide();
+            var memberLoginId = $("#memberLoginId").val();
+            var memberPass = $("#memberPass").val();
+            $.ajax({
+                type: "POST",
+                data: {'vo.memberLoginId': memberLoginId, 'vo.memberPass': memberPass},
+                url: "memberLogin.do.htm"/*tpa=http://www.sdcii.com/psapp/member/memberLogin.do*/,
+                dataType: "json",
+                async: false,
+                success: function (data) {
+
+
+                    if (data.result == 'fail') {
+                        $("#sub").removeAttr('disabled');
+                        $(".Prompt").show();
+                        $("#msg").text(data.msg);
+
+                    } else if (data.result == 'complete') {
+                        if (data.openLoginUrl) {
+
+                            var iframe0 = document.getElementById('openLogin0');
+                            iframe0.src = data.openLoginUrl[0];
+                            iframe0.onload = iframe0.onreadystatechange = function () {
+
+
+                                var iframe1 = document.getElementById('openLogin1');
+                                iframe1.src = data.openLoginUrl[1];
+                                iframe1.onload = iframe1.onreadystatechange = function () {
+                                    var url = "memberComplete.do.htm"/*tpa=http://www.sdcii.com/psapp/member/memberComplete.do*/;
+                                    $("#nextUrl").attr('action', url);
+                                    $("#nextUrl").submit();
+                                }
+                            }
+
+                        }
+
+                    } else {
+
+
+                        if (data.openLoginUrl) {
+
+
+                            var iframe0 = document.getElementById('openLogin0');
+                            iframe0.src = data.openLoginUrl[0];
+                            iframe0.onload = iframe0.onreadystatechange = function () {
+
+
+                                var iframe1 = document.getElementById('openLogin1');
+                                iframe1.src = data.openLoginUrl[1];
+                                iframe1.onload = iframe1.onreadystatechange = function () {
+                                    var url = $("#nextUrl").attr('action');
+                                    if (url) {
+                                        $("#nextUrl").submit();
+                                    } else {
+                                        var refer = document.referrer;
+                                        if (refer.indexOf("www.sdcii.com:81") > 0) {
+                                            window.location.href = "../../index.htm"/*tpa=http://www.sdcii.com:81/*/;
+                                        } else if (refer.indexOf("www.sdcii.com:82") > 0) {
+                                            window.location.href = "../../index-2.htm"/*tpa=http://www.sdcii.com:82/*/;
+                                        } else {
+                                            window.location.href = "../../index-1.htm"/*tpa=http://www.sdcii.com/*/;
+                                        }
+
+
+                                        //window.location.href = "http://localhost:8088/psapp";
+                                    }
+
+                                }
+
+
+                            }
+
+
+                        }
+
+
+                    }
+
+
+                }
+            });
+
+        }
+
+
+    </script>
+</head>
+<body >
+
+<!-------------------ç™»å½•æœç´¢-------------------> 
+
+<!-------------------ç™»å½•æœç´¢-------------------> 
+
+<!-------------------é¡¶éƒ¨å›¾ç‰‡ å¼€å§‹------------------->
+<div class="sy_toptp">&nbsp;</div>
+
+<!-------------------é¡¶éƒ¨å›¾ç‰‡ ç»“æŸ-------------------> 
+
+<!------------------å†…å®¹ å¼€å§‹------------------->
+
+<div class="nr_yonghdl">
+  <div class="demo">
+    <form name="fmLogin" action="http://www.sdcii.com/psapp/member/memberLogin.do" method="post" id="fmLogin" class="forget-pwd">
+      <div class="md-offset">
+        <div class="heading">ä¼šå‘˜ç™»å½•</div>
+        <div class="Prompt" style="display: none;"><i class="icon"></i>
+                    <p id="msg"></p></div>
+        <div class="form-group">
+        <input id="memberLoginId" name="vo.memberLoginId" class="logInput form-control span6 m-wrap" value="" type="text"  placeholder="ç”¨æˆ·å"/>
+          <i class="fa fa-user"></i> </div>
+        <div class="form-group help">
+        <input id="memberPass" name="vo.memberPass" type="password" value="" class="logInput form-control span6 m-wrap"  placeholder="å¯†ç "/>
+          <i class="fa fa-lock"></i> </div>
+         
+        <div class="jzm_wjm">
+          <div class="main-checkbox">
+            <input type="checkbox" name="cookietime" value="2592000" id="checkbox1">
+            <label for="checkbox1"></label>
+          </div>
+          <span class="text">è®°ä½ç”¨æˆ·å</span>
+          <div class="wangjimm "><span><a href="javascript:if(confirm('http://www.sdcii.com/psapp/member/index.php?m=member&c=index&a=register&siteid={$siteid}  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ·şÎñÆ÷±¨¸æ¸ÃÎÄ¼şÎ´ÕÒµ½¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.sdcii.com/psapp/member/index.php?m=member&c=index&a=register&siteid={$siteid}'" tppabs="http://www.sdcii.com/psapp/member/index.php?m=member&c=index&a=register&siteid={$siteid}" target="_blank">ç”¨æˆ·æ³¨å†Œ</a></span><a href="javascript:if(confirm('http://www.sdcii.com/psapp/member/index.php?m=member&c=index&a=public_get_password_type&siteid={$siteid}  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ·şÎñÆ÷±¨¸æ¸ÃÎÄ¼şÎ´ÕÒµ½¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.sdcii.com/psapp/member/index.php?m=member&c=index&a=public_get_password_type&siteid={$siteid}'" tppabs="http://www.sdcii.com/psapp/member/index.php?m=member&c=index&a=public_get_password_type&siteid={$siteid}" target="_blank">å¿˜è®°å¯†ç ?</a></div>
+          <div class="clear"></div>
+        </div>
+        <div class="dengl_zc">
+        <button type="button" class="btn_02 btn-success_02 btn btn-default" id="sub" name="sub" onclick="javascript:doOK();">ç™» å½• </button>
+          
+        </div>
+        <div class="ksdl">
+          <div class="ksdl_bt">
+            <h3>å¿«é€Ÿç™»é™†</h3>
+          </div>
+          <ul>
+            <li class="btn btn-block btn-social btn-facebook margin-bottom-15" ><a href="javascript:if(confirm('http://101.201.121.142/index.php?m=member&c=index&a=public_qq_loginnew  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://101.201.121.142/index.php?m=member&c=index&a=public_qq_loginnew'" tppabs="http://101.201.121.142/index.php?m=member&c=index&a=public_qq_loginnew" target="_blank"><i class="fa fa-qq"></i>QQç™»å½•</a></li>
+            <li class="btn btn-block btn-social btn-weixin  margin-bottom-15"><a href="#" target="_blank"><i class="fa fa-weixin"></i>å¾®ä¿¡ç™»å½•</a></li>
+            <li class="btn btn-block btn-social btn-google-plus" ><a href="javascript:if(confirm('http://101.201.121.142/index.php?m=member&c=index&a=public_sina_login  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://101.201.121.142/index.php?m=member&c=index&a=public_sina_login'" tppabs="http://101.201.121.142/index.php?m=member&c=index&a=public_sina_login" target="_blank"><i class="fa fa-weibo"></i>å¾®åšç™»å½•</a></li>
+          </ul>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<form action="" method="post" id="nextUrl">
+</form>
+<iframe src="" style="display: none" id="openLogin0"></iframe>
+<iframe src="" style="display: none" id="openLogin1"></iframe>
+<!------------------å†…å®¹ ç»“æŸ-------------------> 
+<!-------------------åº•éƒ¨ å¼€å§‹------------------->
+<div class="footer">
+  <div class="footer_diz">Â© 2013-2017 å±±ä¸œæ–‡åŒ–äº§ä¸šä¿¡æ¯æœåŠ¡å¹³å° </div>
+</div>
+
+
+</body>
+</html>

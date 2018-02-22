@@ -1,0 +1,87 @@
+#content .content_main {
+  width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+#content .content_main .content_main_title {
+  height: 50px;
+  background: #E2EBF2;
+  color: #3398db;
+}
+#content .consume_hot{width: 768px;float: left}
+#content .content_main .content_main_title h2 {
+  font-size: 20px;
+  line-height: 50px;
+  margin-left: 20px;
+  
+}
+#content .content_main .content_main_pic ul {
+  width: 1200px;
+}
+#content .content_main .content_main_pic ul li {
+  width: 1160px;
+  height: 165px;
+  margin: 20px;
+}
+#content .content_main .content_main_pic ul li img {
+  display: block;
+  float: left;
+}
+#content .content_main .content_main_pic ul li span {
+  display: block;
+  width: 880px;
+  height: 165px;
+  float: right;
+  text-indent: 20px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #686A76;
+}
+#content .content_main .content_main_list {
+  width: 1160px;
+  margin: 0 auto;
+}
+#content .consume_hot .content_main_list{
+  width: 768px;
+}
+#content .content_main .content_main_list ul {
+  height: auto;
+  width: 1300px;
+  padding-top: 10px;
+}
+#content .consume_hot .content_main_list ul{
+  width: 768px;
+}
+#content .content_main .content_main_list ul li {
+  float: left;
+  width: 550px;
+  font-size: 14px;
+  line-height: 14px;
+  color: #686A76;
+  margin-right: 60px;
+  margin-bottom: 15px;
+}
+#content .consume_hot .content_main_list ul li{
+  width: 345px;
+  margin: 0 17px 15px;
+}
+#content .content_main .content_main_list ul li a {
+  color: #686A76;
+}
+#content .content_main .content_main_list ul li em {
+  color: #900;
+  font-size: 18px;
+  font-style: normal;
+  margin-right: 7px;
+  position: relative;
+}
+#content .content_main .content_main_list ul li span {
+  display: block;
+  float: right;
+}
+/*# sourceMappingURL=list_consume_message.css.map */
+#content .content_consume{width: 1200px;margin:0 auto;}
+#content .other_message{width: 399px;float: right}
+#content .other_message .content_main_list{width: 399px}
+#content .other_message .content_main_list ul{width: 399px}
+#content .other_message .content_main_list ul li{margin-left: 17px;width: 382px}
